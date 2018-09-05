@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--文字コード宣言-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <meta charset="UTF-8"> -->
+  <!--スクリプト言語設定-->
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <!--スタイルシート言語設定-->
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <!--外部javascript呼び出し-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--外部CSS呼び出し-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+  <!--QiMesseging読み込み
+  <script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>-->
+  <title>イベントアプリ生成WEBページ</title>
+
+</head>
+
+<body>
+
+<!--HEADER-->
+  <header>
+    <a href="https://www.ostechnology.co.jp/inquiry/#ost" target="_blank" class="btn_contact spNone">お問い合わせ</a>
+    <img src="img/menu.png" alt="menu" class="btn_menu pcNone">
+    <a href="https://www.ostechnology.co.jp/robotics/contact" class="btn_contact pcNone"><img src="img/contact.png" alt="お問い合わせ"></a>
+    <h1><a href="https://www.ostechnology.co.jp/robotics"><img src="img/ostRobots.png" alt="Out-Sourcing!Technology OSTech Robotics"></a></h1>
+  </header>
+
+<!--ナビゲーション-->
+  <nav>
+    <div class="menu-gnav-container">
+      <ul id="menu-gnav" class="menu">
+        <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20">
+          <a href="https://www.ostechnology.co.jp/robotics">HOME</a></li>
+        <li id="menu-item-135" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-135">
+          <a href="https://www.ostechnology.co.jp/robotics/category/news">お知らせ</a></li>
+        <li id="menu-item-136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136">
+          <a href="https://www.ostechnology.co.jp/robotics/aboutnao">ロボットのご紹介</a></li>
+        <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137">
+          <a href="https://www.ostechnology.co.jp/robotics/business">ロボットソリューション</a></li>
+        <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140">
+          <a href="https://www.ostechnology.co.jp/robotics/buy">ご購入･レンタルについて</a></li>
+        <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141">
+          <a href="https://www.ostechnology.co.jp/robotics/CreateApp">アプリ生成システム</a></li>
+        <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138">
+          <a href="https://www.ostechnology.co.jp/robotics/faq">FAQ</a></li>
+      </ul>
+    </div>
+</nav>
+
+
+
+<!--入力フォーム-->
+    <form name="form1" id="id_form1" action="">
+    <!--<input name="textBox1" id="id_textBox1" type="text" value="" />-->
+    <!--テキスト入力欄-->
+    <p>お名前：<input id="userName" type="text" name="userName" size="30" maxlength="30" value="田中 太郎"></p>
+    <p>ヨミガナ：<input id="yomi" type="text" name="yomi" size="30" maxlength="30" value="タナカ　タロウ"></p>
+    <p>電話番号：<input id="tel" type="text" name="tel" size="30" maxlength="30" value="08012345678"></p>
+    <p>メールアドレス：<input id="email" type="text" name="email"></p>
+    <p>企業名：<input id="company" type="text" name="example2" size="30" maxlength="30" value="株式会社◯◯"></p>
+    <p>役職：<input id="position" type="text" name="example2" size="30" maxlength="30" value="ロボティクス事業課長"></p>
+    <!--セレクトボックス-->
+    <p>支払い方法：<input id="cache" type="text" name="example2" size="30" maxlength="30" value="契約後"></p>
+    <!--日付選択-->
+    <p>納品希望日：<input id="endDay" type="text" name="example2" size="30" maxlength="30" value="2016年1月1日"></p>
+    <br>
+    <!--セレクトボックス-->
+    <p>希望ロボット：<select id="robot" name="example">
+      <option value="NAO">NAO</option>
+      <option value="Pepper">Pepper</option>
+      <option value="Tapia">Tapia</option>
+      <option value="etc">指定無し</option>
+    </select></p>
+    <p>プラン：<select id="plan" name="example">
+      <option value="planA">通常プラン</option>
+      <option value="planB">宣伝プラン</option>
+      <option value="planC">実績プラン</option>
+    </select></p>
+    <p>スタイル：<select id="id_style" name="example">
+      <option value="server">サーバー連動</option>
+      <option value="signage">サイネージ連動</option>
+      <option value="robot">ロボット単体</option>
+    </select></p>
+    <p>キャラクター：<select id="character" name="example">
+      <option value="business">ビジネス</option>
+      <option value="rough">ラフ</option>
+      <option value="humor">ユーモア</option>
+    </select></p>
+    <br>
+    <!--ファイル選択-->
+    <p>出力画像1：<input id="image1" type="file" name="example" size="30"></p>
+    <p>説明文章1：<textarea id="sentence1" name="example" cols="50" rows="10"></textarea></p>
+    <p>テストボタン：<input type="button" name="name" value="テスト" onclick="getFormValue()"></p>
+    <p><input type="submit" value="送信する" onclick="getFormValue()"></p>
+    <!--入力フォームリセット-->
+    <p><input type="reset"  value="  取消  "></p>
+    </form>
+
+
+
+<!--フッダー-->
+    <footer>
+  		<div class="sec">
+  			<p class="btn_sitemap pcNone">サイトマップ</p>
+  			<div class="sitemap cl">
+  				<dl>
+  					<dt><a href="https://www.ostechnology.co.jp/robotics/">HOME</a></dt>
+  					<dt><a href="https://www.ostechnology.co.jp/robotics/news">お知らせ</a></dt>
+  					<dt><a href="https://www.ostechnology.co.jp/robotics/aboutnao">ロボットのご紹介</a></dt>
+  					<dd><a href="https://www.ald.softbankrobotics.com/ja" target="_blank" class="blank">SoftBank Robotics Webサイト</a></dd>
+  					<dt><a href="https://www.ostechnology.co.jp/robotics/business">ロボットソリューション</a></dt>
+  					<dd><a href="https://www.ostechnology.co.jp/robotics/business/#sec1">受付・インフォメーション</a></dd>
+  					<dd><a href="https://www.ostechnology.co.jp/robotics/business/#sec2">NAOをプログラミング</a></dd>
+  					<dd><a href="https://www.ostechnology.co.jp/robotics/business/#sec3">抜群の集客力</a></dd>
+  					<dd><a href="https://www.ostechnology.co.jp/robotics/business/#sec4">アプリケーション開発</a></dd>
+  					<!--
+  					<dd><a href="index.php/nopage">その他：自閉症治療補助等</a></dd>
+  					-->
+  				</dl>
+  				<dl>
+  					<dt><a href="https://www.ostechnology.co.jp/robotics/buy">ご購入・レンタルについて</a></dt>
+  					<dd><a href="https://www.ostechnology.co.jp/robotics/buy/#sec1">販売ラインナップ</a></dd>
+  					<dd><a href="https://www.ostechnology.co.jp/robotics/buy/#sec2">レンタルラインナップ</a></dd>
+  					<!--
+  					<dt>サポートについて</dt>
+  					<dt>ブログ：NAOを使ってみた</dt>
+  					 -->
+  					<dt><a href="https://www.ostechnology.co.jp/robotics/faq">FAQ</a></dt>
+  				</dl>
+  				<dl>
+  					<!--
+  					<dt>ファンサイトのリンク集</dt>
+  					 -->
+  					<dt><a href="https://www.ostechnology.co.jp/inquiry/#ost" target="_blank" class="contact">お問い合わせ</a></dt>
+  				</dl>
+  			</div>
+  			<div class="copy">
+  				<small>
+  					Copyright © OUTSOURCING TECHNOLOGY Inc. All Rights Reserved.<br>
+  					運営：<a href="http://www.ostechnology.co.jp/" target="_blank">（株）アウトソーシングテクノロジー</a>
+  				</small>
+  			</div>
+  			<a href="https://www.ostechnology.co.jp/robotics/category/news#top" class="pagetop" style="display: none;"><img src="img/up.png" alt="ページの先頭へ"></a>
+  		</div>
+  	</footer>
+
+
+</body>
+</html>

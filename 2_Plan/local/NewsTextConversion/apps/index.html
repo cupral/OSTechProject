@@ -1,0 +1,56 @@
+<!doctype html>
+<!--母国語宣言-->
+<html lang="ja">
+	<head>
+		<!--文字コード宣言-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- <meta charset="UTF-8"> -->
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--スクリプト言語設定-->
+	  <meta http-equiv="Content-Script-Type" content="text/javascript">
+		<!--スタイルシート言語設定-->
+	  <meta http-equiv="Content-Style-Type" content="text/css">
+
+		<!-- qimessaging読込 -->
+	  <!-- <script src="/libs/qimessaging/1.0/jquery.min.js" type="text/javascript"></script> -->
+	  <!-- <script src="/libs/qimessaging/1.0/qimessaging.js"></script> -->
+		<!-- jquery読込 -->
+	  <!-- <script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script> -->
+
+    <!--JS読込-->
+	  <script type="text/javascript" src="js/script.js"></script>
+		<!-- CSS読込		 -->
+	  <link rel="stylesheet" href="css/style.css" type="text/css">
+		<title>ロボ用テキスト変換</title>
+  </head>
+	<body>
+    <div id="header">
+      <p id="title">ニュース用ロボテキスト変換システム</p>
+    </div>
+
+    <div id="main">
+      <form id="form1">
+        <textarea id="input_text" name="freeans" rows="10" cols="40">ここに変換したい文字列を記述してください。</textarea>
+        <button id="conversionButton" class="buttonStyle" type="button" name="button" onclick="conversion()">変換START</button>
+        <textarea id="output_text" name="freeans" rows="10" cols="40">変換結果</textarea>
+      </form>
+    </div>
+		<div id="wrapper">
+			置換追加オプション<br>
+			<div class="before">置換前</div><div class="after">置換後</div>
+			<form id="form2">
+				<input id="search1" type="text" value="">&nbsp;→&nbsp;<input id="substitution1" type="text" value=""><br>
+
+				<input id="search2" type="text" value="">&nbsp;→&nbsp;<input id="substitution2" type="text" value=""><br>
+				<input id="search3" type="text" value="">&nbsp;→&nbsp;<input id="substitution3" type="text" value=""><br>
+				<input id="search4" type="text" value="">&nbsp;→&nbsp;<input id="substitution4" type="text" value=""><br>
+				<input id="search5" type="text" value="">&nbsp;→&nbsp;<input id="substitution5" type="text" value=""><br>
+			</form>
+		</div>
+
+    <div id="footer">
+
+    </div>
+	</body>
+
+</html>

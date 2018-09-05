@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*  モ  ー シ  ョ ン タ ブ  */
+/* BOX設定 */
+#controllerBox, #abButtonBox, #pauseBox #videoBox{
+  box-sizing: border-box;
+}
+
+div.#videoBox{
+  width: 369px;
+  height: 113px;
+}
+div.img-camera{
+  width: 369px;
+  height:113px;
+}
+canvas#main{
+  margin: 0px 0px 0px 30px;
+  width: 350px;
+  height: 113px;
+}
+
+
+
+#controllerBox, #abButtonBox{
+  float:left;
+  width: 50%;
+  height: 30%;
+}
+
+#pauseBox{
+  width: 100%;
+  height: 20%;
+}
+
+/* 映像設定 */
+
+/* 画像設定 */
+img.yajirushi {
+    width: 100%;
+    height: 100%;
+}
+
+/* ボタン設定 */
+button.motionButton{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  background-color: azure;
+  /*文字サイズ*/
+  font-size: 1em;
+  /*文字の太さ*/
+  font-weight: normal;
+  /*Buttonの色を変更*/
+  /*background-color: #248;*/
+  color: #fff;
+  /*Buttonの横幅*/
+  width: 30%;
+  /*Buttonの縦幅*/
+  height: 30%;
+}
+
+button#move_ahead{
+top: 8%;
+left: 37%;
+}
+button#move_back{
+  top: 68%;
+  left: 4.5%;
+}
+button#move_goRight{
+  top: 38%;
+  left: 1.5%;
+}
+button#move_goLeft{
+  top: 6%;
+  left: 7%;
+}
+button#move_turnRight{
+  top: -25%;
+  left: -26.5%;
+}
+button#move_turnLeft{
+  top: -25%;
+  left: 2%;
+}
+button#move_moveStop{
+  top: 38%;
+  left: 15%;
+  font-size: 200%;
+  color: red;
+}
+button#move_standInit{
+  top: 10%;
+  left: 25%;
+  color: green;
+  font-size: 200%;
+}
+
+/*  モ  ー シ  ョ ン タ ブ  */
+
+
+button.pauseButton{
+  width: 22%;
+  height: 60%;
+  padding: 0px;
+  margin: 20px 0px 0px 5px;
+  border: 0px;
+}
+img.pause{
+  width: 100%;
+  height: 100%;
+}
+
+button#handUpRight{
+
+}
+button#handUpLeft{
+
+}
+button#shakeHandRight{
+
+}
+button#shakeHandLeft{
+
+}
+button#shakeHands{
+
+}
+button#shakeTheHip{
+
+}
+button#runHere{
+
+}
+button#stoop{
+
+}

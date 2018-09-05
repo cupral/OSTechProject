@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.1" uuid="naocon">
+ <names>
+  <name lang="en_US">NAOコントールアプリ</name>
+  <name lang="ja_JP">NaoCon</name>
+ </names>
+ <supportedLanguages>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

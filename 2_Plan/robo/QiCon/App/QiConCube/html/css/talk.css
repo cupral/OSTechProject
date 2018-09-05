@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* ト ー ク 集 */
+button.talkButton{
+  width: 45%;
+  margin: 4px 1px 1px 10px;
+  /*Buttonの縦幅*/
+  height: 50px;
+  background-color: #248;
+  color: #fff;
+  border-style: none;
+  text-align: center;
+}
+
+button.freeButton, input.freeText{
+  float: left;
+}
+
+button.freeButton{
+  width: 10%;
+  margin: 10px 3px 3px 15px;
+  /*Buttonの縦幅*/
+  height: 50px;
+  background-color: #248;
+  color: #fff;
+  border-style: none;
+  text-align: center;
+}
+input.freeText {
+    width: 70%;
+    height: 50px;
+    margin: 10px 3px 3px 30px;
+}
+
+/*======音声認識===================================================================*/
+div.languageBox{
+  width:100%;
+  height:5%;
+  text-align:center;
+}
+img.countryFlag{
+  width: 25%;
+  margin: 3%;
+}

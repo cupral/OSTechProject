@@ -1,0 +1,36 @@
+<!doctype html>
+<!--母国語宣言-->
+<html lang="ja">
+	<head>
+	<!--文字コード宣言-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- <meta charset="UTF-8"> -->
+	<!--スクリプト言語設定-->
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<!--スタイルシート言語設定-->
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>
+	<!--HTMLタイトル-->
+	<title>テンプレート</title>
+	<!--埋め込みJavascript-->
+	<script>
+	var session = new QiSession();
+
+	function getImageValue(){
+		session.service("PackageManager").done(function (PackageManager){
+			var icon = PackageManager.packageIcon("dmmdance-");
+			return icon;
+		});
+	}
+	var appIcon = getImageValue();
+	var data = 'data:image/gif;base64,' + appIcon;
+	var icon_elem = document.getElementById("icon_here");
+	icon_elem.src = data;
+	</script>
+</head>
+
+<body>
+<img id="icon_here">
+</body>
+
+</html>

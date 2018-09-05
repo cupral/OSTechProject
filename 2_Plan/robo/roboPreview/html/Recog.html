@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta charset="UTF-8">
+		<title>顔認証デモアプリ：認証画面</title>
+		<link rel="stylesheet" href="css/Recog.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js" type="text/javascript"></script>
+		<script src="jQueryAssets/jquery-2.0.3.min.js"></script>
+
+		<script src="/libs/qimessaging/1.0/jquery.min.js" type="text/javascript"></script>
+		<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+
+		<script src="js/jquery.qimhelpers.js"></script>
+
+		<script src="js/Recog.js"></script>
+		<script src="js/camera/configure.js" type="text/javascript"></script>
+		<script src="js/camera/memory.to.html.js"></script>
+		<script src="js/camera/camera_draw.js"></script>
+	</head>
+
+	<!-- 本文 -->
+	<body class="body">
+
+		<!-- 段組みＡ********************************************************************************** -->
+		<div class="boxA">
+			<div class="textTOP">
+				<p>顔認証　　　　</p>
+			</div>
+			
+		</div>
+
+		<div class="boxA2">
+			<input id="RegistName" type="text" placeholder="登録名を入力" required>
+		</div>
+
+		<!-- 段組みB********************************************************************************** -->
+			<!-- カメラ映像 -->
+			<div class="boxB1">
+				<div class="img-camera">
+					<canvas id="main" width="720" height="540"/>
+					<canvas id="preview" width="160" height="120" hidden/>
+				</div>
+				<!-- 枠画像 -->
+				<!--img class="cameraframe" src="img/parts/BG_BODY_BaseCamera_NST.png" alt="カメラ枠"-->
+			</div>
+
+			<div class="boxB2">
+					<table class="ContentsTable">
+						<tbody>
+							<tr>
+								<th>名前</th>
+								<td id="Name">---</td>
+							</tr>
+							<tr>
+								<th>性別</th>
+								<td id="Gender">---</td>
+							</tr>
+							<tr>
+								<th>年齢</th>
+								<td id="Age">---</td>
+							</tr>
+						</tbody>
+					</table>
+				
+
+			</div>
+
+			<div class="boxB3">
+
+				<div class="FootButtonLong" id="Button_OK" >
+					<div class="FootButton_Text">
+						<p>顔登録！</p>
+					</div>
+				</div>
+
+			</div>
+	</body>
+
+</html>

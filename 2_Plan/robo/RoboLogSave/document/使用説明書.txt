@@ -1,0 +1,17 @@
+保存先
+/home/nao/.local/(appId)/(ファイル名)
+
+
+#人の会話
+subscriberHuman = self.mem.subscriber("Dialog/LastInput")
+self.signalHuman = subscriberHuman.signal
+self.subHumanId = self.signalHuman.connect(self.onHumanSpeechDetected)
+
+
+
+from urllib2 import Request, urlopen
+
+request = Request('https://private-2f0cd-newspepper.apiary-mock.com/list')
+
+response_body = urlopen(request).read()
+print response_bod

@@ -1,0 +1,489 @@
+@charset "UTF-8";
+
+/* タ グ 設 定 */
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width : 300px){
+    html,body{ font-size : 70%;
+    }
+}
+
+@media screen and (min-width : 500px) {
+    html,body{ font-size : 80%;
+    }
+}
+
+@media screen and (min-width : 768px){
+    html,body{ font-size : 90%;
+    }
+}
+
+@media screen and (min-width : 1024px) {
+    html,body{ font-size: 100%;
+    }
+}
+
+html {
+    font-size : 16px;
+}
+
+
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  -webkit-text-size-adjust : 100% ;
+
+}
+
+button {
+  touch-callout: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-touch-callout: none;
+  -moz-user-select: none;
+}
+
+img {
+  /*スマホ対応*/
+  max-width : 100% ;
+  height : auto ;
+}
+
+/*スマホ対応*/
+@media screen and (max-width: 480px) {
+h2 {
+  font-size : 75% ;
+  margin : 1em 0 0.8em 0 ; }
+}
+
+@media screen and (max-width: 480px) {
+p {
+  width : 100% ;
+  font-size : 65% ;
+  margin : 0 0 1.8em 0 ;
+  line-height : 1.7 ; }
+}
+
+/*スクロールで横がグラグラしないようにする*/
+#wrap { overflow : hidden ; }
+
+
+
+/* 文 字 設 定  */
+/* b o x 設 定  */
+
+.box1, .box2, .box3, .box4, .box5{
+  border: solid 2px rgb(70, 83, 176);
+  box-sizing: border-box;
+}
+
+.box2, .box3 {
+    float: left;
+    text-align: center;
+    width: 50%
+}
+
+.box4, .box5 {
+    float: left;
+    width: 50%;
+}
+
+.box1 {
+    width: 100%;
+    height: 50px;
+}
+
+.box2 {}
+.box3 {}
+
+.box4 {
+    text-align: center;
+    height: 500px;
+}
+
+.box5 {
+    text-align: center;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+
+/* B O X 1 内 */
+
+#robotName{
+    border: solid 1px rgb(70, 83, 176);
+    box-sizing: border-box;
+}
+
+#robotName,div.setting,#id_batteryImage{
+    box-sizing: border-box;
+    float: left;
+}
+
+div#robotName {
+    font-size: 1em;
+    width: 35%;
+    height: 90%;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    border-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+img#id_batteryImage {
+    width: 9%;
+    height: 90%;
+    padding: 5px 0px 0px 0px;
+    border-style: none;
+}
+
+div#id_battery{
+  text-align: center;
+  width: 50%;
+  margin: 10px 10px;
+}
+
+div.setting{
+  width: 50%;
+  height: 100%;
+}
+
+form#form1{
+  height: 80%;
+  width: 55%;
+  margin-top: 1%;
+}
+
+div.speShr{
+  height:auto;
+  padding: 8% 0px 0px 0px;
+}
+#speed{
+  height: 100%;
+  width: 40%;
+  font-size:0.5em;
+}
+#voiceSharping{
+  height: 100%;
+  width: 40%;
+  font-size:0.5em;
+}
+.speedSharpingButton{
+  height:90%;
+  margin-top: 1%;
+  /*Buttonの横幅*/
+  width: auto;
+  /*Buttonの縦幅*/
+  background-color: #248;
+  color: #fff;
+  border-style: none;
+  overflow: hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div.speShr,#form1,.speedSharpingButton{
+  float:left;
+}
+
+
+
+
+
+
+
+
+
+/* B O X 2 内 */
+
+
+/* B O X 3 内 */
+
+
+/* B O X 4 内 */
+
+p.alifeFont{
+  font-size: 0.8em;
+}
+
+button.alifeOn{
+  margin: 0px 0px 0px 18px;
+}
+button.alifeOff{
+  margin: 0px 0px 0px 15px;
+}
+button.alifeButton {
+    box-sizing: border-box;
+    float: left;
+    /*Buttonの横幅*/
+    width: 35%;
+    /*Buttonの縦幅*/
+    height: 50px;
+    border: 10px 10px;
+    padding: 10px 10px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    /* x文字以上...*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button.alifeButton:hover {
+    /*背景色を明るい青色に指定*/
+    background-color: #24d;
+    color: #fff;
+}
+
+
+.systemButton {
+    /*Buttonの横幅*/
+    width: 80%;
+    /*Buttonの縦幅*/
+    height: 50px;
+    margin: 5px 10px;
+    border: 10px 10px;
+    padding: 10px 10px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    /* x文字以上...*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button.systemButton:hover {
+    /*背景色を明るい青色に指定*/
+    background-color: #24d;
+    color: #fff;
+}
+
+
+
+
+
+              /* ボリューム */
+button.vol, img#imgVol, div.vol{
+  box-sizing: border-box;
+  float: left;
+  width: 23%;
+  height: 50px;
+}
+
+div.vol{
+  margin-top: 10px;
+}
+/* ボリュームボタン */
+button.vol {
+    /*Buttonの横幅*/
+    /*Buttonの縦幅*/
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    /* x文字以上...*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button.volButton:hover {
+    /*背景色を明るい青色に指定*/
+    background-color: #24d;
+    color: #fff;
+}
+
+
+
+
+/* B O X 5 内 */
+
+button.allAppButton {
+    margin: 5px 10px;
+    border: 10px 10px;
+    padding: 10px 10px;
+    /*文字サイズ*/
+    /*文字の太さ*/
+    font-weight: normal;
+    /*Buttonの色を変更*/
+    background-color: #248;
+    color: #fff;
+    /*Buttonの横幅*/
+    width: 90%;
+    /*Buttonの縦幅*/
+    height: 50px;
+    /*ボタンの影の指定
+  *　影の横幅を2px
+  *　縦長を2px
+  *　ぼかしを3px
+  *　広がりを1px
+  *　色を　#666(グレー)に指定 */
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    /* テキストの影の指定
+   * 影の横幅を1px
+   * 縦長を1px
+   * ぼかしを2px
+   * 色を#000(黒)に指定*/
+    text-shadow: 1px 1px 2px #000;
+    /* グラデーションの指定 */
+    background: -moz-liner-gradient(bottom, #36d, #248, 50%, #36d);
+    background: -webkit-gradient(liner, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+    /*角丸の指定*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*　X文字以上で...*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button.allAppButton:hover {
+    /*オンマウス時の処理*/
+    /*背景色を明るい青色に指定*/
+    /* background-color: #24d; */
+    /* color: #fff; */
+    /*透明度を20%に指定*/
+    opacity: 0.8;
+}
+
+
+
+
+                       /*   タ   ブ   設   定   */
+
+
+/* 表示領域全体 */
+
+div.allTab div.tabbox {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* タブ部分 */
+
+div.allTab p.tabs {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.allTab p.tabs a {
+    display: block;
+    width: 30%;
+    float: left;
+    margin: 0px 1px 0px 0px;
+    padding: 3px;
+    font-size:1em;
+    text-align: center;
+    border-radius: 12px 12px 0px 0px;
+}
+
+div.allTab p.tabs a.tab1 {
+    background-color: blue;
+    color: white;
+}
+
+div.allTab p.tabs a.tab2 {
+    background-color: #aaaa00;
+    color: white;
+}
+
+div.allTab p.tabs a.tab3 {
+    background-color: red;
+    color: white;
+}
+
+div.allTab p.tabs a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+
+/* 対応表示領域 */
+
+div.allTab div.tab {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    clear: left;
+}
+
+div.allTab div#tab1 {
+    border: 3px solid blue;
+    background-color: #ccffff;
+}
+
+div.allTab div#tab2 {
+    border: 3px solid #aaaa00;
+    background-color: #ffffcc;
+}
+div#tab2.tab{
+  width: 100%;
+  height: 100%;
+}
+
+div.allTab div#tab3 {
+    border: 3px solid red;
+    background-color: #ffcccc;
+}
+
+div.allTab div.tab p {
+    margin: 0.5em;
+}
+
+
+/* 装飾（今回のテクニックとは無関係） */
+
+div.allTab div.tab ul, div.tab ol {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+div.allTab div.tab li {
+    line-height: 1.35;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+div.allTab div.tab ul li {
+    list-style-type: disc;
+}
+
+div.allTab div.tab p.tabhead {
+    font-weight: bold;
+    border-bottom: 3px double gray;
+}

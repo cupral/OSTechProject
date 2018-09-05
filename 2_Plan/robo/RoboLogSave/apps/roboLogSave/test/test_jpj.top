@@ -1,0 +1,39 @@
+topic: ~test()
+language: jpj
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+concept:(shugo)[私は 僕は ウチは]
+concept:(tes)[すごく すこし ]
+concept:(doushi)[うごく　はしる　のる]
+
+u:(e:onStart) こんにちは。
+u:({~shugo}{~doushi} ) $Dialog/LastInput  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

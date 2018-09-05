@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+/* 他デバイス時対応 */
+
+
+/*body*/
+/*------------------------------------------------------------------------*/
+
+html,body{
+  width: 1707px;
+  height: 1019px;
+  position: fixed !important;
+}
+
+@media screen and (min-width : 300px){
+    html,body{ font-size : 60%;
+    }
+}
+
+@media screen and (min-width : 500px) {
+    html,body{ font-size : 70%;
+    }
+}
+
+@media screen and (min-width : 768px){
+    html,body{ font-size : 80%;
+    }
+}
+
+@media screen and (min-width : 1019px) {
+    html,body{ font-size: 100%;
+    }
+}
+
+html {
+    font-size : 16px;
+}
+
+
+body{
+  background-image: url(../img/background.jpg);
+  background-size: 100% 100%;
+  margin: auto;
+}
+
+.header, .box1, .box2, .box3{
+  box-sizing: border-box;
+  float:left;
+}
+
+img {
+  /*スマホ対応*/
+  max-width : 100% ;
+  height : auto ;
+}
+
+iframe{
+  /*スマホ対応*/
+  width: 100%;
+}
+
+
+
+/*スクロールで横がグラグラしないようにする*/
+#wrap { overflow : hidden ; }
+
+
+/* div.header */
+/*------------------------------------------------------------------------*/
+div.header{
+  margin: 0px;
+  padding: 0%;
+  border: 0px;
+
+  width: 100%;
+  height: 10vh;
+  background-color:white;
+}
+
+div.title,.languageBox{
+  box-sizing: border-box;
+  float: left;
+}
+
+/* title */
+div.title{
+  font-size: 4em;
+  width: 30%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0% 0% 0% 2%;
+  border: 0px;
+}
+
+
+div.languageBox{
+  height: 100%;
+  width: 70%;
+  margin: 0%;
+  padding: 1% 0% 0% 0%;
+  border: 0%;
+  text-align:center;
+}
+
+.languageButton{
+  margin: 0% 2% 0% 2%;
+  border: 0%;
+  padding: 0%;
+  width: 25%;
+  height: 80%;
+  font-weight: normal;
+  font-size: 2em;
+}
+.national_flag{
+  height:50%;
+  width: 20%;
+}
+
+/*img*/
+/* img.paperIcon{
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+
+}
+img.pepperIcon{
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+ */
+
+
+
+/* box1 */
+/*------------------------------------------------------------------------*/
+
+
+.box1{
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+
+  margin: 0px;
+  padding: 1% 0px 0px 0px;
+  border: 0px;
+
+  width: 100%;
+  height: 35vh;
+
+}
+
+.contentsButton{
+  margin: 1% 1% 0% 1%;
+  border: 1% 1%;
+  padding: 1% 1%;
+  width: 90%;
+  height: 27%;
+  font-weight: normal;
+  font-size: 3em;
+}
+
+
+button.buttonStyle{
+  background-color: #248;
+  color: #fff;
+  /*ボタンの影の指定
+*　影の横幅を2px
+*　縦長を2px
+*　ぼかしを3px
+*　広がりを1px
+*　色を　#666(グレー)に指定 */
+  box-shadow: 2px 2px 3px 1px #666;
+  -moz-box-shadow: 2px 2px 3px 1px #666;
+  -webkit-box-shadow: 2px 2px 3px 1px #666;
+  /* テキストの影の指定
+ * 影の横幅を1px
+ * 縦長を1px
+ * ぼかしを2px
+ * 色を#000(黒)に指定*/
+  text-shadow: 1px 1px 2px #000;
+  /* グラデーションの指定 */
+  background: -moz-liner-gradient(bottom, #36d, #248, 50%, #36d);
+  background: -webkit-gradient(liner, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+  /*角丸の指定*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /*　X文字以上で...*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}button.buttonStyle:hover {
+    /*オンマウス時の処理*/
+    /*背景色を明るい青色に指定*/
+    /* background-color: #24d; */
+    /* color: #fff; */
+    /*透明度を20%に指定*/
+    opacity: 0.8;
+    background-color: #03A9F4;
+}
+
+
+/* box2 */
+/*------------------------------------------------------------------------*/
+
+.box2{
+  margin: 3% 10% 3% 10%;
+  padding: 0%;
+  border: 0%;
+
+  width: 80%;
+  height: 35vh;
+
+  background-color: white;
+  overflow-y: scroll;
+
+}
+
+p#overview1,p#overview2,p#overview3{
+ font-size:5em;
+ line-height:0em;
+}
+
+/* box3 */
+/*------------------------------------------------------------------------*/
+.box3{
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+
+  width: 100%;
+  height: 12vh;
+  text-align: center;
+  background-color:white;
+
+}
+
+/* setting */
+div.setting{
+  width: 70%;
+  height: 100%;
+  padding: 0% 0% 0% 2%;
+  margin: 0%;
+}
+
+#form1,.speedSharpingButton, .speShr{
+  box-sizing: border-box;
+  float: left;
+}
+div.setting, .stopButton,.appFinishButton{
+  box-sizing: border-box;
+  float: left;
+}
+
+div.speShr{
+  width: 20%;
+  font-size: 2em;
+  padding: 2%;
+}
+
+
+#form1{
+
+}
+
+#form1 select {
+  width: 45%;
+  height: 90%;
+  font-size: 2em;
+  margin: 1%;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #999;
+  background: #eee;
+  background: url(../img/arrow01.png) right 50% no-repeat, -webkit-linear-gradient(top, #fff 0%,#efebe1 100%);
+  background: url(../img/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+  background-size: 20px, 100%;
+}
+
+#form1{
+  width: 60%;
+  height: 90%;
+
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  height:90%;
+}
+
+.speedSharpingButton{
+  width: 20%;
+  margin: 0px;
+  height: 80%;
+  font-size: 2em;
+}
+
+.stopButton{
+  margin: 0%;
+  border: 0%;
+  padding: 0%;
+  width: 12%;
+  height: 80%;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.appFinishButton{
+  margin: 0%;
+  border: 0%;
+  padding: 0%;
+  font-weight: normal;
+  font-size: 2em;
+  width: 12%;
+  height: 80%;
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<!--母国語宣言-->
+<html lang="ja">
+
+<head>
+  <!--文字コード宣言-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <meta charset="UTF-8"> -->
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <!--スクリプト言語設定-->
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <!--スタイルシート言語設定-->
+  <script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!--Qimessaging参照-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--JS読込-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/motion.css" type="text/css">
+  <!--CSS読込-->
+  <title>NAOQiリモコン</title>
+  <!--HTMLタイトル-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>QiCon</title>
+</head>
+<body>
+  <!-- レ イ ア ウ ト -->
+
+  <!-- B O X 1 -->
+  <div class="box1">
+    <div id="robotName"></div>
+    <img id="id_batteryImage" src="img/battery0-48.png" alt="battery">
+    <div id="input_form">
+      <form class="form1" id="id_form1" action="">
+        <input id="input_text" type="text" name="example" value="こんにちは" maxlength="100">
+      </form>
+      <button id="sayText_Button" class="sayButton" type="submit" name="button" onclick="textareaToSpeech();">話す</button>
+    </div>
+  </div>
+
+<!-- タ　ブ　設　定　 -->
+  <div class="allTab">
+
+    <div class="tabbox">
+
+      <!--  タ ブ 選 択 ボ タ ン -->
+      <p class="tabs">
+        <a onclick="ChangeTab('tab1'); return false;" class="tab1" href="#tab1">ランチャー</a>
+        <a onclick="ChangeTab('tab2'); return false;" class="tab2" href="#tab2">モーション</a>
+      </p>
+
+                              <!--   タ  ブ  1  内  容 -->
+      <div class="tab" id="tab1" style="display: block;">
+        <p class="tabhead">タブ1「ランチャー」</p>
+        <p>ロボ内にあるアプリを一覧表示します。</p>
+        <!-- B O X 2 -->
+        <div class="box2">システム機能</div>
+
+        <!-- B O X 3 -->
+        <div class="box3">アプリ一覧</div>
+
+        <!-- B O X 4 -->
+        <div class="box4">
+          <button class="systemButton" type="submit" name="button" onclick="robotReboot();">再起動</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="robotShutdown();">シャットダウン</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="stopAllBehaviors();">アプリ終了</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="restMode();">Rest</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="wakeUpMode();">wakeUp</button><br>
+
+          <img id="vol" src="img/volume-48.png" alt="音量">
+
+          <button id="vol" class="systemButton" type="submit" name="button" onclick="roboVolumeUp();">+</button>
+
+          <div class="vol" id="nowRoboVolume"></div>
+
+          <button id="vol" class="systemButton" type="submit" name="button" onclick="roboVolumeDown();">-</button><br>
+        </div>
+
+        <!-- B O X 5 -->
+        <div class="box5">
+          <div id="list"></div>
+        </div>
+      </div>
+
+
+                              <!--   タ  ブ  2  内  容   -->
+      <div class="tab" id="tab2" style="display: none;">
+        <p class="tabhead">タブ2「モーション」</p>
+        <button id="move_ahead" class="motionButton" type="reset" name="button" value= 0 ontouchstart="touchMoveToButton(0);" ontouchend="stopMove();">
+          <img class="yajirushi" src="img/UP.png" alt="yajirushi">
+        </button>
+        <button id="move_back" class="motionButton" type="reset" name="button" value= 1 ontouchstart="touchMoveToButton(1);" ontouchend="stopMove();">
+          <img class="yajirushi" src="img/DOWN.png" alt="yajirushi">
+        </button>
+        <button id="move_goRight" class="motionButton" type="reset" name="button" value= 2 ontouchstart="touchMoveToButton(2);" ontouchend="stopMove();">
+          <img class="yajirushi" src="img/RIGHT.png" alt="yajirushi">
+        </button>
+        <button id="move_goLeft" class="motionButton" type="reset" name="button" value= 3 ontouchstart="touchMoveToButton(3);" ontouchend="stopMove();">
+          <img class="yajirushi" src="img/LEFT.png" alt="yajirushi">
+        </button>
+        <button id="move_turnRight" class="motionButton" type="reset" name="button" value= 4 ontouchstart="touchMoveToButton(4);" ontouchend="stopMove();">
+          <img class="yajirushi" src="img/turnRight.png" alt="yajirushi">
+        </button>
+        <button id="move_turnLeft" class="motionButton" type="reset" name="button" value= 5 ontouchstart="touchMoveToButton(5);" ontouchend="stopMove();">
+          <img class="yajirushi" src="img/turnLeft.png" alt="yajirushi">
+        </button>
+
+
+        <button id="move_moveStop" class="motionButton" type="reset" name="button" onclick="stopMove();" value= 6>■</button>
+        <button id="move_standInit"  class="motionButton" type="reset" name="button" onclick="standInit();" value= 7>▶</button>
+
+        <!-- ポーズボタン -->
+        <div id="pauseBox">
+          <button class="pauseButton" id="handUpRight" type="reset" name="button" value=1 onclick="runPause(1)">右手をあげます
+            <img class="pause" id="handUpRight" src="img/handUpRight.png" alt="">
+          </button>
+
+          <button class="pauseButton" id="handUpLeft" type="reset" name="button" value=2 onclick="runPause(2)">左手をあげます
+            <img class="pause" id="handUpLeft" src="img/handUpLeft.png" alt="">
+          </button>
+
+          <button class="pauseButton" id="shakeHandRight" type="reset" name="button" value=3 onclick="runPause(3)">右手を振ります
+            <img class="pause" id="shakeHandRight" src="img/shakeHandRight.png" alt="">
+          </button>
+          <button class="pauseButton" id="shakeHandLeft" type="reset" name="button" value=4 onclick="runPause(4)">左手を振ります
+            <img class="pause" id="shakeHandLeft" src="img/shakeHandLeft.png" alt="">
+          </button>
+
+          <button class="pauseButton" id="shakeHands" type="reset" name="button" value=5 onclick="runPause(5)">両手を振ります
+            <img class="pause" id="shakeHands" src="img/shakeHands.png" alt="">
+          </button>
+
+          <button class="pauseButton" id="shakeTheHip" type="reset" name="button" value=6 onclick="runPause(6)">お尻を振ります
+            <img class="pause" id="shakeTheHip" src="img/shakeTheHip.png" alt="">
+          </button>
+
+          <button class="pauseButton" id="runHere" type="reset" name="button" value=7 onclick="runPause(7)">離れてね？
+            <img class="pause" id="runHere" src="img/runHere.png" alt="">
+          </button>
+
+          <button class="pauseButton" id="stoop" type="reset" name="button" value=8 onclick="runPause(8)">屈む
+            <img class="pause" id="stoop" src="img/stoop.png" alt="">
+          </button>
+          <!-- <img class="pauseBox" id="" src="img/.png" alt="" onclick="runPause();" /> -->
+        </div>
+
+      </div>
+
+
+    <!--音声ファイルの読み込み-->
+    <audio id="buttonTouch-sound" preload="auto">
+        <source src="sound/buttonTouch.mp3" type="audio/mp3">
+        <source src="sound/buttonTouch.wav" type="audio/wav">
+      </audio>
+    <audio id="volTouchUp-sound" preload="auto">
+        <source src="sound/volTouchUp.mp3" type="audio/mp3">
+        <source src="sound/volTouchUp.wav" type="audio/wav">
+      </audio>
+    <audio id="volTouchDown-sound" preload="auto">
+        <source src="sound/volTouchDown.mp3" type="audio/mp3">
+        <source src="sound/volTouchDown.wav" type="audio/wav">
+      </audio>
+
+  </div>
+  <script type="text/javascript"><!--
+  // デフォルトのタブを選択
+  ChangeTab('tab1');
+// --></script>
+</body>
+
+</html>

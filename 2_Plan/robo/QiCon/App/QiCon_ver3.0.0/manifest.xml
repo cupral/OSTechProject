@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="1.0.0" uuid="qicon_ver3">
+ <names>
+  <name lang="en_US">QiCon_ver3</name>
+  <name lang="ja_JP">QiCon_ver3</name>
+ </names>
+ <descriptions>
+  <description lang="ja_JP">NAOを遠隔で操作するアプリケーション</description>
+ </descriptions>
+ <supportedLanguages>
+  <language>ja_JP</language>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>ja_JP</language>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="handUpRight">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="handUpLeft">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="runHere">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="shakeHands">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="shakeTheHip">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="shakeHandRight">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="shakeHandLeft">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="stoop">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="rightCurves">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="leftCurves">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement maxVersion="2.1.4.13" minVersion="2.1.4.13"/>
+  <robotRequirement model="NAO_H25"/>
+ </requirements>
+</package>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    // 解像度を取得
+var sh = window.screen.height;
+var sw = window.screen.width;
+alert('解像度 幅 ' + sw + 'px, 高さ ' + sh + 'px');
+
+// 実際に有効な画面サイズ
+var ash = window.screen.availHeight;
+var asw = window.screen.availWidth;
+alert('有効な画面サイズ 幅 ' + asw + 'px, 高さ ' + ash + 'px');
+    </script>
+    p>画面サイズ：<span id="ScrSize"></span></p>
+    <p>ウィンドウサイズ：<span id="WinSize"></span></p>
+
+    <script type="text/javascript">
+    //画面サイズの取得
+    getScreenSize();
+    //ウィンドウサイズの取得
+    getWindowSize();
+
+    //画面サイズを取得する
+    function getScreenSize() {
+    	var s = "横幅 = " + window.parent.screen.width + " / 高さ = " + window.parent.screen.height;
+    	document.getElementById("ScrSize").innerHTML = s;
+    }
+
+    //ウィンドウサイズを取得する
+    function getWindowSize() {
+    	var sW,sH,s;
+    	sW = window.innerWidth;
+    	sH = window.innerHeight;
+
+    	s = "横幅 = " + sW + " / 高さ = " + sH;
+
+    	document.getElementById("WinSize").innerHTML = s;
+    }
+    </script>
+  </body>
+</html>

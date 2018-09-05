@@ -1,0 +1,137 @@
+<!doctype html>
+<!--母国語宣言-->
+<html lang="ja">
+
+<head>
+  <!--文字コード宣言-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <meta charset="UTF-8"> -->
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <!--スクリプト言語設定-->
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <!--スタイルシート言語設定-->
+  <script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>
+  <!--Qimessaging参照-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--JS読込-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <!--CSS読込-->
+  <title>NAOQiリモコン</title>
+  <!--HTMLタイトル-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>「ページ移動せずに内容を変更するタブを作る」サンプル</title>
+
+	<style type="text/css">
+
+	</style>
+
+	<script type="text/javascript">
+		function ChangeTab(tabname) {
+			// 全部消す
+			document.getElementById('tab1').style.display = 'none';
+			document.getElementById('tab2').style.display = 'none';
+			document.getElementById('tab3').style.display = 'none';
+			// 指定箇所のみ表示
+			if(tabname) {
+				document.getElementById(tabname).style.display = 'block';
+			}
+		}
+	</script>
+
+
+</head>
+
+
+<body>
+  <!-- レ イ ア ウ ト -->
+
+  <!-- B O X 1 -->
+  <div class="box1">
+    <div id="robotName"></div>
+    <img id="id_batteryImage" src="img/battery0-48.png" alt="">
+    <div id="input_form">
+      <form class="form1" id="id_form1" action="">
+        <input id="input_text" type="text" name="example" value="こんにちは" maxlength="100">
+      </form>
+      <button id="sayText_Button" class="sayButton" type="submit" name="button" onclick="textareaToSpeech();">話す</button>
+    </div>
+  </div>
+
+  <div class="allTab">
+    <div class="tabbox">
+      <p class="tabs">
+        <a onclick="ChangeTab('tab1'); return false;" class="tab1" href="#tab1">ランチャー</a>
+        <a onclick="ChangeTab('tab2'); return false;" class="tab2" href="#tab2">モーション</a>
+        <a onclick="ChangeTab('tab3'); return false;" class="tab3" href="#tab3">トーク集</a>
+      </p>
+      <div class="tab" id="tab1" style="display: block;">
+        <p class="tabhead">タブ1「ランチャー」</p>
+        <p>ロボ内にあるアプリを一覧表示します。</p>
+        <ol>
+          <li>
+            <a target="_blank" href="/gm/gc/449917">吹き出しツールチップが簡単に作れる</a>
+          </li>
+          <li>
+            <a target="_blank" href="/gm/gc/402549">Masonryでサイズの異なるBOXを隙間なくタイル状に整列</a>
+          </li>
+        </ol>
+        <!-- B O X 2 -->
+        <div class="box2">システム機能</div>
+
+        <!-- B O X 3 -->
+        <div class="box3">アプリ一覧</div>
+
+        <!-- B O X 4 -->
+        <div class="box4">
+          <button class="systemButton" type="submit" name="button" onclick="robotReboot();">再起動</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="robotShutdown();">シャットダウン</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="stopAllBehaviors();">アプリ終了</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="restMode();">Rest</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="wakeUpMode();">wakeUp</button><br>
+
+          <img id="vol" src="img/volume-48.png" alt="音量">
+
+          <button id="vol" class="systemButton" type="submit" name="button" onclick="roboVolumeUp();">+</button>
+
+          <div class="vol" id="nowRoboVolume"></div>
+
+          <button id="vol" class="systemButton" type="submit" name="button" onclick="roboVolumeDown();">-</button><br>
+        </div>
+
+        <!-- B O X 5 -->
+        <div class="box5">
+          <div id="list"></div>
+        </div>
+
+        <!--音声ファイルの読み込み-->
+        <audio id="buttonTouch-sound" preload="auto">
+            <source src="sound/buttonTouch.mp3" type="audio/mp3">
+            <source src="sound/buttonTouch.wav" type="audio/wav">
+          </audio>
+        <audio id="volTouchUp-sound" preload="auto">
+            <source src="sound/volTouchUp.mp3" type="audio/mp3">
+            <source src="sound/volTouchUp.wav" type="audio/wav">
+          </audio>
+        <audio id="volTouchDown-sound" preload="auto">
+            <source src="sound/volTouchDown.mp3" type="audio/mp3">
+            <source src="sound/volTouchDown.wav" type="audio/wav">
+          </audio>
+
+      </div>
+      <div class="tab" id="tab2" style="display: none;">
+        <p class="tabhead">タブ2「モーション」</p>
+      </div>
+      <div class="tab" id="tab3" style="display: none;">
+        <p class="tabhead">タブ3「トーク集」</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+    <!--
+    // デフォルトのタブ選択
+    ChangeTab('tab1');
+    -->
+    </script>
+  </div>
+</body>
+
+</html>

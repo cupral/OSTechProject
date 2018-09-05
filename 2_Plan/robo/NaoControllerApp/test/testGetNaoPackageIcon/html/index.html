@@ -1,0 +1,62 @@
+<!doctype html>
+<!--母国語宣言-->
+<html lang="ja">
+	<head><!--文字コード宣言-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- <meta charset="UTF-8"> -->
+	<meta http-equiv="Content-Script-Type" content="text/javascript"><!--スクリプト言語設定-->
+	<meta http-equiv="Content-Style-Type" content="text/css">	<!--スタイルシート言語設定-->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>
+	<title>NAOリモコン</title><!--HTMLタイトル-->
+	</head>
+<body onload="getAppDetail();">
+<script>
+var session = new QiSession();
+function getAppDetail(BePath){
+	//PackageManager取得
+	session.service("PackageManager").done(function (PackageManager){
+		PackageManager.packages().done(function (appPackage){
+			//console.log(JSON.stringify(appPackage)); //アプリ情報を出力
+			//取得した情報をHTMLで編集
+			document.write("NAO_リモコン");
+			//アプリ数だけ繰り返す
+			for(var i = 0;i < appPackage.length;i++){
+				//アプリ情報を取得
+				var allPackage = appPackage[i];
+				try{
+					var behaviors = allPackage.behaviors;
+					var behavior = behaviors[0];
+					var path = behavior.path;
+					var uuid = allPackage.uuid;
+					var behaviorPath = uuid + "/" + path;
+				}
+				catch(e){continue;}
+				//アプリ名(各言語)を取得
+				var langToNames = allPackage.langToName;
+				//アプリ名(日本語)を取得
+				var AppNameJP = langToNames.ja_JP;
+				//アプリ名(英語)を取得
+				var AppNameUS = langToNames.en_US;
+				if(AppNameJP == undefined){
+					if(AppNameUS == undefined){continue;}
+					if(~AppNameUS.indexOf('dialog_') || ~AppNameUS.indexOf('Language') ){continue;}
+					document.write("●<button class='Button' type='button' value='" + behaviorPath + "' onClick='runBehavior(value)'>" + AppNameUS + "</button><br>");
+				}else{
+					if( ~AppNameJP.indexOf('dialog_') || ~AppNameJP.indexOf('Language')){continue;}
+					document.write("●<button class='Button' type='button' value='" + behaviorPath + "' onClick='runBehavior(value)'>" + AppNameJP + "</button><br>");
+				}
+			}
+			//取得した情報をHTMLで編集2
+			document.write("終わり");
+		});	});	}
+function runBehavior(value){
+	session.service("ALBehaviorManager").done(function (BeManager){
+		BeManager.runBehavior(value);
+	});	}
+
+
+
+</script>
+</body>
+
+</html>

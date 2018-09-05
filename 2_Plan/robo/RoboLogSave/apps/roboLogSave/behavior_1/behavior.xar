@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3">
+    <Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0">
+        <bitmap>media/images/box/root.png</bitmap>
+        <script language="4">
+            <content>
+                <![CDATA[]]>
+</content>
+        </script>
+        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+        <Input name="ALTextToSpeech/CurrentWord" type="0" type_size="1" nature="4" stm_value_name="ALTextToSpeech/CurrentWord" inner="1" tooltip="ALTextToSpeech/CurrentWord desc" id="4" />
+        <Input name="WordRecognized" type="0" type_size="1" nature="4" stm_value_name="WordRecognized" inner="1" tooltip="WordRecognized desc" id="5" />
+        <Input name="WordRecognizedAndGrammar" type="0" type_size="1" nature="4" stm_value_name="WordRecognizedAndGrammar" inner="1" tooltip="WordRecognizedAndGrammar desc" id="6" />
+        <Input name="LastWordRecognized" type="0" type_size="1" nature="4" stm_value_name="LastWordRecognized" inner="1" tooltip="LastWordRecognized desc" id="7" />
+        <Input name="ALTextToSpeech/PositionOfCurrentWord" type="0" type_size="1" nature="4" stm_value_name="ALTextToSpeech/PositionOfCurrentWord" inner="1" tooltip="ALTextToSpeech/PositionOfCurrentWord desc" id="8" />
+        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="ボックス動作の終了時に信号を送る。" id="9" />
+        <Timeline enable="0">
+            <BehaviorLayer name="behavior_layer1">
+                <BehaviorKeyframe name="keyframe1" index="1">
+                    <Diagram>
+                        <Box name="logSave" id="1" localization="8" tooltip="" x="363" y="9">
+                            <bitmap>media/images/box/box-python-script.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[from datetime import datetime
+import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+        #アプリ起動時の時刻を使ってファイル名を生成
+        self.filename = datetime.now().strftime("dialog_%Y_%m%d_%H%M_%S.txt")
+
+    def onLoad(self):
+
+        #保存先を指定してファイルオープン、フルパスは下記
+        #/home/nao/.local/share/<アプリID>/(self.filename)
+        #(Windowsでシミュレータを使ってる場合のパス例, 下記のAppDataフォルダは隠しフォルダな点に注意)
+        #(C:\Users\<ユーザ名>\AppData\Roaming\.lastUploadedChoregrapheBehavior\(self.filename))
+
+        appId = self.packageUid()
+        self.dataPath = qi.path.userWritableDataPath(appId, self.filename)
+        self.writer = open(self.dataPath, "w+")
+
+        #qi Frameworkをベースにしたモジュールを取得(新しいフレームワーク:こっちが推奨されてる)
+        self.mem = ALProxy("ALMemory").session().service("ALMemory")
+
+        #subscriber Id
+        self.signalHuman = None
+        self.signalRobot = None
+        self.subHumanId = 0
+        self.subRobotId = 0
+
+        self.isRunning = False
+
+
+    def onUnload(self):
+        if self.subHumanId and self.signalHuman:
+            self.signalHuman.disconnect(self.subHumanId)
+            self.signalHuman = None
+            self.subHumanId = 0
+
+        if self.subRobotId and self.signalRobot:
+            self.signalRobot.disconnect(self.subRobotId)
+            self.signalRobot = None
+            self.subRobotId = 0
+
+        if self.writer != None:
+            self.writer.close()
+            self.writer = None
+
+        self.isRunning = False
+
+    def onInput_onStart(self):
+        if self.isRunning:
+            return
+
+        self.isRunning = True
+
+        if not self.writer:
+            self.writer = open(self.dataPath, "w+")
+
+        #人の会話
+        subscriberHuman = self.mem.subscriber("Dialog/LastInput")
+        self.signalHuman = subscriberHuman.signal
+        self.subHumanId = self.signalHuman.connect(self.onHumanSpeechDetected)
+
+        #Pepperからの発話
+        subscriberRobot = self.mem.subscriber("ALTextToSpeech/CurrentSentence")
+        self.signalRobot = subscriberRobot.signal
+        self.subRobotId = self.signalRobot.connect(self.onRobotSpeechDetected)
+
+
+    def onInput_onStop(self):
+        self.onUnload()
+        self.onStopped()
+
+    def onHumanSpeechDetected(self, val):
+        self.writeSentenceToFile(val, "Human")
+
+    def onRobotSpeechDetected(self, val):
+        self.writeSentenceToFile(val, "Robot")
+
+    def writeSentenceToFile(self, val, whoTalk):
+        if self.writer and val:
+            content = "{0}({1}):{2}\n".format(
+                whoTalk,
+                datetime.now().strftime("%H:%M:%S"),
+                val
+                )
+            self.writer.write(content)
+            self.logger.info(content)
+            self.writer.flush()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="ボックス動作の終了時に信号を送る。" id="4" />
+                        </Box>
+                        <Box name="test" id="4" localization="8" tooltip="" x="212" y="6">
+                            <dialogFile>../test/test.dlg</dialogFile>
+                            <bitmap>media/images/box/box-dialog.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="ボックスBehaviorの終了時に信号を送る。" id="4" />
+                        </Box>
+                        <Link inputowner="0" indexofinput="9" outputowner="1" indexofoutput="4" />
+                        <Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="2" />
+                    </Diagram>
+                </BehaviorKeyframe>
+            </BehaviorLayer>
+        </Timeline>
+    </Box>
+</ChoregrapheProject>

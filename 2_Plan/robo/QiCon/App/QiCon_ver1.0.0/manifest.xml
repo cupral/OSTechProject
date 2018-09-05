@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="1.0.0" uuid="qicon">
+ <names>
+  <name lang="en_US">QiCon</name>
+  <name lang="ja_JP">QiCon</name>
+ </names>
+ <descriptions>
+  <description lang="ja_JP">NAOを遠隔で操作するアプリケーション</description>
+ </descriptions>
+ <supportedLanguages>
+  <language>ja_JP</language>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>ja_JP</language>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement maxVersion="2.1.4.13" minVersion="2.1.4.13"/>
+  <robotRequirement model="NAO_H25"/>
+ </requirements>
+</package>

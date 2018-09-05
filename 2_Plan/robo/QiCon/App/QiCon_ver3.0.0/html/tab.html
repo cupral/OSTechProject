@@ -1,0 +1,328 @@
+<!doctype html>
+<!--母国語宣言-->
+<html lang="ja">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!--文字コード宣言-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <meta charset="UTF-8"> -->
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <!--スクリプト言語設定-->
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <!--スタイルシート言語設定-->
+  <!-- <link rel="stylesheet" href="css/Recog.css" type="text/css" /> -->
+
+  <script src="/libs/qimessaging/1.0/jquery.min.js" type="text/javascript"></script>
+  <script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+
+  <script src="js/jquery.qimhelpers.js"></script>
+  <script src="js/camera/camera_draw.js"></script>
+
+  <script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!--Qimessaging参照-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--JS読込-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/talk.css" type="text/css">
+  <link rel="stylesheet" href="css/motion.css" type="text/css">
+
+  <!--CSS読込-->
+  <title>NAOQiリモコン</title>
+  <!--HTMLタイトル-->
+	<title>QiCon</title>
+</head>
+<body onload="talkMemory();" class="body">
+  <!-- レ イ ア ウ ト -->
+
+  <!-- B O X 1 -->
+  <div class="box1">
+    <div id="robotName"></div>
+    <img id="id_batteryImage" src="img/battery0-48.png" alt="battery">
+    <div class="setting">
+    <div class="speShr">読上：</div>
+    <form id="form1" action="index.html" method="post">
+      <select id="speed" name="声の速さ">
+        <option>遅め</option>
+        <option>普通</option>
+        <option>早め</option>
+        <option>高速</option>
+      </select>
+      <select id="voiceSharping" name="声の高さ">
+        <option>低め</option>
+        <option>普通</option>
+        <option>高め</option>
+      </select>
+    </form>
+  <button class="speedSharpingButton" type="button" name="button" onclick="getFormValue()">決定</button>
+  <!-- <img class="paperIcon" src="img/paperIcon.png" alt="新聞紙アイコン" />
+  <img class="pepperIcon" src="img/pepper.png" alt="Pepper" /> -->
+  </div>
+  </div>
+
+<!-- タ　ブ　設　定　 -->
+  <div class="allTab">
+    <div class="tabbox">
+
+      <!--  タ ブ 選 択 ボ タ ン -->
+      <p class="tabs">
+        <a onclick="ChangeTab('tab1'); return false;" class="tab1" href="#tab1">ランチャー</a>
+        <a onclick="ChangeTab('tab2'); return false;" class="tab2" href="#tab2">モーション</a>
+        <a onclick="ChangeTab('tab3'); return false;" class="tab3" href="#tab3">トーク集</a>
+      </p>
+
+      <!--   タ  ブ  1  内  容 -->
+      <div class="tab" id="tab1" style="display: block;">
+        <p class="tabhead">タブ1「ランチャー」</p>
+        <p>ロボ内にあるアプリを一覧表示します。</p>
+
+        <!-- B O X 2 -->
+        <div class="box2">システム機能</div>
+
+        <!-- B O X 3 -->
+        <div class="box3">アプリ一覧</div>
+
+        <!-- B O X 4 -->
+        <div class="box4">
+          <p class="alifeFont">オートノマスライフ</p>
+          <button class="alifeButton alifeOn" type=submit name="button" onclick="alifeLauncher(0)">ON</button>
+          <button class="alifeButton alifeOff" type=submit name="button" onclick="alifeLauncher(1)">OFF</button>
+
+          <button class="systemButton" type="submit" name="button" onclick="wakeUpMode();">wakeUp</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="restMode();">Rest</button><br>
+
+          <img class="vol" id="imgVol" src="img/volume-48.png" alt="音量">
+          <button class="vol" id="plusVol"type="submit" name="button" onclick="roboVolumeUp();">+</button>
+          <div class="vol" id="nowRoboVolume" ></div>
+          <button class="vol" id="minusVol" type="submit" name="button" onclick="roboVolumeDown();">-</button><br>
+
+          <button class="systemButton" type="submit" name="button" onclick="stopAllBehaviors();">アプリ終了</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="robotReboot();">再起動</button><br>
+          <button class="systemButton" type="submit" name="button" onclick="robotShutdown();">シャットダウン</button><br>
+
+
+        </div>
+
+        <!-- B O X 5 -->
+        <div class="box5">
+          <div id="list"></div>
+        </div>
+      </div>
+
+
+      <!--   タ  ブ  2  内  容   -->
+      <div class="tab" id="tab2" style="display: none;">
+        <p class="tabhead">タブ2「モーション」</p>
+
+        <!-- プレビュー機能 -->
+        <div id="videoBox">
+          <div class="img-camera">
+            <!--　720　540　-->
+            <!-- 160 120 -->
+            <canvas id="main" width="720" height="540" />
+            <canvas id="preview" width="160" height="120" hidden/>
+          </div>
+        </div>
+
+        <!-- コントローラー -->
+        <div id="controllerBox">
+
+          <button id="move_curvesLeft" class="motionButton" type="reset" name="button" value= 0 ontouchstart="touchCurvesButton(0);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/curvesLeft.png" alt="yajirushi" />
+          </button>
+
+          <button id="move_ahead" class="motionButton" type="reset" name="button" value= 0 ontouchstart="touchMoveToButton(0);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/UP.png" alt="yajirushi" />
+          </button>
+
+          <button id="move_curvesRight" class="motionButton" type="reset" name="button" value= 0 ontouchstart="touchCurvesButton(1);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/curvesRight.png" alt="yajirushi" />
+          </button>
+
+          <button id="move_goLeft" class="motionButton" type="reset" name="button" value= 3 ontouchstart="touchMoveToButton(3);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/LEFT.png" alt="yajirushi" />
+          </button>
+
+          <button id="move_goRight" class="motionButton" type="reset" name="button" value= 2 ontouchstart="touchMoveToButton(2);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/RIGHT.png" alt="yajirushi" />
+          </button>
+
+
+
+          <button id="move_turnLeft" class="motionButton" type="reset" name="button" value= 5 ontouchstart="touchMoveToButton(5);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/turnLeft.png" alt="yajirushi" />
+          </button>
+
+          <button id="move_back" class="motionButton" type="reset" name="button" value= 1 ontouchstart="touchMoveToButton(1);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/DOWN.png" alt="yajirushi" />
+          </button>
+
+          <button id="move_turnRight" class="motionButton" type="reset" name="button" value= 4 ontouchstart="touchMoveToButton(4);" ontouchend="stopMove();">
+            <img class="yajirushi" src="img/turnRight.png" alt="yajirushi" />
+          </button>
+
+
+        </div>
+
+        <!-- 初期、停止ボタン -->
+        <div id="abButtonBox">
+          <button id="move_moveStop" class="motionButton" type="reset" name="button" onclick="stopMove();" value= 6>■</button>
+          <button id="move_standInit"  class="motionButton" type="reset" name="button" onclick="standInit();" value= 7>▶</button>
+        </div>
+
+        <!-- ポーズボタン -->
+        <div id="pauseBox">
+          <button class="pauseButton" id="handUpRight" type="reset" name="button" value=1 onclick="runPause(1)">右手をあげます
+            <img class="pause" id="handUpRight" src="img/handUpRight.png" alt="" onclick="runPause(1);" />
+          </button>
+
+          <button class="pauseButton" id="handUpLeft" type="reset" name="button" value=2 onclick="runPause(2)">左手をあげます
+            <img class="pause" id="handUpLeft" src="img/handUpLeft.png" alt="" onclick="runPause(2);" />
+          </button>
+
+          <button class="pauseButton" id="shakeHandRight" type="reset" name="button" value=3 onclick="runPause(3)">右手を振ります
+            <img class="pause" id="shakeHandRight" src="img/shakeHandRight.png" alt="" />
+          </button>
+          <button class="pauseButton" id="shakeHandLeft" type="reset" name="button" value=4 onclick="runPause(4)">左手を振ります
+            <img class="pause" id="shakeHandLeft" src="img/shakeHandLeft.png" alt="" />
+          </button>
+
+          <button class="pauseButton" id="shakeHands" type="reset" name="button" value=5 onclick="runPause(5)">両手を振ります
+            <img class="pause" id="shakeHands" src="img/shakeHands.png" alt="" />
+          </button>
+
+          <button class="pauseButton" id="shakeTheHip" type="reset" name="button" value=6 onclick="runPause(6)">お尻を振ります
+            <img class="pause" id="shakeTheHip" src="img/shakeTheHip.png" alt="" />
+          </button>
+
+          <button class="pauseButton" id="runHere" type="reset" name="button" value=7 onclick="runPause(7)">離れてね？
+            <img class="pause" id="runHere" src="img/runHere.png" alt=""/>
+          </button>
+
+          <button class="pauseButton" id="stoop" type="reset" name="button" value=8 onclick="runPause(8)">屈む
+            <img class="pause" id="stoop" src="img/stoop.png" alt="" />
+          </button>
+          <!-- <img class="pauseBox" id="" src="img/.png" alt="" onclick="runPause();" /> -->
+        </div>
+
+      </div><!--タブ2-->
+
+
+
+      <!--   タ  ブ  3  内  容   -->
+      <div class="tab" id="tab3" style="display: none;">
+        <p class="tabhead">タブ3「トーク集」</p>
+        <!-- タ　ブ　設　定　 -->
+          <div class="tab3_tab1">
+            <div class="tab3_tabbox">
+              <!--  タ ブ 選 択 ボ タ ン -->
+              <p class="tab3_tabs">
+                <a onclick="ChangeTab3('tab3_tab1'); return false;" class="tab3_tab1" href="#tab3_tab1">挨拶</a>
+                <a onclick="ChangeTab3('tab3_tab2'); return false;" class="tab3_tab2" href="#tab3_tab2">返答</a>
+                <a onclick="ChangeTab3('tab3_tab3'); return false;" class="tab3_tab3" href="#tab3_tab3">フリー</a>
+              </p>
+
+              <!--  タ ブ 1 内 容 -->
+              <div class="tab3_tab" id="tab3_tab1" style="display: block;">
+                <p class="tab3_tabhead">タブ1「挨拶」</p>
+                <p>挨拶文集</p>
+                <button class="talkButton" id="aisatsu1" type="submit" name="button" onclick="robotSay('おはようッッ！！')">おはよう</button>
+                <button class="talkButton" id="aisatsu2" type="submit" name="button" onclick="robotSay('こんにちはッッ！！')">こんにちは</button>
+                <button class="talkButton" id="aisatsu3" type="submit" name="button" onclick="robotSay('こんばんはッッ！！')">こんばんは</button>
+                <button class="talkButton" id="aisatsu4" type="submit" name="button" onclick="robotSay('初めましてッッ！！')">はじめまして</button>
+                <button class="talkButton" id="aisatsu5" type="submit" name="button" onclick="robotSay('ありがとうッッ！！。')">ありがとう</button>
+                <button class="talkButton" id="aisatsu6" type="submit" name="button" onclick="robotSay('どういたしましてッッ！！。')">どういたしまして</button>
+                <button class="talkButton" id="aisatsu7" type="submit" name="button" onclick="robotSay('ばいばーーーい')">ばいばい</button>
+                <button class="talkButton" id="aisatsu8" type="submit" name="button" onclick="robotSay('お久しぶりですッッ！！')">お久しぶりです</button>
+                <button class="talkButton" id="aisatsu9" type="submit" name="button" onclick="robotSay('NAOですッッ！！')">NAOです</button>
+                <button class="talkButton" id="aisatsu10" type="submit" name="button" onclick="robotSay('Pepperですッッ！！')">Pepperです</button>
+                <button class="talkButton" id="aisatsu11" type="submit" name="button" onclick="robotSay('やあッッ！！')">やあ！</button>
+                <button class="talkButton" id="aisatsu12" type="submit" name="button" onclick="robotSay('ウィッス！')">ウィッス！</button>
+                <button class="talkButton" id="aisatsu13" type="submit" name="button" onclick="robotSay('どうもどうもッッ！！')">どうもどうも</button>
+                <!-- <button class="talkButton" id="aisatsu11" type="submit" name="button" onclick="robotSay('')"></button> -->
+              </div>
+
+              <div class="tab3_tab" id="tab3_tab2" style="display: none;">
+                <p class="tab3_tabhead">タブ2「返答」</p>
+                <button class="talkButton hento" id="hento1" type="submit" name="button" onclick="robotSay('そうですねッッ！！')">そうですね</button>
+                <button class="talkButton hento" id="hento2" type="submit" name="button" onclick="robotSay('うん運ッッ！！')">うんうん</button>
+                <button class="talkButton hento" id="hento3" type="submit" name="button" onclick="robotSay('ボクもそう思う')">ボクもそう思う</button>
+                <button class="talkButton hento" id="hento4" type="submit" name="button" onclick="robotSay('確かに、そうだねッッ！！')">確かにそうだね</button>
+                <button class="talkButton hento" id="hento5" type="submit" name="button" onclick="robotSay('間違い\\pau=0\\ない。')">間違いない</button>
+                <button class="talkButton hento" id="hento6" type="submit" name="button" onclick="robotSay('そうカナ？')">そうかな？</button>
+                <button class="talkButton hento" id="hento7" type="submit" name="button" onclick="robotSay('ええッッ？？')">ええ？！</button>
+                <button class="talkButton hento" id="hento8" type="submit" name="button" onclick="robotSay('違うかも？')">違うかも</button>
+                <button class="talkButton hento" id="hento9" type="submit" name="button" onclick="robotSay('どうでしょう？')">どうでしょう</button>
+                <button class="talkButton hento" id="hento10" type="submit" name="button" onclick="robotSay('うーん')">んー</button>
+                <button class="talkButton hento" id="hento11" type="submit" name="button" onclick="robotSay('マジで？')">マジで？</button>
+                <button class="talkButton hento" id="hento12" type="submit" name="button" onclick="robotSay('それな？')">それな？</button>
+                <button class="talkButton hento" id="hento13" type="submit" name="button" onclick="robotSay('アーネッッ！！')">あーね！</button>
+                <button class="talkButton hento" id="hento14" type="submit" name="button" onclick="robotSay('やべー')">やべー</button>
+                <button class="talkButton hento" id="hento15" type="submit" name="button" onclick="robotSay('君はわるくナイッッ！！')">君は悪くない</button>
+                <button class="talkButton hento" id="hento15" type="submit" name="button" onclick="robotSay('俺は、悪くねー')">俺は悪くねえ</button>
+                <button class="talkButton hento" id="hento15" type="submit" name="button" onclick="robotSay('なるほど、')">なるほど</button>
+                <button class="talkButton hento" id="hento15" type="submit" name="button" onclick="robotSay('すごいなあッッ！！。')">すごいなー</button>
+                <button class="talkButton hento" id="hento15" type="submit" name="button" onclick="robotSay('さすが')">さすが！</button>
+                <!-- <button class="talkButton hento" id="hento15" type="submit" name="button" onclick="robotSay('')"></button> -->
+                <!-- <button class="talkButton hento" id="hento15" type="submit" name="button" onclick="robotSay('')"></button> -->
+
+              </div>
+
+              <div class="tab3_tab" id="tab3_tab3" style="display: none;">
+                <p class="tab3_tabhead">タブ3「フリー」</p>
+                <form class="form2" id="id_form2" action="">
+                  <input class="freeText" id="input_text2" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free2" type="button" name="button" onclick="talkFree(2)">▶</button>
+                  <input class="freeText" id="input_text3" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free3" type="button" name="button" onclick="talkFree(3)">▶</button>
+                  <input class="freeText" id="input_text4" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free4" type="button" name="button" onclick="talkFree(4)">▶</button>
+                  <input class="freeText" id="input_text5" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free5" type="button" name="button" onclick="talkFree(5)">▶</button>
+                  <input class="freeText" id="input_text6" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free6" type="button" name="button" onclick="talkFree(6)">▶</button>
+                  <input class="freeText" id="input_text7" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free7" type="button" name="button" onclick="talkFree(7)">▶</button>
+                  <input class="freeText" id="input_text8" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free8" type="button" name="button" onclick="talkFree(8)">▶</button>
+                  <input class="freeText" id="input_text9" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free9" type="button" name="button" onclick="talkFree(9)">▶</button>
+                  <input class="freeText" id="input_text10" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free10" type="button" name="button" onclick="talkFree(10)">▶</button>
+                  <input class="freeText" id="input_text11" type="text" name="example" value="" maxlength="100">
+                  <button class="freeButton free" id="free11" type="button" name="button" onclick="talkFree(11)">▶</button>
+                </form>
+
+
+              </div>
+
+      </div>
+    </div>
+
+    <!--音声ファイルの読み込み-->
+    <audio id="buttonTouch-sound" preload="auto">
+        <source src="sound/buttonTouch.mp3" type="audio/mp3">
+        <source src="sound/buttonTouch.wav" type="audio/wav">
+      </audio>
+    <audio id="volTouchUp-sound" preload="auto">
+        <source src="sound/volTouchUp.mp3" type="audio/mp3">
+        <source src="sound/volTouchUp.wav" type="audio/wav">
+      </audio>
+    <audio id="volTouchDown-sound" preload="auto">
+        <source src="sound/volTouchDown.mp3" type="audio/mp3">
+        <source src="sound/volTouchDown.wav" type="audio/wav">
+      </audio>
+
+  </div>
+
+<!-- タブ：初期表示 -->
+<script type="text/javascript">
+  <!--
+    ChangeTab('tab2');
+    ChangeTab3('tab3_tab1');
+  //-->
+</script>
+</body>
+
+</html>

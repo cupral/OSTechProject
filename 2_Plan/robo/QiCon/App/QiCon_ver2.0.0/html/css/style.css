@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+/* タ グ 設 定 */
+div{}
+html{
+  width: 100%;
+  height: 100%;
+}
+
+button {
+    touch-callout: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-touch-callout: none;
+    -moz-user-select: none;
+}
+
+
+/* 文 字 設 定  */
+
+h1, h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+
+/* b o x 設 定  */
+
+.box1, .box2, .box3, .box4, .box5 {
+    border: solid 2px rgb(70, 83, 176);
+    box-sizing: border-box;
+}
+
+.box2, .box3 {
+    float: left;
+    font-size: 2em;
+    text-align: center;
+    width: 50%
+}
+
+.box4, .box5 {
+    float: left;
+    width: 50%;
+}
+
+.box1 {
+    width: 100%;
+    height: 100px;
+}
+
+.box2 {}
+
+.box3 {}
+
+.box4 {
+    text-align: center;
+    height: 1200px;
+}
+
+.box5 {
+    text-align: center;
+    height: 1200px;
+    overflow-y: scroll;
+}
+
+
+/* B O X 1 内 */
+
+#robotName, .sayButton, #input_text {
+    border: solid 1px rgb(70, 83, 176);
+    box-sizing: border-box;
+}
+
+div#robotName {
+    width: 40%;
+    height: 90px;
+    font-size: 2em;
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+    border-style: none;
+}
+
+img#id_batteryImage {
+    width: 9%;
+    height: 90px;
+    padding: 5px 0px 0px 0px;
+    border-style: none;
+}
+
+div#id_battery{
+  text-align: center;
+  font-size: 2em;
+  width: 50%;
+  margin: 10px 10px;
+}
+
+input#input_text {
+    width: 39%;
+    height: 90px;
+    margin: 3px 3px 3px 9px;
+}
+
+input[type="text"] {
+    font-size: 2.2em;
+}
+
+.sayButton {
+    /*Buttonの横幅*/
+    width: 10%;
+    margin: 4px 1px 1px 2.5px;
+    /*Buttonの縦幅*/
+    height: 90px;
+    font-size: 2em;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    text-align: center;
+}
+
+button.say_button:hover {
+    /*背景色を明るい青色に指定*/
+    background-color: #24d;
+    color: #fff;
+}
+
+#robotName, .sayButton, #input_text, #id_batteryImage {
+    float: left;
+}
+
+
+/* B O X 2 内 */
+
+
+/* B O X 3 内 */
+
+
+/* B O X 4 内 */
+
+.systemButton {
+    /*Buttonの横幅*/
+    width: 80%;
+    /*Buttonの縦幅*/
+    height: 100px;
+    font-size: 2.5em;
+    margin: 50px 10px;
+    border: 10px 10px;
+    padding: 10px 30px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    /* x文字以上...*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button.systemButton:hover {
+    /*背景色を明るい青色に指定*/
+    background-color: #24d;
+    color: #fff;
+}
+
+#nowRoboVolume {
+    margin: 50px 0px;
+    border: 10px 0px;
+    padding: 10px 0px;
+}
+
+img#vol {
+    margin: 35px 0px;
+    border: 10px 0px;
+    padding: 10px 0px;
+}
+
+
+/* Volumeボタン設定 */
+
+#vol, .vol {
+    float: left;
+    width: 22%;
+    height: 100px;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+/* B O X 5 内 */
+
+button.allAppButton {
+    margin: 20px 10px;
+    border: 10px 10px;
+    padding: 10px 30px;
+    /*文字サイズ*/
+    font-size: 2.3em;
+    /*文字の太さ*/
+    font-weight: normal;
+    /*Buttonの色を変更*/
+    background-color: #248;
+    color: #fff;
+    /*Buttonの横幅*/
+    width: 90%;
+    /*Buttonの縦幅*/
+    height: 100px;
+    /*ボタンの影の指定
+  *　影の横幅を2px
+  *　縦長を2px
+  *　ぼかしを3px
+  *　広がりを1px
+  *　色を　#666(グレー)に指定 */
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    /* テキストの影の指定
+   * 影の横幅を1px
+   * 縦長を1px
+   * ぼかしを2px
+   * 色を#000(黒)に指定*/
+    text-shadow: 1px 1px 2px #000;
+    /* グラデーションの指定 */
+    background: -moz-liner-gradient(bottom, #36d, #248, 50%, #36d);
+    background: -webkit-gradient(liner, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+    /*角丸の指定*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*　X文字以上で...*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button.allAppButton:hover {
+    /*オンマウス時の処理*/
+    /*背景色を明るい青色に指定*/
+    /* background-color: #24d; */
+    /* color: #fff; */
+    /*透明度を20%に指定*/
+    opacity: 0.8;
+}
+
+
+
+
+                       /*   タ   ブ   設   定   */
+
+
+/* 表示領域全体 */
+
+div.allTab div.tabbox {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+/* タブ部分 */
+
+div.allTab p.tabs {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.allTab p.tabs a {
+    display: block;
+    width: 48%;
+    height: 50px;
+    font-size: 30px;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 12px 12px 0px 0px;
+}
+
+div.allTab p.tabs a.tab1 {
+    background-color: blue;
+    color: white;
+}
+
+div.allTab p.tabs a.tab2 {
+    background-color: #aaaa00;
+    color: white;
+}
+
+div.allTab p.tabs a.tab3 {
+    background-color: red;
+    color: white;
+}
+
+div.allTab p.tabs a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+
+/* 対応表示領域 */
+
+div.allTab div.tab {
+    height: 1500px;
+    overflow: auto;
+    clear: left;
+}
+
+div.allTab div#tab1 {
+    border: 3px solid blue;
+    background-color: #ccffff;
+}
+
+div.allTab div#tab2 {
+    border: 3px solid #aaaa00;
+    background-color: #ffffcc;
+}
+
+div.allTab div#tab3 {
+    border: 3px solid red;
+    background-color: #ffcccc;
+}
+
+div.allTab div.tab p {
+    margin: 0.5em;
+}
+
+
+/* 装飾（今回のテクニックとは無関係） */
+
+div.allTab div.tab ul, div.tab ol {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+div.allTab div.tab li {
+    line-height: 1.35;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+div.allTab div.tab ul li {
+    list-style-type: disc;
+}
+
+div.allTab div.tab p.tabhead {
+    font-weight: bold;
+    border-bottom: 3px double gray;
+}
+
+/* ト ー ク 集 */
+button.talkButton{
+  width: 48%;
+  margin: 4px 1px 1px 10px;
+  /*Buttonの縦幅*/
+  height: 90px;
+  font-size: 1.8em;
+  background-color: #248;
+  color: #fff;
+  border-style: none;
+  text-align: center;
+}
+
+button.freeButton, input.freeText{
+  float: left;
+}
+button.freeButton{
+  width: 10%;
+  margin: 10px 3px 3px 15px;
+  /*Buttonの縦幅*/
+  height: 90px;
+  font-size: 1.8em;
+  background-color: #248;
+  color: #fff;
+  border-style: none;
+  text-align: center;
+}
+input.freeText {
+    width: 80%;
+    height: 80px;
+    margin: 10px 3px 3px 30px;
+}

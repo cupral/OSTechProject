@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--母国語宣言-->
+<html lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- <meta charset="UTF-8"> -->
+	  <meta http-equiv="Content-Script-Type" content="text/javascript"><!--スクリプト言語設定-->
+	  <meta http-equiv="Content-Style-Type" content="text/css"><!--スタイルシート言語設定-->
+	  <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    		<!--作成JS読込-->
+	  <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
+    <!-- CSS読込		 -->
+		<title>EventAppCreater</title>
+	<!-- 埋 め 込 み J a v a s c r i p t -->
+		<script>
+
+		</script>
+	</head>
+
+	<body>
+    <p>こんにちは。</p>
+    <p>
+    <?php
+      echo "お元気ですか";
+    ?>
+    </p>
+		<header>
+      <div class="title">イベントロボアプリ自動生成サービス</div>
+		</header>
+
+		<main>
+      <form class="mainForm" action="EventAppCreater.html" method="post">
+        <p>1.企業名 <input type="text" name="name" size="40" value="株式会社 太郎"></p>
+        <p>2.部署名 <input type="text" name="name" size="" value="◯◯部"></p>
+        <p>3.担当者名 <input type="text" name="name" size="40" value="田中 太郎"></p>
+        <p>4.納品希望日 <input type="date" name="example2" value="2017-01-01"></p>
+        <p>5.ロボ種類
+          <select name="roboType">
+            <option value="Pepper">Pepper</option>
+            <option value="NAO">NAO</option>
+            <option value="etc">その他</option>
+            <option value="anything">どれでも</option>
+          </select>
+        </p>
+        <p>6.ロボ台数 <input type="number" name="number" max="5" min="0"></p>
+        <p>7.連動
+          <select name="conectionType">
+            <option value="solo">ロボ単体</option>
+            <option value="display">ディスプレイ</option>
+            <option value="server">サーバー</option>
+            <option value="etc">その他</option>
+            <option value="anything">どれでも</option>
+          </select>
+        </p>
+        <p>8.ダンス
+          <select name="dance">
+            <option value="thriller">スリラー</option>
+            <option value="dmm">DMM</option>
+            <option value="etc">その他</option>
+            <option value="anything">どれでも</option>
+          </select>
+        </p>
+
+        <p>9.内容</p><br>
+        <p>パート1</p>
+        <p>&nbsp;文章 <textarea name="name" rows="8" cols="40"></textarea></p>
+        <p>&nbsp;画像 <input type="file" name="name" value=""></p>
+
+        <p>パート2</p>
+        <p>&nbsp;文章 <textarea name="name" rows="8" cols="40"></textarea></p>
+        <p>&nbsp;画像 <input type="file" name="name" value=""></p>
+
+        <p>パート3</p>
+        <p>&nbsp;文章 <textarea name="name" rows="8" cols="40"></textarea></p>
+        <p>&nbsp;画像 <input type="file" name="name" value=""></p>
+
+        <p>パート4</p>
+        <p>&nbsp;文章 <textarea name="name" rows="8" cols="40"></textarea></p>
+        <p>&nbsp;画像 <input type="file" name="name" value=""></p>
+
+        <p>パート5</p>
+        <p>&nbsp;文章 <textarea name="name" rows="8" cols="40"></textarea></p>
+        <p>&nbsp;画像 <input type="file" name="name" value=""></p>
+        <input type="submit" value="送信" name="" id="">
+
+      </form>
+		</main>
+
+		<footer>
+
+		</footer>
+
+	</body>
+
+</html>

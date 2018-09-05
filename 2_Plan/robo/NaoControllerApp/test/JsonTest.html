@@ -1,0 +1,465 @@
+<!doctype html>
+<!--母国語宣言-->
+<html lang="ja">
+	<head>
+	<!--文字コード宣言-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- <meta charset="UTF-8"> -->
+	<!--スクリプト言語設定-->
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<!--スタイルシート言語設定-->
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>
+	<!--HTMLタイトル-->
+	<title>テンプレート</title>
+	<!--埋め込みJavascript-->
+
+</head>
+
+<body>
+<img id="icon_here">
+<script>
+var session = new QiSession();
+appPackage = '[{"author": "",
+"behaviors": [
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {
+"ja_JP": [
+"デモの手順を思い出してます、。",
+"き、緊張するなあ"
+]
+},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {
+"ja_JP": [
+"コミュニケーションデモ",
+"こみゅにけーしょんでも",
+"コミニケーションデモ",
+"こみにけーしょんでも"
+]
+},
+"nature": "interactive",
+"path": "behavior_1",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "onStart",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Nao",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "int",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Ninshiki",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Language",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Taiwa",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Teyandei",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "LED",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Motion",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Walk",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "Music",
+"permissions": [],
+"purposeToCondition": {}
+}
+],
+"channel": "",
+"date": "",
+"descriptionLanguages": [],
+"dialogs": [],
+"executableFiles": [],
+"installer": "user",
+"langToDesc": {},
+"langToName": {
+"en_US": "CommunicationDemo_2.0.2",
+"ja_JP": "コミュニケーションデモ"
+},
+"languages": [],
+"naoqiRequirements": [],
+"organization": "",
+"path": "/home/nao/.local/share/PackageManager/apps/communicationdemo-",
+"robotRequirements": [],
+"services": [],
+"supportedLanguages": [
+"ja_JP"
+],
+"typeVersion": "",
+"uuid": "communicationdemo-",
+"version": "2.0.2"
+},
+{
+"author": "veltrop",
+"behaviors": [
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "",
+"path": "Network",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "",
+"path": "QRCode",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "",
+"path": "Touch",
+"permissions": [],
+"purposeToCondition": {}
+}
+],
+"channel": "",
+"date": "2013-10-04T04:20:00",
+"descriptionLanguages": [],
+"dialogs": [],
+"executableFiles": [],
+"installer": "system",
+"langToDesc": {
+"en_US": "These basic Launchpad Plugins help Autonomous Life to start activities based on the context of the environment."
+},
+"langToName": {
+"en_US": "Default Launchpad Plugins"
+},
+"languages": [],
+"naoqiRequirements": [],
+"organization": "",
+"path": "/home/nao/.local/share/PackageManager/apps/default_launchpad_plugins",
+"robotRequirements": [],
+"services": [],
+"supportedLanguages": [],
+"typeVersion": "1.0",
+"uuid": "default_launchpad_plugins",
+"version": "0.6.2"
+},
+{
+"author": "",
+"behaviors": [
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {
+"en_US": "Auto diagnostic"
+},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "",
+"path": ".",
+"permissions": [],
+"purposeToCondition": {}
+}
+],
+"channel": "",
+"date": "",
+"descriptionLanguages": [],
+"dialogs": [],
+"executableFiles": [],
+"installer": "system",
+"langToDesc": {},
+"langToName": {
+"en_US": "Auto diagnostic"
+},
+"languages": [],
+"naoqiRequirements": [],
+"organization": "",
+"path": "/home/nao/.local/share/PackageManager/apps/diagnostic",
+"robotRequirements": [],
+"services": [],
+"supportedLanguages": [],
+"typeVersion": "",
+"uuid": "diagnostic",
+"version": "2.0.0"
+},
+{
+"author": "",
+"behaviors": [
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {
+"ja_JP": [
+"AKB",
+"エーケービイ",
+"フォーチュンクッキー"
+]
+},
+"nature": "interactive",
+"path": "behavior_1",
+"permissions": [],
+"purposeToCondition": {}
+}
+],
+"channel": "",
+"date": "",
+"descriptionLanguages": [],
+"dialogs": [],
+"executableFiles": [],
+"installer": "user",
+"langToDesc": {},
+"langToName": {
+"en_US": "DMMdance",
+"ja_JP": "フォーチュンクッキー"
+},
+"languages": [],
+"naoqiRequirements": [],
+"organization": "",
+"path": "/home/nao/.local/share/PackageManager/apps/dmmdance-",
+"robotRequirements": [],
+"services": [],
+"supportedLanguages": [
+"en_US",
+"ja_JP"
+],
+"typeVersion": "",
+"uuid": "dmmdance-",
+"version": ""
+},
+{
+"author": "",
+"behaviors": [
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {
+"ja_JP": [
+"エビカニクス",
+"エビカニ",
+"エビカニダンス"
+]
+},
+"nature": "interactive",
+"path": "behavior_1",
+"permissions": [],
+"purposeToCondition": {}
+},
+{
+"categories": "",
+"langToDesc": {},
+"langToLoadingResponses": {},
+"langToName": {},
+"langToTags": {},
+"langToTriggerSentences": {},
+"nature": "interactive",
+"path": "init",
+"permissions": [],
+"purposeToCondition": {}
+}
+],
+"channel": "",
+"date": "",
+"descriptionLanguages": [],
+"dialogs": [],
+"executableFiles": [],
+"installer": "user",
+"langToDesc": {},
+"langToName": {
+"en_US": "Ebikanix",
+"ja_JP": "エビカニクス"
+},
+"languages": [],
+"naoqiRequirements": [],
+"organization": "",
+"path": "/home/nao/.local/share/PackageManager/apps/ebikanix-",
+"robotRequirements": [],
+"services": [],
+"supportedLanguages": [
+"ja_JP"
+],
+"typeVersion": "",
+"uuid": "ebikanix-",
+"version": ""
+}]';
+
+function funcPackages(){
+	session.service("PackageManager").done(function (PackageManager){
+console.log("PackageManager取得");
+PackageManager.packages().done(function (appPackage){
+	//console.log(JSON.stringify(package));
+	for(var i = 0;i < appPackage.length;i++){
+behaviors = appPackage["behaviors"];
+document.write(behaviors + ",");
+	}
+}).fail(function (error){
+	console.log("An error occurred: " + error);
+});
+	}).fail(function (error){
+console.log("An error occurred: " + error);
+	});
+}
+
+function funcPackageIcon(){
+	session.service("PackageManager").done(function (PackageManager){
+console.log("PackageManager取得");
+PackageManager.packageIcon("dmmdance-").done(function (appIcon){
+	alert(appIcon);
+}).fail(function (error){
+	console.log("An error occurred: " + error);
+});
+	}).fail(function (error){
+console.log("An error occurred: " + error);
+	});
+}
+
+	function setLang(){
+session.service("ALTextToSpeech").done(function (tts){
+	tts.say("OK");
+	tts.getLanguage().done(function (lang){
+console.log(" I speak " + lang);
+	}).fail(function (error){
+console.log("An error occurred: " + error);
+	});
+}).fail(function (error){
+	console.log("An error occureed:", error);
+});
+	}
+
+funcPackages();
+funcPackageIcon();
+setLang();
+
+
+</script>
+</body>
+
+</html>

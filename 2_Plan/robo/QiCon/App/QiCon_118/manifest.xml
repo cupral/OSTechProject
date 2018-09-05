@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="5.0.1" uuid="qicon">
+ <names>
+  <name lang="en_US">QiCon_118</name>
+  <name lang="ja_JP">QiCon</name>
+ </names>
+ <descriptions>
+  <description lang="en_US">rimocon</description>
+  <description lang="ja_JP">NAO、Pepper用遠隔リモコン</description>
+ </descriptions>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="speechReco">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/handUpLeft">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/handUpRight">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/leftCurves">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/rightCurves">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/runHere">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/shakeHandRight">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/shakeHands">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/shakeTheHip">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/stoop">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/shakeHandLeft">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement maxVersion="2.1.4.13" minVersion="2.1.4.13"/>
+  <robotRequirement model="JULIETTE_Y20"/>
+  <robotRequirement model="NAO_H25"/>
+ </requirements>
+</package>
