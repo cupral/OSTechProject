@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="/libs/qimessaging/1.0/qimessaging.js"></script>
+	<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.qimhelpers.js"></script>
+	<script>
+
+	function selectJump(){
+ 		 listn = document.form1.s01.selectedIndex;
+ 		 url = document.form1.s01.options[listn].value;
+ 		 window.location = url;
+  }
+
+/*
+	function toTabletHandler(value) {
+			console.log("Choregraphe/startイベント発生: " + value);
+			if(value==0){
+					window.location='http://ost_nao_07.local/apps/mental_check-7b3351/sex.html';
+			}
+			else if(value==1){
+					window.location='http://ost_nao_07.local/apps/mental_check-7b3351/finish.html';
+			}
+	}
+
+	function startSubscribe() {
+			session.service("ALMemory").done(function (ALMemory) {
+					console.log("ALMemory取得成功");
+					ALMemory.subscriber("Choregraphe/start").done(function(subscriber) {
+							subscriber.signal.connect(toTabletHandler);
+					});
+			});
+	}
+*/
+		$(function() {
+			$.subscribeToALMemoryEvent("NaoEvent/Init", function() {
+				$('#background').css('background-image', 'url(img/Init.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Finish", function() {
+				$('#background').css('background-image', 'url(img/Finish.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image01", function() {
+				$('#background').css('background-image', 'url(img/Image01.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image02", function() {
+				$('#background').css('background-image', 'url(img/Image02.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image03", function() {
+				$('#background').css('background-image', 'url(img/Image03.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image04", function() {
+				$('#background').css('background-image', 'url(img/Image04.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image05", function() {
+				$('#background').css('background-image', 'url(img/Image05.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image06", function() {
+				$('#background').css('background-image', 'url(img/Image06.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image07", function() {
+				$('#background').css('background-image', 'url(img/Image07.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image08", function() {
+				$('#background').css('background-image', 'url(img/Image08.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image09", function() {
+				$('#background').css('background-image', 'url(img/Image09.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image10", function() {
+				$('#background').css('background-image', 'url(img/Image10.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image11", function() {
+				$('#background').css('background-image', 'url(img/Image11.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image12", function() {
+				$('#background').css('background-image', 'url(img/Image12.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image13", function() {
+				$('#background').css('background-image', 'url(img/Image13.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image14", function() {
+				$('#background').css('background-image', 'url(img/Image14.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image15", function() {
+				$('#background').css('background-image', 'url(img/Image15.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image16", function() {
+				$('#background').css('background-image', 'url(img/Image16.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image17", function() {
+				$('#background').css('background-image', 'url(img/Image17.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image18", function() {
+				$('#background').css('background-image', 'url(img/Image18.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image19", function() {
+				$('#background').css('background-image', 'url(img/Image19.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image20", function() {
+				$('#background').css('background-image', 'url(img/Image20.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image21", function() {
+				$('#background').css('background-image', 'url(img/Image21.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image22", function() {
+				$('#background').css('background-image', 'url(img/Image22.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image23", function() {
+				$('#background').css('background-image', 'url(img/Image23.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image24", function() {
+				$('#background').css('background-image', 'url(img/Image24.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image25", function() {
+				$('#background').css('background-image', 'url(img/Image25.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image26", function() {
+				$('#background').css('background-image', 'url(img/Image26.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image27", function() {
+				$('#background').css('background-image', 'url(img/Image27.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image28", function() {
+				$('#background').css('background-image', 'url(img/Image28.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image29", function() {
+				$('#background').css('background-image', 'url(img/Image29.png)');
+			});
+
+			$.subscribeToALMemoryEvent("NaoEvent/Image30", function() {
+				$('#background').css('background-image', 'url(img/Image30.png)');
+			});
+
+//ぎえｈくぉｈげいおｑｈごいｈくぇ
+			$.subscribeToALMemoryEvent("NaoEvent/sample", function() {
+				window.location='http://nao.local/apps/sample-/index.html';
+			});
+
+/*
+var nao_name = boss;
+var background_img ='<img id="background-image" src="img/common/common-seasons/common-background' + nao_name + '.gif" alt="background-image" />'
+*/
+
+
+
+		});
+	</script>
+</head>
+
+<body>
+	<div id="background"></div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+topic: ~talk()
+language: jpj
+
+concept:(byebye)[ばいばい さようなら またね]
+concept:(yes)[いいよ ハイ はい うい はいー はい はーい はぁい うん そうです そうだね そうだな そうだよ そうやな そうよ 思う おもう 思います おもいます そう思う そう思います いいよ いいですね いいですよ いいとも OK ok オッケー 大丈夫 わかった わかりました 了解 承知 当然 当たり前 あたりまえ 勿論 もちろん その通り おっしゃる通り そうかも そうかもね いいかも まあね まぁね まーね それはそうだ それはそうです それはそうでしょ そりゃそうだ そりゃそうです そりゃそうでしょ そうに決まってる そうに決まってます そうに決まっている そうに決まっています　知っている　みたことある　知ってる]
+concept:(no)[いいえ 違う ちがう 違います ちがいます 思わない おもわない 思いません おもいません いやいや いえいえそうじゃない そうじゃありません そうではない そうではありません そうやない そんなわけない そんなわけありません んなわけない そんなことない そんなことありません んなことない]
+
+u:(e:onStart) $NaoEvent/Image01=1 \rspd=100\\vct=120\こんにちはッッ！！。
+    u1:(["{*}~yes{*}"]) ^gotoReactivate(step1)
+    u1:(["{*}~no{*}"]) ^gotoReactivate(step1)
+proposal:%step1 こんばんわ！
+    u1:(["{*}~yes{*}"]) ^gotoReactivate(step2)
+    u1:(["{*}~no{*}"]) ^gotoReactivate(step2)
+    
+proposal:%step2 こんにちは！ ^gotoReactivate(step3)
+
+proposal:%step3 $NaoEvent/Image02=1 おはよう！ ^gotoReactivate(step4)
+
+proposal:%step4 $NaoEvent/Image03=1 やあ！ $onStopped=1
+
+
+#不認識時の対応
+u:(e:Dialog/NotUnderstood)すみません、聞き取れませんでした。^sameProposal
+
+#DialogStopに入力されるとDialogを即座に終了する。
+u:(e:NaoEvent/DialogStop) $onFinish=1
+
+#DialogWaitに入力されるとDialogを即座にWaitする。
+u:(e:NaoEvent/DialogWait) $onWait=1
+
+#20秒間認識しないと反応
+u:(e:Dialog/NotSpeaking20)もしもーし。^sameProposal
+
+#二度認識できなかった場合
+u:(e:Dialog/Failure)すみません、聞き取れませんでした。僕の目が青くクルクルと回ったら話しかけてね？。^sameProposal
+
+#アプリ終了
+u:(アプリケーション終了)アプリケーションを終了します。$onAppFinish=1
+
