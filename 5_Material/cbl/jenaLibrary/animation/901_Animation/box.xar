@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ChoregrapheBox xar_version="3">
+    <Box name="root" id="5" localization="8" tooltip="Sends a custom message to the tablet" x="257" y="0">
+        <bitmap>media/images/box/shortcut.png</bitmap>
+        <script language="4">
+            <content>
+                <![CDATA[import json
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+        self.memory = ALProxy("ALMemory")
+
+    def onInput_onStart(self):
+        self.memory.raiseEvent(self.getParameter("EventName"), 901)
+        self.onStopped();]]>
+</content>
+        </script>
+        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="" id="3" />
+        <Parameter name="EventName" inherits_from_parent="0" content_type="3" value="interviewAnimation" default_value="EventName" custom_choice="0" tooltip="" id="4" />
+    </Box>
+</ChoregrapheBox>
