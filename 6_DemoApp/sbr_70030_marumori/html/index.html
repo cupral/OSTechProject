@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale = 1.335, minimum-scale = 1.335, maximum-scale = 1.335"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #bg_image {
+      opacity: 0.0;
+      transition: opacity 1s ease-in-out;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="/libs/qimessaging/1.0/jquery.min.js"></script>
+  <script src="/libs/qimessaging/1.0/socket.io.min.js"></script>
+  <script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+  <script src="scripts/jquery.qimhelpers.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/adjust.js"></script>
+</head>
+<script type="text/javascript">
+  pageLoaded = function() {
+    document.getElementById("image_container").style.visibility="visible";
+    document.getElementById("bg_image").style.opacity = 1;
+  };
+</script>
+<body  onload="pageLoaded()">
+  <div style="margin:auto; text-align:center;height:100%;border:0px solid red;visibility:hidden;" id="image_container">
+    <img id="bg_image" src="image.jpg" style="vertical-align: middle;opacity: 0.0;">
+    <div id="jasrac_no" style="font-family: sans-serif; position: absolute; right: 10px; bottom: 10px; font-size: 35px;"></div>
+  </div>
+</body>	   
+</html>

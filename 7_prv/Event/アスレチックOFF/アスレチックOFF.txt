@@ -1,0 +1,568 @@
+<div>
+  <div>
+    <div>
+      <div style="letter-spacing:.24px;">
+        <img src="/imgs/1707/697859800267116.png" width="580" alt="697859800267116.png" />
+        <span style="font-size:large;letter-spacing:.24px;">
+          <br />
+        </span>
+        <div style="letter-spacing:.24px;">
+          <hr />
+        </div>
+        <div class="bluetext" style="text-align:center;letter-spacing:.24px;">
+          <span style="letter-spacing:.24px;line-height:1.5;">内 容</span>
+        </div>
+        <div style="text-align:center;letter-spacing:.24px;">
+          <span style="font-size:small;letter-spacing:.24px;">
+            <br />
+          </span>
+        </div>
+        <div style="text-align:center;letter-spacing:.24px;">
+          <span style="font-size:small;letter-spacing:.24px;">体を動かす、アスレチックが好きな人で集まって</span></div>
+        <div style="text-align:center;letter-spacing:.24px;">
+          <span style="font-size:small;">2017年夏の思い出を作ろう！</span>
+        </div>
+        <div style="text-align:center;letter-spacing:.24px;">
+          <span style="font-size:small;">というコンセプトのオフ会です！！！！</span>
+        </div>
+        <div style="text-align:center;letter-spacing:.24px;">
+          <span style="font-size:small;">
+            <br />
+          </span>
+        </div>
+        <div style="letter-spacing:.24px;">
+          <div style="text-align:center;">
+            <span style="font-size:x-small;letter-spacing:.24px;">↓森林公園内↓</span>
+          </div>
+          <div style="text-align:center;">
+            <img src="/imgs/1707/449949312374986.jpg" width="500" alt="449949312374986.jpg" />
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <div style="letter-spacing:.24px;text-align:left;">
+            <span style="font-size:large;">
+              <br />
+            </span>
+          </div>
+          <div style="letter-spacing:.24px;text-align:left;">
+            <div style="letter-spacing:.24px;">
+              <hr />
+              <br />
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <span style="letter-spacing:.24px;">
+            <span style="font-size:xx-large;">■集合場所■</span>
+          </span>
+        </div>
+      </div>
+      <div style="letter-spacing:.24px;">
+        <div style="text-align:center;">
+          <span style="font-size:x-large;letter-spacing:.24px;">
+            <br />8月12日(土) 12:45&nbsp;
+          </span>
+        </div>
+        <div style="text-align:center;">
+          <span style="letter-spacing:.24px;">
+            <span style="font-size:x-large;">森林公園駅北口 集合</span>
+          </span>
+        </div>
+        <div style="text-align:center;">
+          <span style="letter-spacing:.24px;">
+            <span style="font-size:x-large;">
+              <br />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="letter-spacing:.24px;line-height:1.5;">
+          <span style="font-size:small;">※集合時間を過ぎてしまった場合は、</span>
+        <br /></span>
+        <span style="font-size:small;letter-spacing:.24px;line-height:1.5;">直接会場へお越し下さい。</span>
+      </div>
+      <div>
+        <div style="text-align:center;">
+          <span style="font-size:small;letter-spacing:.24px;">　首を長くながーくしてお待ちしております。</span>
+
+        </div>
+        <span style="line-height:1.5;">
+          <br />
+          </span><div style="text-align:center;">
+            <a href="http://www.shinrinkoen.jp/media/bus_south.pdf" title="【森林公園駅北口発バス停時刻表】" target="_blank"><span style="font-size:large;">
+
+                <span style="letter-spacing:.24px;">【</span><span style="letter-spacing:.24px;">森林公園駅北口発バス停時刻表</span><span style="letter-spacing:.02em;">】
+              </span>
+            </span>
+          </a></div>
+          <div style="text-align:center;">
+            <span style="letter-spacing:.02em;">
+              <span style="font-size:large;">&nbsp;</span>
+            </span>
+          </div>
+          <div style="text-align:center;letter-spacing:.24px;">
+            <a href="http://www.shinrinkoen.jp/media/shinrinkoen_guidemap.pdf" title="【森林公園MAP】" target="_blank"><span style="font-size:large;">
+              <span style="letter-spacing:.24px;">【</span><span style="letter-spacing:.02em;">森林公園MAP】</span>
+            </span>
+          </a></div>
+          <div style="font-size:small;text-align:center;">
+            <br />
+          </div>
+          <br />
+
+      </div>
+      <div style="letter-spacing:.24px;">
+        <hr />
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:xx-large;">■会場■&nbsp; </span>
+      </div>
+      <div>
+        <div style="text-align:center;">
+          <span style="letter-spacing:.02em;">
+            <span style="font-size:large;">
+              <br />
+            </span>
+          </span>
+        </div>
+        <div style="text-align:center;">
+          <span style="letter-spacing:.02em;">
+            <span style="font-size:large;">国営武蔵丘陵森林公園 南口&nbsp;</span>
+          </span>
+        </div>
+        <span style="font-size:large;">
+          </span><div style="text-align:center;">
+            <span style="letter-spacing:.02em;">〒355-0802 埼玉県比企郡滑川町山田1920&nbsp;</span>
+          </div>
+          <br />
+
+      </div>
+      <div style="letter-spacing:.24px;">
+        <div style="letter-spacing:.24px;">
+          <hr />
+        </div>
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:xx-large;">
+          <span style="letter-spacing:.24px;line-height:1.5;">■日時■</span>
+        </span>
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="letter-spacing:.24px;">
+          <br />
+          <span style="font-size:x-large;">2017年8月12日(土)</span>
+        </span>
+
+      </div>
+      <div style="letter-spacing:.24px;">
+        <div style="text-align:center;">
+          <span style="letter-spacing:.24px;">
+            <span style="font-size:x-large;">12 : 45 〜 17 : 00&nbsp;</span>
+            <br />
+          </span>
+        </div>
+        <span style="font-size:large;">
+          <span style="line-height:27px;">
+            <br />
+          </span>
+        </span>
+      </div>
+      <div style="letter-spacing:.24px;">
+        <hr />
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:xx-large;">■募集定員■ </span>
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:large;">
+          <br />
+        </span>
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:x-large;">定員 50名&nbsp;</span>
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:large;">
+          <br />
+        </span>
+      </div>
+      <div style="letter-spacing:.24px;">
+        <hr />
+      </div>
+      <div style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:xx-large;">■参加費用■ </span>
+      </div>
+      <div style="letter-spacing:.24px;">
+        <div style="text-align:center;">
+          <span style="font-size:x-large;letter-spacing:.24px;">
+            <br />500円</span></div>
+        <span style="line-height:27px;">
+          </span><div style="text-align:center;">
+            <span style="font-size:medium;letter-spacing:.24px;">(入場料+遊具)</span>
+          </div>
+          <div style="text-align:center;">
+            <span style="font-size:medium;letter-spacing:.24px;">
+              <br />
+            </span>
+          </div>
+
+      </div>
+    </div>
+    <div style="letter-spacing:.24px;">
+      <hr style="text-align:center;" />
+    </div>
+    <div class="bluetext" style="text-align:center;letter-spacing:.24px;">詳細</div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;letter-spacing:.24px;">
+        <br />
+      </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;letter-spacing:.24px;">森林公園のアスレチックで<br />思う存分遊んで頂きましょう！<br /><br /></span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;letter-spacing:.24px;line-height:1.5;">オフ会初心者の方も楽しめるように、</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;letter-spacing:.24px;line-height:1.5;">雰囲気を作りますので、<br />是非一緒に楽しみましょう！&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <br />
+    </div>
+
+    <div>
+      <div style="letter-spacing:.24px;">
+        <br />
+        <hr />
+      </div>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">
+          <span style="font-size:xx-large;letter-spacing:.24px;">■雨天時■</span>
+        </span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span style="font-size:large;">
+          <span class="s1"><br />雨天時 場所変更条件</span>
+        </span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">・当日9:00の段階で森林公園の天気予報が<br />午後の降水確率60%以上だった場合</span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <br />
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">※森林公園の天気予報は<br />以下のURLを参考に判断します。</span>
+      </p>
+      <p class="p3" style="text-align:center;">
+        <a href="http://www.toshin.com/weather/detail.php?id=61649" target="_blank">http://www.toshin.com/weather/detail.php?id=61649</a>
+      </p>
+      <p class="p3" style="text-align:center;">
+        <br />
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">&nbsp;&nbsp; 【雨天時 変更事項】</span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">・会場：</span>
+        <span style="letter-spacing:.24px;">森林公園 → スポッチャ板橋店</span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">・会費：</span>
+        <span style="letter-spacing:.24px;">500円 → 2,500円</span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">
+          <br />
+        </span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">・待ち合わせ</span>
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;">
+        <span class="s1">赤羽駅西口&nbsp;</span>
+        <span style="letter-spacing:.24px;">13:00</span>
+      </p>
+      <p class="p2" style="text-align:center;letter-spacing:.24px;">
+        <br />
+      </p>
+      <p class="p1" style="text-align:center;letter-spacing:.24px;"><span style="font-size:x-small;"><span class="s1">場所や価格に変動がある為、参加不参加は自由です！<br />遠慮なく言ってください！<br /><br /></span>
+      </span></p>
+      <p class="p4" style="letter-spacing:.24px;">
+        </p><div style="text-align:center;">
+          <span style="font-size:x-small;"><span style="letter-spacing:.24px;">あくまでこれは念の為の、事前共有なので、&nbsp;</span>
+        </span></div>
+        <span class="s3"><span style="font-size:x-small;">
+          </span></span><div style="text-align:center;">
+            <span style="letter-spacing:.24px;"><span style="font-size:x-small;">もちろん雨が降らなければ通常通りの<br />ツイプラにかかれている内容で行います！</span></span>
+          </div>
+
+      <br />
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <br />
+    </div>
+    <div style="letter-spacing:.24px;">
+      <hr style="text-align:center;" />
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:xx-large;">■イベント流れ■ </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;"><br /><span style="font-size:medium;">12:45　
+      <span style="letter-spacing:.24px;">森林公園駅北口集合</span>
+    </span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">↓</span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">13:15　
+      <span style="letter-spacing:.24px;">森林公園南口到着</span>
+    </span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">↓</span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">13:30　
+      <span style="letter-spacing:.24px;">オフ会開始</span>
+    </span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">↓</span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">17:00　オフ会終了</span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">↓</span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">19:00　
+      <span style="letter-spacing:.24px;">二次会開始</span>
+    </span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">↓</span></div>
+    <div style="text-align:center;letter-spacing:.24px;"><span style="font-size:medium;">21:00　二次会終了</span></div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <br />
+    </div>
+    <div style="letter-spacing:.24px;">
+      <hr style="text-align:left;" />
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:xx-large;">■二次会■
+    </span></div>
+    <div>
+      <span style="font-size:xx-large;letter-spacing:.24px;">
+        </span><div style="text-align:center;">
+          <span style="letter-spacing:.24px;">
+            <br /><span style="font-size:large;">場所：
+          </span></span><span style="font-size:large;">
+          <a href="http://nico-bar.net/que-sera-ikebukuro/" title="ニコバー池袋" target="_blank" style="letter-spacing:.24px;">ニコバー池袋</a>
+          <br />
+          <br />
+        </span></div>
+
+    </div>
+    <div style="letter-spacing:.24px;">
+      <div style="text-align:center;">
+        <span style="font-size:large;"><span style="letter-spacing:.24px;">時間：19:00 〜 21:00
+          <br />
+          <br />
+        </span>
+      </span></div>
+
+        <div style="text-align:center;">
+          <span style="font-size:large;"><span style="letter-spacing:.24px;">料金：3000円 &nbsp; ※</span>
+          <span style="letter-spacing:.24px;">食べ飲み放題<br /><br /></span>
+        </span></div>
+
+    </div>
+    <div style="letter-spacing:.24px;">
+      <div style="text-align:center;">
+        <span style="font-size:large;letter-spacing:.24px;">住所：</span>
+        <span style="font-size:large;letter-spacing:.24px;">東京都豊島区東池袋1-7-4&nbsp;</span>
+        <br /><span style="letter-spacing:.24px;"><span style="font-size:large;">東西物産ビル B1F</span><br /><br /><br /></span></div></div>
+
+    <div style="letter-spacing:.24px;">
+      <hr style="text-align:center;" />
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:xx-large;">■参加方法■
+    </span></div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">
+        <br />募集はTwiPla、twitterで受け付けます。&nbsp;
+      </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">TwiPlaには直接書き込んでください。</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">
+        <br />
+      </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">＜TwiPla＞</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <a href="http://twipla.jp/users/ikbkr_nicobar" target="_blank">http://twipla.jp/users/ikbkr_nicobar</a>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">
+        <br />
+      </span>
+    </div>
+    <div style="text-align:center;">
+      <span style="font-size:small;">
+        <span style="letter-spacing:.24px;">twitterは@</span>ikbkr_nicobar
+        <span style="letter-spacing:.24px;">&nbsp;</span>
+        <span style="letter-spacing:.24px;">宛に</span>
+      </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">
+        <span style="letter-spacing:.24px;">以下の内容を書いてリプを飛ばしてください。&nbsp;</span>
+      </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <br />
+    </div>
+
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">参加表明時に必要な事項&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">※本名は絶対に書かないで下さい。&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">※初心者かどうかは正直に書いてください。&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">
+        <br />
+      </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">【ハンドルネーム】&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;letter-spacing:.24px;line-height:1.5;">【イベント初心者かどうか】&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">【二次会の参加の可否】&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">【twitter】&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">
+        <br />
+      </span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">例)&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">【ハンドルネーム】たあぼう</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">【チームリーダーしてもいいか】◎&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">【イベント初心者かどうか】×&nbsp;</span>
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <span style="font-size:small;">【二次会の参加の可否】◎&nbsp;</span>
+    </div>
+    <div style="text-align:center;">
+      <span style="font-size:small;letter-spacing:.24px;">【twitter】@tabo0520</span>
+    </div>
+    <div style="letter-spacing:.24px;">
+      <hr style="text-align:center;" />
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">【注意事項】</div>
+    <div style="text-align:center;letter-spacing:.24px;">本オフ会による傷害、事故については、<br />一切の責任を負いかねますので、ご了承ください。
+      <br />
+      <br />
+    </div>
+    <div style="text-align:center;letter-spacing:.24px;">
+      <br />
+    </div>
+  </div>
+</div>
+<div class="bluetext" style="text-align:center;">
+  <span style="letter-spacing:.24px;line-height:1.5;">スタッフ紹介</span>
+</div>
+<div>
+  <div>
+    <div style="text-align:center;">
+      <span style="letter-spacing:.02em;">
+        <span style="font-size:x-large;"><br />主催 たあぼう</span>
+      </span>
+    </div>
+    <div style="text-align:center;">
+      <img src="/imgs/1707/635024686258288.jpg" width="150" height="150" alt="635024686258288.jpg" style="letter-spacing:.02em;" />
+    </div>
+  </div>
+  <div>
+    <div style="text-align:center;">
+      <span style="letter-spacing:.02em;">
+        <br />こちらのアカウントを&nbsp;
+      </span>
+    </div>
+    <div style="text-align:center;">
+      <span style="letter-spacing:.02em;">フォローしてください(´・ω・｀)b&nbsp;</span>
+    </div>
+    <div style="text-align:center;">
+      <span style="letter-spacing:.02em;">リプを頂ければフォロバします！</span>
+    </div>
+  </div>
+  <div style="text-align:center;">
+    <a href="https://twitter.com/tabo0520" class="twitter-follow-button" style="line-height:1.5;letter-spacing:.02em;">@たあぼうさんをフォロー</a>
+  </div>
+</div>
+<hr style="text-align:center;" />
+<div>
+  <div>
+    <div style="text-align:center;">
+      <span style="letter-spacing:.02em;">
+        <span style="font-size:x-large;">幹事 やつはし</span>
+      </span>
+    </div>
+    <div style="text-align:center;">
+      <img src="http://twipla.jp/imgs/1707/194174161437126.jpg" width="150" height="150" alt="194174161437126.jpg" style="letter-spacing:.24px;" />
+    </div>
+  </div>
+  <div style="text-align:center;">
+    <br />幹事のやつはし君です！！</div>
+  <div style="text-align:center;">
+    <a href="https://twitter.com/yababababawi" class="twitter-follow-button" style="letter-spacing:.02em;line-height:1.5;">@やつはしさん(幹事)をフォロー</a>
+  </div>
+</div>
+<hr style="text-align:center;" />
+<div style="text-align:center;">
+  <div style="letter-spacing:.24px;text-align:left;">
+    <div>
+      <div style="text-align:center;">
+        <span style="letter-spacing:.02em;">
+          <span style="font-size:x-large;">店舗 ニコバー池袋</span>
+        </span>
+      </div>
+      <div style="text-align:center;">
+        <br />
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <img src="/imgs/1707/494779918225314.jpg" width="150" height="150" alt="494779918225314.jpg" />
+      <br />二次会会場です(・∀・)
+    </div>
+    <div style="text-align:center;">
+      <a href="https://twitter.com/ikbkr_nicobar" class="twitter-follow-button" style="letter-spacing:.02em;line-height:1.5;">@ニコバー池袋さんをフォロー</a>
+    </div>
+  </div>
+  <hr style="letter-spacing:.24px;" />
+  <br />
+</div>
+<div class="bluetext" style="text-align:center;">
+  <span style="letter-spacing:.24px;line-height:1.5;">ニコバーについて</span>
+</div>
+<div style="text-align:center;">ニコバーについて詳しく知りたい方はコチラ</div>
+<div style="text-align:center;">
+  <a href="http://nico-bar.net/que-sera-shinjuku/" target="_blank">ニコバー新宿店</a>&nbsp;
+  <span style="letter-spacing:.02em;">/&nbsp;</span>
+  <a href="http://www.nico-bar.net/que-sera-machida/index.html" title="ニコバー町田店" target="_blank" style="letter-spacing:.02em;">ニコバー町田店</a>
+</div>
+<div style="text-align:center;">
+  <a href="http://nico-bar.net/que-sera-ueno/" target="_blank">ニコバー上野店</a>&nbsp;/&nbsp;
+  <a href="http://nico-bar.net/que-sera-ikebukuro/" title="ニコバー池袋店" target="_blank" style="letter-spacing:.02em;">ニコバー池袋店</a>
+</div>

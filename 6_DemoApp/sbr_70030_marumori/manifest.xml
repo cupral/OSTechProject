@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="sbr_70030_marumori" version="2.0.2">
+  <names>
+    <name lang="en_US">Maru Maru Mori Mori!</name>
+    <name lang="en_US-x-scrald">Maru Maru Mori Mori!</name>
+    <name lang="ja_JP">マルマルモリモリ！</name>
+    <name lang="ja_JP-x-scrald">マルマルモリモリ！</name>
+    <name lang="zh_CN">Maru Maru Mori Mori!</name>
+    <name lang="zh_CN-x-scrald">Maru Maru Mori Mori!</name>
+  </names>
+  <descriptions>
+    <description lang="en_US">Pepper's 'Maru Maru Mori Mori!' dance.</description>
+    <description lang="en_US-x-scrald">Pepper's 'Maru Maru Mori Mori!' dance.</description>
+    <description lang="ja_JP">ペッパーがダンスをするアプリです。タイトルは「マルマルモリモリ！」。
+アプリ実行中にペッパーが移動するため、４(2x2)平方m程度のスペースが必要。</description>
+    <description lang="ja_JP-x-scrald">ペッパーがダンスをするアプリです。タイトルは「マルマルモリモリ！」。
+アプリ実行中にペッパーが移動するため、４(2x2)平方m程度のスペースが必要。</description>
+  </descriptions>
+  <supportedLanguages>
+    <language>ja_JP</language>
+    <language>en_US</language>
+    <language>zh_CN</language>
+  </supportedLanguages>
+  <descriptionLanguages>
+    <language>en_US</language>
+    <language>ja_JP</language>
+    <language>zh_CN</language>
+  </descriptionLanguages>
+  <contents>
+    <behaviorContent path=".">
+      <userRequestable/>
+      <nature>interactive</nature>
+      <names>
+        <name lang="en_US">Maru Maru Mori Mori!</name>
+        <name lang="en_US-x-scrald">Maru Maru Mori Mori!</name>
+        <name lang="ja_JP">マルマルモリモリ！</name>
+        <name lang="ja_JP-x-scrald">マルマルモリモリ！</name>
+        <name lang="zh_CN">Maru Maru Mori Mori!</name>
+        <name lang="zh_CN-x-scrald">Maru Maru Mori Mori!</name>
+      </names>
+      <triggerSentences>
+        <sentence lang="ja_JP">マルマルモリモリ</sentence>
+        <sentence lang="ja_JP-x-scrald">マルマルモリモリ</sentence>
+      </triggerSentences>
+      <loadingResponses/>
+      <autonomous/>
+      <permissions/>
+    </behaviorContent>
+  </contents>
+  <requirements>
+    <naoqiRequirement maxVersion="2" minVersion="2.3"/>
+    <robotRequirement model="JULIETTE_Y20"/>
+  </requirements>
+</package>

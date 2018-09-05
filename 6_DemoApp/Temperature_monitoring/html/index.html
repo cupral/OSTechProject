@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<!--母国語宣言-->
+<html lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- <meta charset="UTF-8"> -->
+	  <meta http-equiv="Content-Script-Type" content="text/javascript"><!--スクリプト言語設定-->
+	  <meta http-equiv="Content-Style-Type" content="text/css"><!--スタイルシート言語設定-->
+		<!-- qimessaging読込 -->
+		<script src="/libs/qimessaging/1.0/jquery.min.js" type="text/javascript"></script>
+	  <script src="/libs/qimessaging/1.0/qimessaging.js" type="text/javascript"></script>
+		<!-- localファイル参照 -->
+	  <script type="text/javascript" src="js/script.js"></script>
+	  <link rel="stylesheet" href="css/style.css" type="text/css">
+		<title></title>
+		<script></script>
+	</head>
+
+	<body>
+		<div class="header">
+
+			<table>
+				<tr>
+					<td>Battery</td>
+					<td><div class="temperature" id="Battery"></div></td>
+				</tr>
+				<tr>
+					<td>Head</td>
+					<td><div class="temperature" id="Head"></div></td>
+				</tr>
+				<tr>
+					<td>
+						HeadPitch
+					</td>
+					<td>
+						<div class="temperature" id="HeadPitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						HeadYaw
+					</td>
+					<td>
+						<div class="temperature" id="HeadYaw"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LAnklePitch
+					</td>
+					<td>
+						<div class="temperature" id="LAnklePitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LAnkleRoll
+					</td>
+					<td>
+						<div class="temperature" id="LAnkleRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LElbowRoll
+					</td>
+					<td>
+						<div class="temperature" id="LElbowRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LElbowYaw
+					</td>
+					<td>
+						<div class="temperature" id="LElbowYaw"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LHand
+					</td>
+					<td>
+						<div class="temperature" id="LHand"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LHipPitch
+					</td>
+					<td>
+						<div class="temperature" id="LHipPitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LHipRoll
+					</td>
+					<td>
+						<div class="temperature" id="LHipRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LHipYawPitch
+					</td>
+					<td>
+						<div class="temperature" id="LHipYawPitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LKneePitch
+					</td>
+					<td>
+						<div class="temperature" id="LKneePitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LShoulderPitch
+					</td>
+					<td>
+						<div class="temperature" id="LShoulderPitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LShoulderRoll
+					</td>
+					<td>
+						<div class="temperature" id="LShoulderRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						LWristYaw
+					</td>
+					<td>
+						<div class="temperature" id="LWristYaw"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RAnklePitch
+					</td>
+					<td>
+						<div class="temperature" id="RAnklePitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RAnkleRoll
+					</td>
+					<td>
+						<div class="temperature" id="RAnkleRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RElbowRoll
+					</td>
+					<td>
+						<div class="temperature" id="RElbowRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RElbowYaw
+					</td>
+					<td>
+						<div class="temperature" id="RElbowYaw"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RHand
+					</td>
+					<td>
+						<div class="temperature" id="RHand"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RHipPitch
+					</td>
+					<td>
+						<div class="temperature" id="RHipPitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RHipRoll
+					</td>
+					<td>
+						<div class="temperature" id="RHipRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RHipYawPitch
+					</td>
+					<td>
+						<div class="temperature" id="RHipYawPitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RKneePitch
+					</td>
+					<td>
+						<div class="temperature" id="RKneePitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RShoulderPitch
+					</td>
+					<td>
+						<div class="temperature" id="RShoulderPitch"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RShoulderRoll
+					</td>
+					<td>
+						<div class="temperature" id="RShoulderRoll"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						RWristYaw
+					</td>
+					<td>
+						<div class="temperature" id="RWristYaw"></div>
+					</td>
+				</tr>
+			</table>
+
+
+
+		</div>
+		<div class="main">
+
+		</div>
+		<div class="footer">
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="1.0.1" uuid="disopa_reception">
+ <names>
+  <name lang="en_US">DISOPA_Reception</name>
+  <name lang="ja_JP">DISOPA受付</name>
+ </names>
+ <descriptions>
+  <description lang="en_US">DISOPA_reception</description>
+  <description lang="ja_JP">DISOPA様向け受付アプリ</description>
+ </descriptions>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="question1">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="question2">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="lookAtNao">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="ojigi">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/erai">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/no">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="motion/camera">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement maxVersion="2.1.4.13" minVersion="2.1.4.13"/>
+  <robotRequirement maxHeadVersion="5.0" model="NAO_H25" minBodyVersion="3.0" maxBodyVersion="5.0" minHeadVersion="3.0"/>
+ </requirements>
+</package>

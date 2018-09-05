@@ -1,0 +1,17 @@
+topic: ~look()
+language: jpj
+
+
+concept:(no)[いいえ　違う　そうじゃない　ノー ない 大丈夫]
+concept:(camera)[写真 カメラ　撮影　一緒に　撮ろう]
+concept:(erai)[えらい　できた　利口　がんばった　あってる　すごい　やるね さすが]
+
+u:(e:onStart)何か、御用は、ございますか？
+
+u:({*}~camera{*})一緒に写真を撮りましょうッッ！！。ポーズを撮るので、自由に撮ってくださいッッ！！。^start(disopa_reception/motion/camera)^wait(disopa_reception/motion/camera)$onStopped=1
+
+u:(*)ちょっと待ってくださいねッッ！！。店長に確認しますッッ！！。$onStopped=1
+
+u:({*}~no{*})^start(disopa_reception/motion/no)コリャマタ、失礼しましたッッ！！。^wait(disopa_reception/motion/no)$onStopped=1
+
+u:({*}~erai{*})^start(disopa_reception/motion/erai)お役に立てて、光栄ですッッ！！。^wait(disopa_reception/motion/erai)$onStopped=1

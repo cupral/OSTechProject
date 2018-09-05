@@ -1,0 +1,8 @@
+topic: ~question1_dialog()
+language: jpj
+
+
+u:(e:onStart)本日は、オシゴ戸でスカ？それとも勉強ですか？
+u:({*}仕事{*})$NaoEvent/question1end="お疲れ様ですッッ！！。" $onStopped=1
+u:({*}勉強{*})$NaoEvent/question1end="頑張って下さいねッッ！！。" $onStopped=1
+u:(e:Dialog/NotUnderstood)$NaoEvent/question1end="ファイトですッッ！！。" $onStopped=1

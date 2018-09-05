@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+html,body{
+    width:100%;
+    height:100vh;
+}
+
+body{
+    background-color: #fff200;
+    text-align:center;
+}
+
+button{
+  color: #fff;
+  border-style: none;
+
+  /* x文字以上...*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  box-shadow: 2px 2px 3px 1px #666;
+  -moz-box-shadow: 2px 2px 3px 1px #666;
+  -webkit-box-shadow: 2px 2px 3px 1px #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+
+  touch-callout: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-touch-callout: none;
+  -moz-user-select: none;
+}
+
+
+/* index */
+img.logo{
+    width:50%;
+    margin: 10% 0% 0% 0%;
+    padding: 0% % 0% 0%;
+    border: 0% 0% 0% 0%;
+
+}
+button.startBtn{
+    width:50%;
+    height:15vh;
+    margin: 4% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    border: 0% 0% 0% 0%;
+
+    font-size:4rem;
+    font-family:serif;
+    background-color:#00aeef;
+
+}button.startBtn:hover{
+
+}
+/* iceBreal */
+div.header{
+  width:100%;
+  height:20vh;
+  text-align:right;
+}
+img.sLogo{
+  width:20%;
+}

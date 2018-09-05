@@ -1,0 +1,12 @@
+topic: ~question2_dialog()
+language: jpj
+
+
+u:(e:onStart)本日は、どのくらいご利用されますか？
+u:({*}1時間{*})$NaoEvent/question2end="1時間" $onStopped=1
+u:({*}2時間{*})$NaoEvent/question2end="2時間" $onStopped=1
+u:({*}3時間{*})$NaoEvent/question2end="3時間" $onStopped=1
+u:({*}4時間{*})$NaoEvent/question2end="4時間" $onStopped=1
+u:({*}フル{*})$NaoEvent/question2end="一日フル" $onStopped=1
+u:({*}一日{*})$NaoEvent/question2end="一日フル" $onStopped=1
+u:(e:Dialog/NotUnderstood)すみません、聞き取れませんでした。もう一度お願いしますッッ！！$NaoEvent/question1end=7 

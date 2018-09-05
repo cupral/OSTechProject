@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+html,body{
+    width:100%;
+    height:100vh;
+    margin:0%;
+    padding:0%;
+}
+
+body{
+    background-color: #fff200;
+    text-align:center;
+    font-family:serif;
+}
+
+button{
+  color: #fff;
+  border-style: none;
+
+  /* x文字以上...*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  box-shadow: 5px 5px 6px 4px #666;
+  -moz-box-shadow: 5px 5px 6px 4px #666;
+  -webkit-box-shadow: 5px 5px 6px 4px #666;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+
+  touch-callout: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-touch-callout: none;
+  -moz-user-select: none;
+}
+
+div.header{
+  width:100%;
+  height:20vh;
+}
+div.main{
+  width:100%;
+  height:80vh;
+}
+
+/* index.html ---------------------------------------------- */
+div.logoBox{
+  width:100%;
+}
+
+img.logo{
+    width:50%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    border: 0% 0% 0% 0%;
+
+}
+
+div.startEndBox{
+  width:100%;
+}
+button.startBtn{
+    width: 30%;
+    height: 20vh;
+    margin: 10% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    border: 0% 0% 0% 0%;
+
+    font-size: 4rem;
+    font-family:serif;
+    background-color:#00aeef;
+
+}button.startBtn:hover{
+   background-color:#003d54;
+   color:#00e2e8;
+}
+
+button.endBtn{
+    width: 30%;
+    height: 20vh;
+    margin: 10% 0% 0% 10%;
+    padding: 0% 0% 0% 0%;
+    border: 0% 0% 0% 0%;
+
+    font-size: 4rem;
+    font-family:serif;
+    background-color:#00aeef;
+
+}button.endBtn:hover{
+   background-color:#003d54;
+   color:#00e2e8;
+}
+/* iceBreak.html ---------------------------------------------- */
+
+div.pageTitle,img.sLogo{
+  float:left;
+}
+div.pageTitle{
+  width:80%;
+  height:20vh;
+}
+
+img.sLogo{
+  width:20%;
+}
+
+p.iceTitle{
+  font-size:5rem;
+  padding:2% 0% 0% 25%;
+  margin: 0% 0% 0% 0%;
+}
+
+
+div.weatherData,div.weatherImageBox{
+  float:left;
+}
+div.weatherData{
+  width:50%;
+  height:30vh;
+  padding: 13% 0% 0% 0%;
+
+}
+div.weatherImageBox{
+  width:50%;
+  padding: 13% 0% 0% 0%;
+}
+div#city{
+  font-size:3rem;
+  padding: 1% 0% 0% 0%;
+
+}
+div#temp{
+  font-size:3rem;
+  padding: 1% 0% 0% 0%;
+}
+div#code{
+  font-size:3rem;
+  padding: 1% 0% 0% 0%;
+}
+img#weatherImage{
+  width:50%;
+}
+
+
+/* intro.html---------------------------------------------------- */
+p.introTitle{
+  font-size:5rem;
+  padding:2% 0% 0% 28%;
+  margin: 0% 0% 0% 0%;
+}
+img.naoImage{
+  width:50%;
+}
+
+/* question1.html------------------------------------------------ */
+p.q1Title{
+  font-size:3.5rem;
+  padding:5% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
+}
+button.question1Btn{
+    width: 35%;
+    height: 20vh;
+    margin: 20% 5% 0% 5%;
+    padding: 0% 0% 0% 0%;
+    border: 0% 0% 0% 0%;
+
+    font-size: 4rem;
+    font-family:serif;
+    background-color:#00aeef;
+
+}button.question1Btn:hover{
+   background-color:#003d54;
+   color:#00e2e8;
+}
+
+
+
+/* question2.html------------------------------------------------ */
+p.q2Title{
+  font-size:2.7rem;
+  padding:5% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
+}
+
+button.question2Btn{
+    width: 35%;
+    height: 18vh;
+    margin: 5% 4% 0% 4%;
+    padding: 0% 0% 0% 0%;
+    border: 0% 0% 0% 0%;
+
+    font-size: 4rem;
+    font-family:serif;
+    background-color:#00aeef;
+
+}button.question2Btn:hover{
+   background-color:#003d54;
+   color:#00e2e8;
+}
+
+
+
+
+/* finish.html---------------------------------------------------- */
+p.finishTitle{
+  font-size:3.3rem;
+  padding:10% 0% 0% 20%;
+  margin: 0% 0% 0% 0%;
+}
+p.finishMain{
+  font-size:3.5rem;
+  padding:20% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
+}
