@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/permission_margin"
+    android:paddingRight="@dimen/permission_margin"
+    android:gravity="center_vertical"
+    android:background="@color/primary_dark">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/permission_margin"
+        android:src="@drawable/location_access"
+        android:scaleType="center"
+        android:contentDescription="@string/illustration_description"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/location_permission_title"
+            android:textColor="@android:color/white"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/request_permission_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_text_button_2dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="2dp"
+            android:text="@string/location_permission_open"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

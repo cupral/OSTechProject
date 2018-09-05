@@ -1,0 +1,45 @@
+# The example app has been created to demonstrate the use of Android Auto SDK only. Use at your
+# own risk.
+
+# Station Name	Street Address	City	State	ZIP	Station Phone	Access Days Time	EV Network	EV Network Web	Latitude	Longitude	EV Connector Types
+South Shore Center	523 S Shore Center	Alameda	CA	94501	510-521-8100	24 hours daily			37.7601273	-122.2534215	J1772
+City of Benicia	370 E L St	Benicia	CA	94510	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	38.0507908	-122.1493176	J1772
+City of Berkeley	2450 Durant Ave	Berkeley	CA	94704	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.8661801	-122.268963	J1772
+Peter Pan BMW	1625 Adrian Rd	Burlingame	CA	94010	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.5969	-122.373812	J1772COMBO
+City of Campbell	41 N 2nd St	Campbell	CA	95008	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.2875329	-121.9466201	J1772
+Castro Valley Station 1	20103 Lake Chabot Rd	Castro Valley	CA	94546	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.6983405	-122.0896915	J1772
+Concord Hilton	1970 Diamond Blvd.	Concord	CA	94520	888-998-2546	24 hours daily	Blink Network	http://www.blinknetwork.com/	37.971326	-122.054309	CHADEMO J1772
+De Anza College 6	21250  Stevens Creek Blvd	Cupertino	CA	95014	888-998-2546	24 hours daily	GE WattStation	https://www.gewattstation.com	37.32049177	-122.0434195	J1772
+Serramonte Center	3 Serramonte Center	Daly City	CA	94015	888-998-2546	unknown	Blink Network	http://www.blinknetwork.com/	37.6693	-122.470878	CHADEMO
+Town of Danville	112 W. Prospect Ave	Danville	CA	94526	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.8213192	-122.000701	J1772
+Dublin KIA	4300 D John Monego Ct	Dublin	CA	94568	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.7032887	-121.8772468	J1772
+Four Points	1603 Powell St	Emeryville	CA	94608	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.8386726	-122.2936935	NEMA520 J1772
+Pinewood	357 Fremont Ave	Los Altos	CA	94024	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.3669602	-122.1056215	J1772
+The Ritz-Carlton - Tesla	1 Miramontes Point Rd	Half Moon Bay	CA	94019	650-712-7040  877-798-3752	24 hours daily; for Tesla use only; for guest use only; see valet for access	Tesla	http://www.teslamotors.com/supercharger	37.4339383	-122.4412633	TESLA
+Britannia Point Eden Business Park on Research Way	26103 Research Road	Hayward	CA	94545	888-998-2546	24 hours daily	Blink Network	http://www.blinknetwork.com/	37.625021	-122.127497	CHADEMO J1772
+Serenity	1400 Lincoln Village Cir	Larkspur	CA	94939	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.948236	-122.506677	J1772
+Los Altos Hills	27500-27606 Purissima Rd	Los Altos Hills	CA	94022	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.377491	-122.1471863	NEMA520 J1772
+Town Los Gatos	41 Miles Ave	Los Gatos	CA	95030	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.2249102	-121.9778537	J1772
+Martinez CA	407 Estudillo St	Martinez	CA	94553	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	38.0192133	-122.1376306	J1772
+Essex	350 Sharon Park Dr	Menlo Park	CA	94025	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.425146	-122.1984253	J1772
+McCarthy Center #4	690  N McCarthy Blvd	Milpitas	CA	95035	888-998-2546	24 hours daily	GE WattStation	https://www.gewattstation.com	37.43711338	-121.922527	J1772
+Mountain View BMW	847-899 Yuba Dr	Mountain View	CA	94041	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.3800083	-122.0712144	J1772
+Aloft SV Newark	8200 Gateway Blvd	Newark	CA	94560	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.5363579	-122.062851	J1772
+Hamilton Landing Parking	9 Hamilton Landing	Novato	CA	94949	415-884-9977	24 hours daily			38.0600888	-122.5152275	J1772
+Oakland Airport - Economy Lot	1 Airport Dr	Oakland	CA	94621	510-563-3300	24 hours daily; pay lot			37.7153	-122.2145	J1772
+Creekside Inn	3400 California 82	Palo Alto	CA	94306	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.4194479	-122.1352943	NEMA520 J1772
+Pleasanton Station 1	5667 Gibraltar Dr	Pleasanton	CA	94588	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.688417	-121.889862	J1772
+City of Redwood	799 St Francis St	Redwood City	CA	94061	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.4719595	-122.2399898	J1772
+Richmond	2540 Barrett Ave	Richmond	CA	94804	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.9380306	-122.3443344	NEMA520 J1772
+San Anselmo	22 Magnolia Ave	San Anselmo	CA	94960	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.9753601	-122.5635251	NEMA520 J1772
+CCSF - SFO	San Francisco International Airport International Parking Garage G	San Francisco	CA	94128	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.6154652	-122.3930703	J1772 NEMA520
+HGST	5601 Great Oaks Pkwy B004	San Jose	CA	95119	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.246941	-121.7899939	J1772
+SMCCD	3401 CSM Dr	San Mateo	CA	94402	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.5311975	-122.3373583	J1772
+County of Marin	3210 Kerner Blvd	San Rafael	CA	94901	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.9601743	-122.5009799	NEMA520 J1772
+McDonald's on San Ramon Valley Blvd in San Ramon, CA	21001 San Ramon Valley Boulevard	San Ramon	CA	94583	888-998-2546	24 hours daily	Blink Network	http://www.blinknetwork.com/	37.724427	-121.94313	J1772
+South Creek BMW	4333 Stevens Creek Blvd	Santa Clara	CA	95051	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.3235499	-121.97671	J1772COMBO
+Saratoga City	13777 Fruitvale Ave	Saratoga	CA	95070	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.2675489	-122.0147169	J1772
+Britannia Pointe Grand Business Park	280 E Grand Avenue	South San Francisco	CA	94080	888-998-2546	Mon-Fri: 5:00am-8:00pm, Sat-Sun: 6:00am-6:00pm	Blink Network	http://www.blinknetwork.com/	37.65216	-122.39512	CHADEMO J1772
+Sunnyvale VW	1025 E El Camino Real	Sunnyvale	CA	94087	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	37.3529733	-122.0062547	J1772COMBO
+Lennar M.I.	1080 Nimitz Ave	Vallejo	CA	94592	888-758-4389	24 hours daily	ChargePoint Network	http://www.mychargepoint.net/	38.1000243	-122.2696558	J1772
+Plaza Escuela, West Parking Lot, 2nd Floor	1500 Botelho Drive	Walnut Creek	CA	94596	888-998-2546	unknown	Blink Network	http://www.blinknetwork.com/	37.895307	-122.059363	CHADEMO

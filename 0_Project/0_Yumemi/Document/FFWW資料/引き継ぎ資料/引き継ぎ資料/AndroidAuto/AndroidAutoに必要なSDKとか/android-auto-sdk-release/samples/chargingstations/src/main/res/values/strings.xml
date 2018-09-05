@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">RoboCharge</string>
+
+    <!-- Drawer menu -->
+    <string name="menu_recents">Recent stations</string>
+    <string name="menu_fake_location">Use fake location</string>
+    <string name="menu_create_notification">Create notification</string>
+    <string name="menu_no_recent_stations">No recently visited stations available</string>
+    <string name="menu_station_subtitle">
+        <xliff:g id="distance" example="3.5">%1$.1f</xliff:g> mi -
+        <xliff:g id="full_address" example="12 Main St, Anytown, CA 91234">%2$s</xliff:g>
+    </string>
+
+    <!-- Labels used on battery status screen -->
+    <string name="status_percentage_value">30%</string>
+    <string name="status_percentage_label">Battery</string>
+    <string name="status_distance_value">40</string>
+    <string name="status_distance_label">Miles</string>
+    <string name="find_stations">Find Robo Stations</string>
+    <string name="battery_icon_description">Battery status icon</string>
+
+    <!-- Action label for dialing a charging station (all uppercase) -->
+    <string name="dial_charging_station">CALL</string>
+    <!-- Action label for navigating to a charging station (all uppercase) -->
+    <string name="navigate_to_charging_station">NAVIGATE</string>
+
+    <!-- Strings for example battery notification -->
+    <string name="battery_notification_title">
+        Vehicle Battery at <xliff:g id="percentage" example="15">%1$d</xliff:g>%%
+    </string>
+    <string name="battery_notification_content">Tap to find nearby charging stations</string>
+
+    <!-- Strings for location permission notification -->
+    <string name="open_phone_app">
+        RoboCharge needs to access your location to find nearby Robo Stations. When it\'s safe,
+        check the notification on your phone.
+    </string>
+    <string name="location_permission_notification_title">Permission needed</string>
+    <string name="location_permission_notification_short">
+        RoboCharge needs permission to access your location.
+    </string>
+    <string name="location_permission_notification_long">
+        RoboCharge needs permission to access your phone\'s location to find charging
+        stations closest to you.
+    </string>
+
+    <!-- String for location permissions activity -->
+    <string name="location_permission_title">
+        Allow RoboCharge to access this device\'s location to locate nearby Robo Stations?
+    </string>
+    <string name="location_permission_open">Location Permission</string>
+    <string name="location_permission_granted">
+        Connect your phone to your car and start Android Auto to find charging stations near you.
+    </string>
+
+    <!-- Content description for "close station details" image button -->
+    <string name="close_details_description">Close station details</string>
+    <!-- Content descriptions for charging station services icons -->
+    <string name="lightning_description">EV charging</string>
+    <string name="cup_description">Coffee</string>
+    <string name="pizza_description">Food</string>
+    <!-- Content descriptions for permission activity -->
+    <string name="illustration_description">decorative graphic</string>
+</resources>

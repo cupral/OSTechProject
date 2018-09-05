@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="PhoneActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="StationDetailSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/car_list_divider</item>
+    </style>
+
+    <style name="StationDetails">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="StationDetails.Title" parent="StationDetails">
+        <item name="android:textColor">@color/station_details_text</item>
+        <item name="android:textSize">@dimen/station_details_title</item>
+    </style>
+
+    <style name="StationDetails.Info" parent="StationDetails">
+        <item name="android:textColor">@color/station_details_text</item>
+        <item name="android:textSize">@dimen/station_details_info</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="StationDetails.Action" parent="StationDetails">
+        <item name="android:background">@drawable/car_masked_ripple_background</item>
+        <item name="android:textColor">@color/station_details_action</item>
+        <item name="android:textSize">@dimen/station_details_action</item>
+
+        <item name="android:layout_height">64dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ChargeRemaining">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:lineSpacingMultiplier">0</item>
+    </style>
+
+    <style name="ChargeRemaining.Value">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/battery_remaining_text</item>
+        <item name="android:textSize">88dp</item>
+    </style>
+
+    <style name="ChargeRemaining.Label">
+        <!-- Negative top margin is OK as characters in value field above never have descenders -->
+        <item name="android:layout_marginTop">-8dp</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">36dp</item>
+    </style>
+
+    <style name="BatteryStatusFabText">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+</resources>

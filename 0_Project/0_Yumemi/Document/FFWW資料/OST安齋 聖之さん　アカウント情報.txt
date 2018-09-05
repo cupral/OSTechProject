@@ -1,0 +1,15 @@
+アウトソーシングテクノロジー 安齋 聖之さん　アカウント情報
+
+
+■Gitlab
+URL	https://git.yumemi.jp
+ID	: ost_anzai@yumemi.co.jp
+PASS	: jvoqagzfqx8}h6ok
+
+
+■JIRA/Confluence
+URL	https://yumemi.atlassian.net
+※Googleアカウントでログイン
+ID	: ost_anzai@yumemi.co.jp
+PASS	: h982S>DV
+2段階認証用バックアップコード	: 52374859

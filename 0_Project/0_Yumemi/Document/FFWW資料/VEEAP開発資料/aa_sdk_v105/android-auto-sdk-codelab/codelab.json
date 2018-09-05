@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "source": "15LSlXcpIXWHhJK_olZIBOHU3vs4pwkNZ_DguPPrN6oY",
+  "format": "offline",
+  "prefix": "../../",
+  "mainga": "UA-49880327-14",
+  "updated": "2016-12-07T21:56:30Z",
+  "id": "aa-fs-app-sdk",
+  "duration": 35,
+  "title": "Your Android Auto Full Screen App",
+  "author": "rni",
+  "summary": "In this codelab, you'll build a fullscreen application for Android Auto and learn the basic concepts of how to build an application for Android Auto.",
+  "theme": "android",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Android"
+  ],
+  "tags": [
+    "android-auto"
+  ],
+  "url": "aa-fs-app-sdk"
+}

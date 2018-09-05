@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/battery_status_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    android:clickable="true"
+    android:background="@drawable/battery_status_background_gradient" >
+
+    <!-- Background color used for darkening the gradient at night. Top padding is used to ensure
+         that actual content is not drawn under the status bar. -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="96dp"
+        android:background="@color/night_shade">
+
+        <!-- Row of views displaying remaining charge -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="top|center_horizontal">
+
+            <!-- Remaining battery charge as percentage -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minWidth="192dp">
+
+                <TextView
+                    android:id="@+id/text_remaining_charge"
+                    style="@style/ChargeRemaining.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_percentage_value" />
+
+                <TextView
+                    style="@style/ChargeRemaining.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_percentage_label" />
+
+            </LinearLayout>
+
+            <!-- Vertical divider line -->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/vertical_bar_margin"
+                android:layout_marginRight="@dimen/vertical_bar_margin"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="28dp"
+                android:background="@color/text_light" />
+
+            <!-- Remaining battery charge as estimated distance -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minWidth="136dp">
+
+                <!-- Note: this example app uses hardcoded distance value -->
+                <TextView
+                    style="@style/ChargeRemaining.Value"
+                    android:id="@+id/text_remaining_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_distance_value" />
+
+                <TextView
+                    style="@style/ChargeRemaining.Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_distance_label" />
+
+            </LinearLayout>
+
+            <!-- Remaining charge graphic -->
+            <ImageView
+                android:id="@+id/image_battery_status"
+                android:layout_width="169dp"
+                android:layout_height="169dp"
+                android:layout_marginStart="48dp"
+                android:layout_gravity="top"
+                android:contentDescription="@string/battery_icon_description"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_battery_30" />
+
+        </LinearLayout>
+
+        <!-- Button to open map of charging stations -->
+        <TextView
+            android:id="@+id/find_stations_button"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_text_button"
+            android:clickable="true"
+            android:drawablePadding="24dp"
+            android:drawableStart="@drawable/ic_pin_white"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="@string/find_stations"
+            android:textColor="@color/text_light"
+            android:textSize="26dp" />
+
+    </LinearLayout>
+</FrameLayout>

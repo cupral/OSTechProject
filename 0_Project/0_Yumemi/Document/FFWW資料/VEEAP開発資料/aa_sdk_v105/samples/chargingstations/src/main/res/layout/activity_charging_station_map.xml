@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:mapType="normal"
+        app:uiScrollGestures="true"
+        app:uiZoomGestures="true"
+        app:uiMapToolbar="false"
+        app:uiZoomControls="false"
+        app:uiCompass="false"
+        app:uiRotateGestures="false"
+        app:uiTiltGestures="false" />
+
+    <!-- Translucent background for statusbar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_gradient_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/statusbar_background_gradient" />
+
+    <!-- Map zoom in/out buttons and my location button -->
+    <ImageButton
+        android:id="@+id/zoom_in_button"
+        android:layout_width="@dimen/zoom_button_size"
+        android:layout_height="@dimen/zoom_button_size"
+        android:layout_above="@+id/separator"
+        android:layout_marginStart="@dimen/zoom_button_margin_start"
+        android:padding="@dimen/zoom_button_padding"
+        android:elevation="@dimen/car_card_view_elevation"
+        android:background="@drawable/capsule_top"
+        android:src="@drawable/ic_zoom_in"
+        android:tint="@color/car_body1"
+        android:scaleType="fitCenter" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/zoom_out_button"
+        android:layout_alignStart="@id/zoom_in_button"
+        android:layout_alignEnd="@id/zoom_in_button"
+        android:elevation="8dp"
+        android:outlineProvider="none"
+        android:background="@color/car_card_background"
+        android:backgroundTint="@color/car_list_divider"
+        android:backgroundTintMode="src_atop"/>
+
+    <ImageButton
+        android:id="@+id/zoom_out_button"
+        android:layout_width="@dimen/zoom_button_size"
+        android:layout_height="@dimen/zoom_button_size"
+        android:layout_alignStart="@id/zoom_in_button"
+        android:layout_above="@+id/my_location_button"
+        android:layout_marginBottom="24dp"
+        android:padding="@dimen/zoom_button_padding"
+        android:elevation="@dimen/car_card_view_elevation"
+        android:background="@drawable/capsule_bottom"
+        android:src="@drawable/ic_zoom_out"
+        android:tint="@color/car_body1"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/my_location_button"
+        android:layout_width="@dimen/my_location_button_size"
+        android:layout_height="@dimen/my_location_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/my_location_button_margin_start"
+        android:layout_marginBottom="24dp"
+        android:elevation="@dimen/car_card_view_elevation"
+        android:background="@drawable/disc"
+        android:src="@drawable/ic_my_location"
+        android:tint="@color/car_body1"
+        android:scaleType="center" />
+
+    <!-- FAB is displayed on top of a white disc -->
+    <View
+        android:id="@+id/battery_status_fab_backing"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/disc"
+        android:elevation="8dp"/>
+
+    <!-- Actual FAB (FloatingActionButton) -->
+    <TextView
+        android:id="@+id/battery_status_fab"
+        style="@style/BatteryStatusFabText"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignBottom="@id/battery_status_fab_backing"
+        android:layout_alignEnd="@id/battery_status_fab_backing"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/disc"
+        android:backgroundTint="@color/battery_status_fab"
+        android:elevation="8dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/status_percentage_value"/>
+
+    <!-- Transparent area where station details cards are displayed -->
+    <FrameLayout
+        android:id="@+id/station_details_card_area"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="96dp"
+        android:elevation="@dimen/car_card_view_elevation"/>
+
+    <!-- Notification panel for telling user about missing location permission -->
+    <TextView
+        android:id="@+id/location_permission_missing_note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/missing_permission_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/missing_permission_padding_side"
+        android:paddingRight="@dimen/missing_permission_padding_side"
+        android:elevation="@dimen/car_card_view_elevation"
+        android:clickable="true"
+        android:maxLines="2"
+        android:background="@color/missing_permission_bg"
+        android:textColor="#E0E0E0"
+        android:textSize="26dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/open_phone_app"
+        android:visibility="gone"/>
+
+    <include layout="@layout/battery_status"/>
+
+</RelativeLayout>

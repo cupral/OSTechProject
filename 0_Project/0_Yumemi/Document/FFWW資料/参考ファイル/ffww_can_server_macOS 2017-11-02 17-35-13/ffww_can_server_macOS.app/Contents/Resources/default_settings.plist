@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>vectorFCan</key>
+    <integer>1</integer>
+    <key>vectorBCan</key>
+    <integer>2</integer>
+    <key>canInfoFilename</key>
+    <string>canInfo.csv</string>
+    <key>readType</key>
+    <string>Vector</string>
+    <key>fileType</key>
+    <string>ASC</string>
+    <key>readAscFilename</key>
+    <string>data.asc</string>
+    <key>repeatReading</key>
+    <false/>
+    <key>writeInterval</key>
+    <integer>100</integer>
+    <key>writeCsvFilename</key>
+    <string>hw1.asc</string>
+    <key>writeAscFilename</key>
+    <string>data.asc</string>
+    <key>serverType</key>
+    <string>Vector Can</string>
+    <key>serialPort</key>
+    <string>/dev/cu.Bluetooth-Incoming-Port</string>
+    <key>canDetailFilter</key>
+    <false/>
+    <key>canSummaryInterval</key>
+    <integer>1000</integer>
+</dict>
+</plist>

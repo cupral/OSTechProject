@@ -1,0 +1,149 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Your Android Auto Full Screen App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="styles/codelab.css">
+  <style>
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+</head>
+
+<body class="codelab-takeover">
+  <div class="codelab__toc">
+    <a href="index.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">1</span>
+      <span class="toc-item__title">Introduction</span>
+    </a>
+    <a href="step-2.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">2</span>
+      <span class="toc-item__title">Getting set up</span>
+    </a>
+    <a href="step-3.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">3</span>
+      <span class="toc-item__title">Build the skeleton of your application</span>
+    </a>
+    <a href="step-4.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">4</span>
+      <span class="toc-item__title">Adding a menu based navigation structure</span>
+    </a>
+    <a href="step-5.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">5</span>
+      <span class="toc-item__title">Integrating search into your application</span>
+    </a>
+    <a href="step-6.html" class="toc-item toc-item--current">
+      <span class="toc-item__index">6</span>
+      <span class="toc-item__title">Creating and displaying Notifications</span>
+    </a>
+    <a href="step-7.html" class="toc-item">
+      <span class="toc-item__index">7</span>
+      <span class="toc-item__title">Accessing Car data</span>
+    </a>
+    <a href="step-8.html" class="toc-item">
+      <span class="toc-item__index">8</span>
+      <span class="toc-item__title">Conclusion</span>
+    </a>
+  </div>
+
+  <div class="codelab__step">
+
+    <div class="step__header">
+      <a href="step-5.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+      </a>
+
+      <a href="index.html" title="Return to home page">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </a>
+
+      <a href="step-7.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+        </svg>
+      </a>
+
+      <h1>Your Android Auto Full Screen App</h1>
+    </div>
+
+    <div class="step__body">
+      <h1>Your Android Auto Full Screen App</h1>
+      <h2>6. Creating and displaying Notifications</h2>
+      <div><p>Notifications are a powerful paradigm in Android and we have enabled developers to use them within Android Auto using the <code>CarNotificationExtender</code>.</p><p>For a glimpse of what we can do with notifications in Android Auto, we will be modifying our sample activity such that when the user clicks on a menu entry, we display a notification with some text in it. This will also put a card on the home screen, which will allow the user to navigate back to your application by clicking the card.</p><p>We override the <code>onMenuItemClicked()</code> method in our <code>MenuAdapter</code> from before to be the point from where we trigger the notifications. Go ahead and modify the code such that it looks like this:</p><p>HelloWorldCarActivity.java</p><pre><code>@Override
+public void onMenuItemClicked(int position) {
+   Context context = HelloWorldCarActivity.this;
+
+   Intent intent = new Intent(context, HelloWorldService.class);
+
+   final String title = getString(R.string.sample_notification);
+   final String subtitle = getString(R.string.sample_notification_body) + position;
+   CarNotificationExtender extender = new CarNotificationExtender.Builder()
+           .setTitle(title)
+           .setSubtitle(subtitle)
+           .setShouldShowAsHeadsUp(true)
+           .setActionIntent(intent)
+           .setActionIconResId(R.drawable.ic_android_black_24dp)
+           .setThumbnail(BitmapFactory.decodeResource(getResources(),
+                                                      R.mipmap.ic_car))
+           .build();
+
+   NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
+           .setContentTitle(title)
+           .setContentText(subtitle)
+           .setSmallIcon(R.drawable.ic_android_black_24dp)
+           .extend(extender);
+
+   NotificationManagerCompat notificationManager =  
+           NotificationManagerCompat.from(context);
+   notificationManager.notify(position, builder.build());
+}</code></pre><p>Compile and deploy your code. Now when you click any of the menu items, you should see a notification like the one in the image below. The example here is of a heads up notification; read the documentation for the <code>CarNotifcationExtender</code> class for the details on how to use notifications within Android Auto.</p><p><img src="img/b651dafd4a8113c9.png" style="max-width: 624.00px"/></p><p>Posting a notification also adds it to the home screen. If you click the home button on the Activity bar, you will see notifications your application has posted represented as cards. Clicking the cards will trigger the action intent that was set in the extender, causing your application to be launched with that intent.</p><p><img src="img/c4c7a86fd9674c98.png" style="max-width: 624.00px"/></p><p>Android Auto has a rich set of notification driven features and you are encouraged to read the documentation and to explore the full extent of this API.</p></div>
+    </div>
+
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49880327-14', 'auto');
+
+    (function() {
+      var gaCodelab = '';
+      if (gaCodelab) {
+        ga('create', gaCodelab, 'auto', {name: 'codelab'});
+      }
+
+      var gaView;
+      var parts = location.search.substring(1).split('&');
+      for (var i = 0; i < parts.length; i++) {
+        var param = parts[i].split('=');
+        if (param[0] === 'viewga') {
+          gaView = param[1];
+          break;
+        }
+      }
+      if (gaView && gaView !== gaCodelab) {
+        ga('create', gaView, 'auto', {name: 'view'});
+      }
+    })();
+  </script>
+  <script src="scripts/codelab.js" async></script>
+</body>
+</html>

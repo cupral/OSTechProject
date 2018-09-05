@@ -1,0 +1,199 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Your Android Auto Full Screen App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="styles/codelab.css">
+  <style>
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+</head>
+
+<body class="codelab-takeover">
+  <div class="codelab__toc">
+    <a href="index.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">1</span>
+      <span class="toc-item__title">Introduction</span>
+    </a>
+    <a href="step-2.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">2</span>
+      <span class="toc-item__title">Getting set up</span>
+    </a>
+    <a href="step-3.html" class="toc-item toc-item--current">
+      <span class="toc-item__index">3</span>
+      <span class="toc-item__title">Build the skeleton of your application</span>
+    </a>
+    <a href="step-4.html" class="toc-item">
+      <span class="toc-item__index">4</span>
+      <span class="toc-item__title">Adding a menu based navigation structure</span>
+    </a>
+    <a href="step-5.html" class="toc-item">
+      <span class="toc-item__index">5</span>
+      <span class="toc-item__title">Integrating search into your application</span>
+    </a>
+    <a href="step-6.html" class="toc-item">
+      <span class="toc-item__index">6</span>
+      <span class="toc-item__title">Creating and displaying Notifications</span>
+    </a>
+    <a href="step-7.html" class="toc-item">
+      <span class="toc-item__index">7</span>
+      <span class="toc-item__title">Accessing Car data</span>
+    </a>
+    <a href="step-8.html" class="toc-item">
+      <span class="toc-item__index">8</span>
+      <span class="toc-item__title">Conclusion</span>
+    </a>
+  </div>
+
+  <div class="codelab__step">
+
+    <div class="step__header">
+      <a href="step-2.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+      </a>
+
+      <a href="index.html" title="Return to home page">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </a>
+
+      <a href="step-4.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+        </svg>
+      </a>
+
+      <h1>Your Android Auto Full Screen App</h1>
+    </div>
+
+    <div class="step__body">
+      <h1>Your Android Auto Full Screen App</h1>
+      <h2>3. Build the skeleton of your application</h2>
+      <div><h2>Create starter files to work with</h2><p>Android Auto currently does <strong>not</strong> support running regular Android <a href="https://developer.android.com/reference/android/app/Activity.html" target="_blank">Activities</a>. The class that forms the basis of an Android Auto application is the <code>CarActivity</code> class. In addition to this, there is the <code>CarActivityService</code> class that forms the launching point for all Android Auto applications. </p><p>Let&#39;s go ahead and get these set up. We create two new files:</p><p>HelloWorldCarActivity.java</p><pre><code>package exp.helloworld;
+
+import android.os.Bundle;
+
+import com.google.android.apps.auto.sdk.CarActivity;
+
+public class HelloWorldCarActivity extends CarActivity {
+
+   @Override
+   public void onCreate(Bundle bundle) {
+       super.onCreate(bundle);
+       getCarUiController().getStatusBarController()
+               .setTitle(getString(R.string.app_name));
+       setContentView(getLayoutInflater().inflate(R.layout.main_layout, null));
+   }
+}</code></pre><p>In the block above, we are setting up the title of the application and the content view with a basic layout that is defined below.</p><p>HelloWorldService.java</p><pre><code>package exp.helloworld;
+
+import com.google.android.apps.auto.sdk.CarActivity;
+import com.google.android.apps.auto.sdk.CarActivityService;
+
+public class HelloWorldService extends CarActivityService {
+   @Override
+   public Class&lt;? extends CarActivity&gt; getCarActivity() {
+       return HelloWorldCarActivity.class;
+   }
+}</code></pre><p>Finally, we create a starter layout file for our main content view.</p><pre><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+&lt;FrameLayout xmlns:android=&#34;http://schemas.android.com/apk/res/android&#34;
+            android:layout_width=&#34;match_parent&#34;
+            android:layout_height=&#34;match_parent&#34;
+            android:background=&#34;@color/car_blue_800&#34; &gt;
+
+   &lt;TextView
+       android:layout_width=&#34;wrap_content&#34;
+       android:layout_height=&#34;wrap_content&#34;
+       android:layout_gravity=&#34;center&#34;
+       android:text=&#34;@string/hello_world&#34; /&gt;
+&lt;/FrameLayout&gt;</code></pre><h2>Declaring your manifest entries</h2><p>After we have the code in place, we need to declare our manifest entries and other required metadata so the application shows up in Android Auto. We set up our manifest to look like this:</p><p>AndroidManifest.xml</p><pre><code>&lt;manifest package=&#34;exp.helloworld&#34;
+         xmlns:android=&#34;http://schemas.android.com/apk/res/android&#34;&gt;
+
+   &lt;application
+       android:allowBackup=&#34;true&#34;
+       android:icon=&#34;@mipmap/ic_launcher&#34;
+       android:label=&#34;@string/app_name&#34;
+       android:supportsRtl=&#34;true&#34;
+       android:theme=&#34;@style/AppTheme&#34;&gt;
+
+       &lt;meta-data android:name=&#34;com.google.android.gms.car.application&#34;
+                  android:resource=&#34;@xml/automotive_app_desc&#34; /&gt;
+
+       &lt;service android:name=&#34;.HelloWorldService&#34;
+                android:label=&#34;@string/app_name&#34;
+                android:exported=&#34;true&#34;&gt;
+
+           &lt;intent-filter&gt;
+               &lt;action android:name=&#34;android.intent.action.MAIN&#34; /&gt;
+
+               &lt;category android:name=&#34;com.google.android.gms.car.category.CATEGORY_PROJECTION&#34; /&gt;
+               &lt;category android:name=&#34;com.google.android.gms.car.category.CATEGORY_PROJECTION_OEM&#34; /&gt;
+           &lt;/intent-filter&gt;
+       &lt;/service&gt;
+   &lt;/application&gt;
+&lt;/manifest&gt;</code></pre><p>automotive_app_desc.xml</p><pre><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+&lt;automotiveApp&gt;
+   &lt;uses name=&#34;service&#34; /&gt;
+   &lt;uses name=&#34;projection&#34; /&gt;
+   &lt;uses name=&#34;notification&#34; /&gt;
+&lt;/automotiveApp&gt;</code></pre><p>Build and deploy your application as usual. </p><p>Android Studio does not let you deploy an application using instant run without a main activity. As using instant run can speed up build and deployment, go ahead and create an empty main activity to streamline your development workflow. This main activity will not be used in the example. In a real application, you will most likely have a main activity that you launch on the phone when not in Android Auto, so this should not be a problem outside of this codelab.</p><p>After you have deployed your application, start Desktop Head Unit and click on the rightmost icon on the activity bar at the bottom. Your application should be displayed in the menu there.</p><p><img src="img/6b5f1e5834e89cdf.png" style="max-width: 624.00px"/></p><h3>Restricting your application to just your head unit</h3><div class="step__note note--special"><p><strong>Note: </strong>We can skip this step for now since we are developing against the Desktop Head Unit. However, when you are writing your final application you should include a head unit restriction and make sure your application works with your targeted head units.</p></div><p>You will need to restrict your application to run only on your head units. This is achieved by adding a head unit whitelist, in which you must whitelist <em>at least </em>the Make and any other fields you may wish to filter on.</p><p>You will need to modify your automotive_app_desc.xml to look like the following:</p><p>automotive_app_desc.xml</p><pre><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+&lt;automotiveApp&gt;
+   &lt;uses name=&#34;service&#34; /&gt;
+   &lt;uses name=&#34;projection&#34; /&gt;
+   &lt;uses name=&#34;notification&#34; /&gt;
+
+   &lt;head-unit-whitelist&gt;
+       &lt;car-info
+            manufacturer=&#34;&lt;Specify make here&gt;&#34;
+            modelContains=&#34;&lt;Specify model here&gt;&#34; /&gt;
+   &lt;/head-unit-whitelist&gt;
+&lt;/automotiveApp&gt;</code></pre></div>
+    </div>
+
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49880327-14', 'auto');
+
+    (function() {
+      var gaCodelab = '';
+      if (gaCodelab) {
+        ga('create', gaCodelab, 'auto', {name: 'codelab'});
+      }
+
+      var gaView;
+      var parts = location.search.substring(1).split('&');
+      for (var i = 0; i < parts.length; i++) {
+        var param = parts[i].split('=');
+        if (param[0] === 'viewga') {
+          gaView = param[1];
+          break;
+        }
+      }
+      if (gaView && gaView !== gaCodelab) {
+        ga('create', gaView, 'auto', {name: 'view'});
+      }
+    })();
+  </script>
+  <script src="scripts/codelab.js" async></script>
+</body>
+</html>

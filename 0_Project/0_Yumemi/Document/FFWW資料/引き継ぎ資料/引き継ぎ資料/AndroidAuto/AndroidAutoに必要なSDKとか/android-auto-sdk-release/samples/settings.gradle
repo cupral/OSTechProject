@@ -1,0 +1,2 @@
+include(':chargingstations')
+project(':chargingstations').projectDir = new File(rootDir, 'chargingstations')

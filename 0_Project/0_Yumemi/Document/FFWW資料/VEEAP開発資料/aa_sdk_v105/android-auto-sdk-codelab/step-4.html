@@ -1,0 +1,154 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Your Android Auto Full Screen App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="styles/codelab.css">
+  <style>
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+</head>
+
+<body class="codelab-takeover">
+  <div class="codelab__toc">
+    <a href="index.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">1</span>
+      <span class="toc-item__title">Introduction</span>
+    </a>
+    <a href="step-2.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">2</span>
+      <span class="toc-item__title">Getting set up</span>
+    </a>
+    <a href="step-3.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">3</span>
+      <span class="toc-item__title">Build the skeleton of your application</span>
+    </a>
+    <a href="step-4.html" class="toc-item toc-item--current">
+      <span class="toc-item__index">4</span>
+      <span class="toc-item__title">Adding a menu based navigation structure</span>
+    </a>
+    <a href="step-5.html" class="toc-item">
+      <span class="toc-item__index">5</span>
+      <span class="toc-item__title">Integrating search into your application</span>
+    </a>
+    <a href="step-6.html" class="toc-item">
+      <span class="toc-item__index">6</span>
+      <span class="toc-item__title">Creating and displaying Notifications</span>
+    </a>
+    <a href="step-7.html" class="toc-item">
+      <span class="toc-item__index">7</span>
+      <span class="toc-item__title">Accessing Car data</span>
+    </a>
+    <a href="step-8.html" class="toc-item">
+      <span class="toc-item__index">8</span>
+      <span class="toc-item__title">Conclusion</span>
+    </a>
+  </div>
+
+  <div class="codelab__step">
+
+    <div class="step__header">
+      <a href="step-3.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+      </a>
+
+      <a href="index.html" title="Return to home page">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </a>
+
+      <a href="step-5.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+        </svg>
+      </a>
+
+      <h1>Your Android Auto Full Screen App</h1>
+    </div>
+
+    <div class="step__body">
+      <h1>Your Android Auto Full Screen App</h1>
+      <h2>4. Adding a menu based navigation structure</h2>
+      <div><p>Menus form the primary navigation paradigm within Android Auto. The Android Auto app decor allows you to easily create a multi level menu using a data driven API that is part of the <code>MenuController</code> class you can obtain from the <code>CarUiController</code>.</p><p>A trivial example of how to quickly create a menu is shown below. We create a new menu with a few fixed items in the following snippet. Modify your code so that it looks like the following:</p><p>HelloWorldCarActivity.java</p><pre><code>private MenuAdapter mRootMenuAdapter = new MenuAdapter() {
+   private static final int MAX_ITEMS = 4;
+
+   @Override
+   public int getMenuItemCount() {
+       return MAX_ITEMS;
+   }
+
+   @Override
+   public MenuItem getMenuItem(int i) {
+       return new MenuItem.Builder()
+               .setTitle(String.format(&#34;Item %d&#34;, i))
+               .setType(MenuItem.Type.ITEM)
+               .build();
+   }
+
+   @Override
+   public void onMenuItemClicked(int position) {
+      // TODO: Handle the case where the user selects on something.
+   }
+};
+
+@Override
+public void onCreate(Bundle bundle) {
+   super.onCreate(bundle);
+   setContentView(getLayoutInflater().inflate(R.layout.main_layout, null));
+
+   // Add this block to create the menu.
+   MenuController menuController = getCarUiController().getMenuController();
+   menuController.setRootMenuAdapter(mRootMenuAdapter);
+   menuController.showMenuButton();
+
+}</code></pre><p>Menus in Android Auto are powerful mechanisms for surfacing data. They allow you to pass in hierarchical contents and manage the rendering and safety lockouts for you so you do not have to worry about these aspects. </p><p>The features of the API shown here only scratch the surface; you are highly encouraged to read the API documentation to see how you can deal with slow loading menus, add rich features like images and checkboxes, and implement submenus.</p><p>Compile and run your application again. You should see a menu that looks like this:</p><p><img src="img/1a923c4286d5503b.png" style="max-width: 624.00px"/></p><p>This is just a very quick introduction into the basic capabilities of the Menu APIs provided by Android Auto. The menu system in Android Auto is a powerful tool and you are encouraged to read the full documentation and explore all its capabilities.</p></div>
+    </div>
+
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49880327-14', 'auto');
+
+    (function() {
+      var gaCodelab = '';
+      if (gaCodelab) {
+        ga('create', gaCodelab, 'auto', {name: 'codelab'});
+      }
+
+      var gaView;
+      var parts = location.search.substring(1).split('&');
+      for (var i = 0; i < parts.length; i++) {
+        var param = parts[i].split('=');
+        if (param[0] === 'viewga') {
+          gaView = param[1];
+          break;
+        }
+      }
+      if (gaView && gaView !== gaCodelab) {
+        ga('create', gaView, 'auto', {name: 'view'});
+      }
+    })();
+  </script>
+  <script src="scripts/codelab.js" async></script>
+</body>
+</html>

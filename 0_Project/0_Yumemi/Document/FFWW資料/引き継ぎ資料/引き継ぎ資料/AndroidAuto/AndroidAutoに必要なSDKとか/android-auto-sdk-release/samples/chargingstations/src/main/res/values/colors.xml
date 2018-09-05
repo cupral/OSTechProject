@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#691A99</color>
+    <color name="primary_dark">#4A148C</color>
+    <color name="primary_accent">#1DE9B6</color>
+
+    <color name="drawer_scrim">#9A691A99</color>
+
+    <!-- Text colors -->
+    <color name="text_dark">#212121</color>
+    <color name="text_light">#F5F5F5</color>
+
+    <!-- Colors used in battery status screen -->
+    <color name="battery_remaining_text">#FFCDD2</color>
+    <color name="night_shade">#00000000</color>
+
+    <!-- FAB color -->
+    <color name="battery_status_fab">#C42A2E</color>
+
+    <!-- User location dot color -->
+    <color name="user_location_dot">#4384F6</color>
+
+    <!-- Text colors used in charging station info card -->
+    <color name="station_details_text">#F5F5F5</color>
+    <color name="station_details_action">#212121</color>
+    <color name="station_details_services">#1DE9B6</color>
+
+    <color name="map_button_ripple">#BDBDBD</color>
+
+    <color name="missing_permission_bg">#37474F</color>
+
+    <color name="search_distance_color">#3367D6</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.1" uuid="advacontents_pepper">
+ <names>
+  <name lang="en_US">advaContentsPepper</name>
+  <name lang="ja_JP">先端コンテンツ技術展Pepper</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="ja_JP">先端コンテンツ技術展</sentence>
+    <sentence lang="ja_JP">先端コンテンツ</sentence>
+   </triggerSentences>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

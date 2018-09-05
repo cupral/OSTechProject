@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/permission_top_padding"
+    android:paddingLeft="@dimen/permission_margin"
+    android:paddingRight="@dimen/permission_margin"
+    android:gravity="top"
+    android:background="@color/primary_dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location_access"
+        android:scaleType="center"
+        android:contentDescription="@string/illustration_description"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/permission_margin"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="21dp"
+        android:text="@string/location_permission_title" />
+
+    <TextView
+        android:id="@+id/request_permission_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="2dp"
+        android:background="@drawable/rounded_text_button_2dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:textSize="14dp"
+        android:text="@string/location_permission_open"/>
+
+</LinearLayout>

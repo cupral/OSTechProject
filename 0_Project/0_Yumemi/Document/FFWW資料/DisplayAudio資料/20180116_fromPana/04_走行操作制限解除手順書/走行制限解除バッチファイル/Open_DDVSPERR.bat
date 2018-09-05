@@ -1,0 +1,1 @@
+adb shell am start -n com.panasonic.automotive.driverdistractiondiag/.view.DDVspErrorActivity

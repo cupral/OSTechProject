@@ -1,0 +1,154 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Your Android Auto Full Screen App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="styles/codelab.css">
+  <style>
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+</head>
+
+<body class="codelab-takeover">
+  <div class="codelab__toc">
+    <a href="index.html" class="toc-item toc-item--complete">
+      <span class="toc-item__index">1</span>
+      <span class="toc-item__title">Introduction</span>
+    </a>
+    <a href="step-2.html" class="toc-item toc-item--current">
+      <span class="toc-item__index">2</span>
+      <span class="toc-item__title">Getting set up</span>
+    </a>
+    <a href="step-3.html" class="toc-item">
+      <span class="toc-item__index">3</span>
+      <span class="toc-item__title">Build the skeleton of your application</span>
+    </a>
+    <a href="step-4.html" class="toc-item">
+      <span class="toc-item__index">4</span>
+      <span class="toc-item__title">Adding a menu based navigation structure</span>
+    </a>
+    <a href="step-5.html" class="toc-item">
+      <span class="toc-item__index">5</span>
+      <span class="toc-item__title">Integrating search into your application</span>
+    </a>
+    <a href="step-6.html" class="toc-item">
+      <span class="toc-item__index">6</span>
+      <span class="toc-item__title">Creating and displaying Notifications</span>
+    </a>
+    <a href="step-7.html" class="toc-item">
+      <span class="toc-item__index">7</span>
+      <span class="toc-item__title">Accessing Car data</span>
+    </a>
+    <a href="step-8.html" class="toc-item">
+      <span class="toc-item__index">8</span>
+      <span class="toc-item__title">Conclusion</span>
+    </a>
+  </div>
+
+  <div class="codelab__step">
+
+    <div class="step__header">
+      <a href="index.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+      </a>
+
+      <a href="index.html" title="Return to home page">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </a>
+
+      <a href="step-3.html">
+        <svg fill="#FFFFFF" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+        </svg>
+      </a>
+
+      <h1>Your Android Auto Full Screen App</h1>
+    </div>
+
+    <div class="step__body">
+      <h1>Your Android Auto Full Screen App</h1>
+      <h2>2. Getting set up</h2>
+      <div><h2>Unzip the SDK &amp; set up your phone</h2><p>Start off by unzipping the sdk zip file provided.</p><pre>$ unzip android-auto-sdk.zip</pre><p>Install the pre-release applications on your phone.</p><pre>$ adb install -r 11-02-2016/arm64/gearhead_release.apk</pre><p>Test your installation with Desktop Head Unit by <a href="https://developer.android.com/training/auto/testing/index.html" target="_blank">using the instructions here</a> (you should see Android Auto start up successfully).</p><h2>Set up your development environment</h2><p><strong>Set up a new project in Android Studio</strong></p><p>Start with a new project</p><p><img src="img/95f94ddfc9f5b411.png" style="max-width: 624.00px"/></p><p>Select API 21 or above for the min SDK level. On the next screen, do not target Android Auto explicitly (this is currently only for media and messaging apps).</p><p><img src="img/ffb88dc0a48ea2e1.png" style="max-width: 624.00px"/></p><p>On the next screen, don&#39;t add an activity. ￼￼￼Proceed to finish the wizard as usual. This should create an empty project for you to work with.</p><p><strong>Set the toolchain to use Java 1.8</strong></p><p>To compile an application for Android Auto, your toolchain needs to understand Java 1.8. This does not necessarily mean the final binary needs to be Java 1.8 bytecode, but it must be 1.7 compatible. We set up our project to be that way by modifying our gradle to do so:</p><pre><code>compileSdkVersion 23
+buildToolsVersion &#34;24.0.1&#34;
+defaultConfig {
+   ...
+
+   jackOptions {
+       enabled true
+   }
+
+   compileOptions {
+       sourceCompatibility JavaVersion.VERSION_1_7
+       targetCompatibility JavaVersion.VERSION_1_7
+   }
+}</code></pre><p><strong>Set up the .aar dependencies</strong></p><p>Start off by creating a libs folder that you will need to put the <a href="https://developer.android.com/studio/projects/android-library.html" target="_blank">aar files</a> into. You can create a folder right in Android Studio by switching to the Project view.</p><p><img src="img/b54c399335db2072.png" style="max-width: 624.00px"/></p><p> Now you can create a new directory from there.</p><p><img src="img/c0528cfefbbee930.png" style="max-width: 624.00px"/></p><p>Add in android-support-car.aar, gearhead-sdk-ui.aar, and gearhead-sdk.aar by copying them into the newly-created libs directory. Now you are ready to update your build files to reference these new libraries.</p><p>Next, in your app build.gradle file, reference the libraries. You can do this by adding a repositories section and changing the dependencies section to look like this:</p><pre><code>repositories {
+   flatDir {
+       dirs &#39;../libs&#39;
+   }
+}
+
+dependencies {
+   compile fileTree(dir: &#39;libs&#39;, include: [&#39;*.jar&#39;])
+
+   compile(name:&#39;gearhead-sdk&#39;, ext:&#39;aar&#39;)
+   compile(name: &#39;gearhead-sdk-ui&#39;, ext: &#39;aar&#39;)
+   compile(name:&#39;android-support-car&#39;, ext:&#39;aar&#39;)
+
+   androidTestCompile(&#39;com.android.support.test.espresso:espresso-core:2.2.2&#39;, {
+       exclude group: &#39;com.android.support&#39;, module: &#39;support-annotations&#39;
+   })
+   compile &#39;com.android.support:appcompat-v7:25.0.1&#39;
+   compile &#39;com.android.support:design:25.0.1&#39;
+   testCompile &#39;junit:junit:4.12&#39;
+}</code></pre><p>Android Studio will now ask you to sync your project. After you sync your project the build should complete successfully. You are now done with your build environment and you should be able to move on to writing code for your application.</p></div>
+    </div>
+
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49880327-14', 'auto');
+
+    (function() {
+      var gaCodelab = '';
+      if (gaCodelab) {
+        ga('create', gaCodelab, 'auto', {name: 'codelab'});
+      }
+
+      var gaView;
+      var parts = location.search.substring(1).split('&');
+      for (var i = 0; i < parts.length; i++) {
+        var param = parts[i].split('=');
+        if (param[0] === 'viewga') {
+          gaView = param[1];
+          break;
+        }
+      }
+      if (gaView && gaView !== gaCodelab) {
+        ga('create', gaView, 'auto', {name: 'view'});
+      }
+    })();
+  </script>
+  <script src="scripts/codelab.js" async></script>
+</body>
+</html>

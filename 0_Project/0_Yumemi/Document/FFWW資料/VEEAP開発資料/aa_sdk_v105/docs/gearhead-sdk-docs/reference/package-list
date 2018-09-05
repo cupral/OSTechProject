@@ -1,0 +1,9 @@
+com.google.android.apps.auto.sdk
+com.google.android.apps.auto.sdk.nav
+com.google.android.apps.auto.sdk.nav.state
+com.google.android.apps.auto.sdk.nav.suggestion
+com.google.android.apps.auto.sdk.notification
+com.google.android.apps.auto.sdk.service
+com.google.android.apps.auto.sdk.service.vec
+com.google.android.apps.auto.sdk.vanagon
+

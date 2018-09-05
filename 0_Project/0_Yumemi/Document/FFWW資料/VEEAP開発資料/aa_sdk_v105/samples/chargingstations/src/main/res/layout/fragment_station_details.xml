@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/CarFloatingCard"
+    android:layout_width="@dimen/station_details_card_width"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:layout_gravity="top"
+    android:padding="0dp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/car_standard_margin"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/details_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@string/close_details_description" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/StationDetails.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/details_close_button"
+            android:layout_marginStart="@dimen/car_standard_margin"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <!-- Hard-coded list of services provided at the station (there is no real data) -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/name"
+            android:layout_below="@id/name"
+            android:layout_marginTop="@dimen/car_text_vertical_margin"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/station_details_service_icon_size"
+                android:layout_height="@dimen/station_details_service_icon_size"
+                android:scaleType="center"
+                android:src="@drawable/ic_lightning"
+                android:tint="@color/station_details_services"
+                android:contentDescription="@string/lightning_description"/>
+            <ImageView
+                android:layout_width="@dimen/station_details_service_icon_size"
+                android:layout_height="@dimen/station_details_service_icon_size"
+                android:layout_marginStart="8dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_cup"
+                android:tint="@color/station_details_services"
+                android:contentDescription="@string/cup_description"/>
+            <ImageView
+                android:layout_width="@dimen/station_details_service_icon_size"
+                android:layout_height="@dimen/station_details_service_icon_size"
+                android:layout_marginStart="8dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_pizza"
+                android:tint="@color/station_details_services"
+                android:contentDescription="@string/pizza_description"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hours"
+            style="@style/StationDetails.Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/name"
+            android:layout_below="@id/services"
+            android:layout_marginTop="@dimen/car_text_vertical_margin"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/call"
+        style="@style/StationDetails.Action"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="@dimen/station_details_button_padding"
+        android:clickable="true"
+        android:textAllCaps="true"
+        android:text="@string/dial_charging_station"/>
+
+    <View style="@style/StationDetailSeparator"/>
+
+    <TextView
+        android:id="@+id/navigate"
+        style="@style/StationDetails.Action"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_navigation"
+        android:drawablePadding="@dimen/station_details_button_padding"
+        android:clickable="true"/>
+
+</LinearLayout>

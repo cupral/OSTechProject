@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4A148C</color>
+
+    <color name="drawer_scrim">#CD4A148C</color>
+
+    <!-- Text colors used in charging station info card -->
+    <color name="station_details_text">#F5F5F5</color>
+    <color name="station_details_action">#F5F5F5</color>
+
+    <!-- FAB color -->
+    <color name="battery_status_fab">#AF0202</color>
+
+    <color name="missing_permission_bg">#263238</color>
+
+    <!-- Translucent black shade to darken battery status background at night -->
+    <color name="night_shade">#40000000</color>
+
+</resources>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--母国語宣言-->
+<html lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- <meta charset="UTF-8"> -->
+	  <meta http-equiv="Content-Script-Type" content="text/javascript"><!--スクリプト言語設定-->
+	  <meta http-equiv="Content-Style-Type" content="text/css"><!--スタイルシート言語設定-->
+		<!-- qimessaging読込 -->
+		<script src="/libs/qimessaging/1.0/jquery.min.js" type="text/javascript"></script>
+	  <script src="/libs/qimessaging/1.0/qimessaging.js" type="text/javascript"></script>
+		<!-- localファイル参照 -->
+		<script type="text/javascript" src="js/camera/camera_draw.js"></script>
+	  <script type="text/javascript" src="js/script.js"></script>
+
+	  <link rel="stylesheet" href="css/style.css" type="text/css">
+		<title></title>
+		<script></script>
+	</head>
+
+	<body onload="previewOnload()">
+		<div class="header">
+      <!-- <p class="previewTitle">季語となる画像をカメラに向けてください</p> -->
+			<img class="imgPreviewTitle" src="img/image1.png" alt="季語っぽい画像をNAOのカメラに見せてね" />
+		</div>
+
+<!--　720　540　--><!-- 160 120 -->
+		<div class="main">
+
+      <div class="boxMainPreview">
+				<!-- カウントダウン数値表示 -->
+	      <div id="countDown">10</div>
+				<div id="videoBox">
+					<div class="img-camera">
+						<!--　720　540　-->
+						<!-- 160 120 -->
+						<canvas id="main" width="720" height="540" />
+						<canvas id="preview" width="160" height="120" hidden/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<button class="appEndButton" type="button" name="button" onclick="appInit();">☓</button>
+		</div>
+	</body>
+
+</html>
