@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="sample7-1-6f2c58" version="1.0.0">
+ <names>
+  <name lang="en_US">sample7-1</name>
+  <name lang="ja_JP">サンプル7-1</name>
+ </names>
+ <descriptions>
+  <description lang="en_US">This sample is for Pepper application development introductory version. </description>
+  <description lang="ja_JP">このサンプルはPepperアプリケーション開発入門編用です。 </description>
+ </descriptions>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>solitary</nature>
+   <names>
+    <name lang="en_US">behavior</name>
+    <name lang="ja_JP">ビヘイビア</name>
+   </names>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA['Launchpad/Minute' == 0 && ('Launchpad/FocusedActivity' != "sample7-1-6f2c58/behavior_1") ~ 60]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement maxVersion="2" minVersion="2.5"/>
+  <robotRequirement model="JULIETTE_Y20"/>
+ </requirements>
+</package>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="getparametersample">
+ <names>
+  <name lang="en_US">getParameterSample</name>
+  <name lang="ja_JP">パラメータの取得</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="ja_JP">パラメータ</sentence>
+    <sentence lang="ja_JP">パラメータ取得</sentence>
+   </triggerSentences>
+   <loadingResponses>
+    <sentence lang="ja_JP">ちょっとまってね。</sentence>
+   </loadingResponses>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="behavior_2">
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

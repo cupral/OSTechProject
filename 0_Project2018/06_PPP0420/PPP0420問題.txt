@@ -1,0 +1,29 @@
+Pepperパートナープログラム資格試験
+2018/04/20 試験問題 (覚えている限りの殴り書きです...)
+・Pepperの手押し方法 
+・発話の間を作る方法　pau=1000
+・vct=135 rspd=110
+・新しいSay、AnimatedSayBOXの言語切替方法
+・behaviorの拡張子　.xar
+・Dialogの拡張子　.top
+・Pepperの目の機能　同じ役割ではなく赤外線照射と赤外線検出
+・Pepperのアプリ言語のデフォルトは英語
+・起動トリガー条件 12時以降の毎時30分に起動する条件
+・ポーズライブラリの仕様　基本姿勢はStand　一つのポーズから次のポーズへと移る動作はPepperが自動的に補完します。
+・ダイアログに出力される内容　Pepper発話文章、認識文章、認識率
+・ログビューアにできる事一覧 Fatal,Error,Warning,Info,Verbose,Debug 表示方法
+・pythonファイルのデフォルトのoutput方法　onStopped
+・Qichatのproposal移動関連　^nextProposal ^sameProposal
+・開発時はPepperをレストモードにしておく (テストではアプリ開発時、実行時とあったので、レスとモードは違う？)
+・TakePictureBoxの仕様について あっているものを選択
+・ALTabletServiceのメソッド名 今回はpauseVideoが正解
+・RecordSoundの仕様　今回はoggファイルが保存できる　が正解
+・独自モーションとの競合回避
+　今回はBasic AwarenessとBreathingがアプリと競合する　が正解
+・ALMemoryのメソッドにあるもの　今回はraiseEvent
+・ALPeoplePerceptionのALMemory Key Listにあるもの 今回はシャツの柄は取得できない　が正解
+・アプリパッケージのver指定方法 from 2.4 to 2.5など
+・新しく追加されたメソッドの名前　ALNavigation
+・名称に関する制限　Pepper for ◯◯　はOK　など
+・Linuxコマンドで直接ログファイルを見る方法 tail- f /var/log/naoqi/tail-naoqi.log
+・MoveToの指定項目 X方向、Y方向、角度で移動する方向と距離を指定 今回は”正しい”が正解

@@ -1,0 +1,17 @@
+jp.co.hmori.android.sample.messagesample
+int color color_primary 0x7f010000
+int color color_primary_dark 0x7f010001
+int color text_color_black 0x7f010002
+int color text_color_primary 0x7f010003
+int dimen activity_horizontal_margin 0x7f020000
+int dimen activity_vertical_margin 0x7f020001
+int id button_send 0x7f030000
+int id message 0x7f030001
+int id name 0x7f030002
+int layout activity_main 0x7f040000
+int mipmap ic_launcher 0x7f050000
+int string app_name 0x7f060000
+int string sample_message 0x7f060001
+int string sample_name 0x7f060002
+int style AppTheme 0x7f070000
+int xml automotive_app_desc 0x7f080000

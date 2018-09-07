@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="speechrecotimeline">
+ <names>
+  <name lang="en_US">speechRecoTimeline</name>
+ </names>
+ <supportedLanguages>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+  <language>es_ES</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>interactive</nature>
+   <names>
+    <name lang="ja_JP">挨拶アプリ</name>
+   </names>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

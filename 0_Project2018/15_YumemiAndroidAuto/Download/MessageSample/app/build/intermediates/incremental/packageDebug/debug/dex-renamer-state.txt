@@ -1,0 +1,4 @@
+#Thu Aug 23 14:39:41 JST 2018
+base.0=/Users/anzaitakayuki/Documents/00_develop/0_Project2018/15_YumemiAndroidAuto/Download/MessageSample/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.co.hmori.android.sample.messagesample.test">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="22" />
+
+    <application android:debuggable="true" >
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="jp.co.hmori.android.sample.messagesample"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for jp.co.hmori.android.sample.messagesample"/>
+</manifest>

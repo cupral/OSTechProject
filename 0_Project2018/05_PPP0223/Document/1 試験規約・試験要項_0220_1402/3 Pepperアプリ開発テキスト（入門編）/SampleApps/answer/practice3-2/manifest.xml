@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="1.0.0" uuid="practice3-2-a786b5">
+ <names>
+  <name lang="en_US">practice3-2</name>
+ </names>
+ <descriptions>
+  <description lang="en_US">This is for Pepper application development introductory version exercises. </description>
+  <description lang="ja_JP">これはPepperアプリケーション開発入門編演習用です。 </description>
+ </descriptions>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="3-2-2">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="3-2-1">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement maxVersion="2" minVersion="2.5"/>
+  <robotRequirement model="JULIETTE_Y20"/>
+ </requirements>
+</package>

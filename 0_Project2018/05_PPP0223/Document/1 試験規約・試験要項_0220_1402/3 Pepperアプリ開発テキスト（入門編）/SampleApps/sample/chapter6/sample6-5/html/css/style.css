@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: sans-serif;
+}
+
+body {
+	width: 100%;
+}
+
+p {
+	font-size: 640px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 200px;
+}

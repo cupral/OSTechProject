@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: white;
+}
+
+/* ループ選択画面 */
+div.select{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: 10;
+	opacity: 1;
+}
+
+/* タイトル選択 */
+div.select_title{
+	width:100%;
+	height:100%;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	background-color:#ffffff;
+}
+form{
+	width:100%;
+	height:100%;
+}
+section{
+	width:100%;
+	height:100%;
+}
+
+input,label,div.select_button{
+	float:left;
+}
+
+
+/* 再生、ループdiv */
+div.select_button{
+	width:50%;
+	height:45%;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	background-color:#ffffff;
+}
+
+div.select_button button,div.select_button img{
+	float:left;
+}
+
+div.select_button img{
+	border-style:none;
+
+}
+img.contents_text{
+	width:auto;
+	height:auto;
+	margin: 4.5% 0% 0% 22.5%;
+	padding: 0% 0% 0% 0%;
+	background-color:white;
+
+}
+img.once_text{
+	width:auto;
+	height:auto;
+	margin: 3% 0% 0% 19%;
+	padding: 0% 0% 0% 0%;
+	background-color:white;
+}
+img.repeat_text{
+	width:auto;
+	height:auto;
+	margin: 3% 0% 0% 27%;
+	padding: 0% 0% 0% 0%;
+	background-color:white;
+}
+
+
+div.select_button button{
+	border-style:none;
+	width:auto;
+	height:auto;
+}
+
+#button-once{
+	width:300px;
+	height:300px;
+	background-image:url(../img/button/play_enable.png);
+	background-size:100% 100%;
+	background-color:white;
+	margin: 3% 0% 0% 9%;
+	padding: 0% 0% 0% 0%;
+}#button-once:hover{
+	background-image:url(../img/button/play_press.png);
+}
+
+#button-repeat{
+	width:300px;
+	height:300px;
+	background-image:url(../img/button/repeat_enable.png);
+	background-size:100% 100%;
+	background-color:white;
+	margin: 3% 0% 0% 14%;
+	padding: 0% 0% 0% 0%;
+}#button-repeat:hover{
+	background-image:url(../img/button/repeat_press.png);
+}
+
+
+/* ---image.html----------------------------------------------------- */
+/* 画像表示画面 */
+div.image_table{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#button-close{
+	position:absolute;
+	top:0%;
+	right:0%;
+	width:8%;
+	background-color:#ffffff;
+	border-radius:150px;
+
+}
+
+#contents-image{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+.dialog{
+	position:absolute;
+	background: rgba(0,0,0,0.30);
+	top: 0%;
+	left:0%;
+	width:100%;
+	height: 100%;
+	margin:0%;
+	padding:0%;
+	text-align:center;
+}
+.dialog_area{
+	width:70%;
+	height:70%;
+	margin: 10% auto 0%;
+	padding: 0% 0% 0% 0%;
+	background-color:white;
+	text-align:center;
+  border-radius: 50px;
+
+}
+
+.dialog p{
+	width:100%;
+	font-size:4.5rem;
+	margin: 0% auto 0%;
+	padding: 10% 0% 0% 0%;
+}
+
+.dialog button{
+	width:50%;
+	height:20%;
+	margin: 20% auto 0%;
+	padding: 0% 0% 0% 0%;
+	background-color:#b5f5b5;
+	color:black;
+	font-size:4rem;
+  	border-radius: 30px;
+}.dialog button:hover{
+	background-color:#1a981a;
+	color:white;
+}

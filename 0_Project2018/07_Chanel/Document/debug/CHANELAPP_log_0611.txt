@@ -1,0 +1,32 @@
+total :6449000
+nSlide : 6449.0
+difference : 0.0
+nSlide(n回スライド) : 6449.0
+loopCount(loop回数) : 2149.67
+imgDeci(画像番号) : 2.00024
+nowImageNum(画像番号) : 2
+hideProgress
+
+total :6450000
+nSlide : 6450.0
+difference : 0.0
+nSlide(n回スライド) : 6450.0
+loopCount(loop回数) : 2150.0
+imgDeci(画像番号) : 0.0
+nowImageNum(画像番号) : 0
+hideProgress
+total :6451000
+nSlide : 6451.0
+difference : 0.0
+nSlide(n回スライド) : 6451.0
+loopCount(loop回数) : 2150.33
+imgDeci(画像番号) : 0.999756
+nowImageNum(画像番号) : 1
+hideProgress
+total :6452000
+nSlide : 6452.0
+difference : 0.0
+nSlide(n回スライド) : 6452.0
+loopCount(loop回数) : 2150.67
+imgDeci(画像番号) : 2.00024
+nowImageNum(画像番号) : 2

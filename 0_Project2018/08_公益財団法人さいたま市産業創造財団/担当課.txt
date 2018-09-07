@@ -1,0 +1,46 @@
+topic: ~Purpose()
+language: jpj
+
+
+u:(e:onStart) ^gotoReactivate(Main)
+proposal:%Main　今日は、どの担当課にご用でしょうか？。
+    #1階
+    u1:(["{*}市民課{*}"])市民課ですね？。$NaoEvent/Ikkaityounaiannai=1 場所は、1階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}国保年金課{*}"])国保年金課ですね？。$NaoEvent/Ikkaityounaiannai=1 場所は、1階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}自立支援課{*}"])自立支援課ですね？。$NaoEvent/Ikkaityounaiannai=1 場所は、1階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}福祉政策課{*}"])福祉政策課ですね？。 $NaoEvent/Ikkaityounaiannai=1 場所は、1階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}児童課{*}"]) 児童課ですね？。$NaoEvent/Ikkaityounaiannai=1 場所は、1階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}介護福祉課{*}"])介護福祉課ですね？。 $NaoEvent/Ikkaityounaiannai=1 場所は、1階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    #2階
+    u1:(["{*}都市政策課{*}"])都市政策課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}建設管理課{*}"])建設管理課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}河川課{*}"])河川課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}納税課{*}"])納税課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}課税課{*}"])課税課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}建築住宅課{*}"])建築住宅課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}花と緑の課{*}"])花と緑の課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}道路課{*}"])道路課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}環境政策課{*}"])環境政策課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}生活環境課{*}"])生活環境課ですね？。 $NaoEvent/Nikaityounaiannai=1 場所は、2階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    #3階
+    u1:(["{*}総務課{*}"])総務課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}人事課{*}"])人事課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}危機管理課{*}"])危機管理課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}秘書課{*}"])秘書課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}財政課{*}"])財政課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}連携交流課{*}"])連携交流課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}企画経営課{*}"])企画経営課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}管財課{*}"])管財課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}契約検査課{*}"])契約検査課ですね？。 $NaoEvent/Sankaityounaiannai=1 場所は、3階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    #4階
+    u1:(["{*}協働政策課{*}"])協働政策課ですね？。 $NaoEvent/Yonkaityounaiannai=1 場所は、4階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}商業観光課{*}"])商業観光課ですね？。 $NaoEvent/Yonkaityounaiannai=1 場所は、4階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}学校給食課{*}"])学校給食課ですね？。 $NaoEvent/Yonkaityounaiannai=1 場所は、4階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}情報政策課{*}"])情報政策課ですね？。 $NaoEvent/Yonkaityounaiannai=1 場所は、4階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}農林課{*}"])農林課ですね？。 $NaoEvent/Yonkaityounaiannai=1 場所は、4階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+    u1:(["{*}産業政策課{*}"])農業政策課ですね？。 $NaoEvent/Yonkaityounaiannai=1 場所は、4階のこちらになります。詳細のわからない事は、受付のお姉さんに聞いて下さいねッッ！！$onStopped=1
+u:(e:Dialog/NotUnderstood) すみません、聞き取れませんでした。受付のお姉さんに聞いてみてね？。$onStopped=1
+
+
+
+    
