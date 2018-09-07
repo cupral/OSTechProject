@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE3C8CD020297AAC00442E7C /* TestFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3C8CCF20297AAC00442E7C /* TestFunc.m */; };
+		CE89566C2027FC9900D8E051 /* MainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89566B2027FC9900D8E051 /* MainTabController.m */; };
+		CE9A50A21C9794A100362AD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A50A11C9794A100362AD9 /* main.m */; };
+		CE9A50A51C9794A100362AD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A50A41C9794A100362AD9 /* AppDelegate.m */; };
+		CE9A50A81C9794A100362AD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9A50A71C9794A100362AD9 /* ViewController.m */; };
+		CE9A50AB1C9794A100362AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A50A91C9794A100362AD9 /* Main.storyboard */; };
+		CE9A50AD1C9794A100362AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A50AC1C9794A100362AD9 /* Assets.xcassets */; };
+		CE9A50B01C9794A100362AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A50AE1C9794A100362AD9 /* LaunchScreen.storyboard */; };
+		CEBF63CA1EF21EBA005E7891 /* ViewControllerEventRes.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF63C91EF21EBA005E7891 /* ViewControllerEventRes.m */; };
+		CEDE1EEA1D2F6A2C0065B791 /* EAPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE1EE91D2F6A2C0065B791 /* EAPLog.m */; };
+		CEE698B71D2E44CE00EC117D /* libMDEAPframework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEE698B61D2E44CE00EC117D /* libMDEAPframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEE698B81D2E467000EC117D /* libMDEAPframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE698B61D2E44CE00EC117D /* libMDEAPframework.framework */; };
+		CEFBD166202D71BA00F9FE41 /* ExtraUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFBD165202D71BA00F9FE41 /* ExtraUITextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEE381281C9A3CBA007F5D50 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEE698B71D2E44CE00EC117D /* libMDEAPframework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE3C8CCE20297AA200442E7C /* TestFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFunc.h; sourceTree = "<group>"; };
+		CE3C8CCF20297AAC00442E7C /* TestFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFunc.m; sourceTree = "<group>"; };
+		CE753BA91DA726D000355793 /* Accesskey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Accesskey.h; sourceTree = "<group>"; };
+		CE89566A2027FC8C00D8E051 /* MainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabController.h; sourceTree = "<group>"; };
+		CE89566B2027FC9900D8E051 /* MainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabController.m; sourceTree = "<group>"; };
+		CE9A509D1C9794A100362AD9 /* EAPSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAPSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9A50A11C9794A100362AD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9A50A31C9794A100362AD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE9A50A41C9794A100362AD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE9A50A61C9794A100362AD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE9A50A71C9794A100362AD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE9A50AA1C9794A100362AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE9A50AC1C9794A100362AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9A50AF1C9794A100362AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE9A50B11C9794A100362AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBF63C91EF21EBA005E7891 /* ViewControllerEventRes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEventRes.m; sourceTree = "<group>"; };
+		CEBF63CB1EF21F22005E7891 /* ViewControllerEventRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerEventRes.h; sourceTree = "<group>"; };
+		CEDE1EE91D2F6A2C0065B791 /* EAPLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPLog.m; sourceTree = "<group>"; };
+		CEDE1EEB1D2F6A530065B791 /* EAPLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAPLog.h; sourceTree = "<group>"; };
+		CEE698B61D2E44CE00EC117D /* libMDEAPframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libMDEAPframework.framework; path = ../libMDEAPframework/libMDEAPframework.framework; sourceTree = "<group>"; };
+		CEFBD164202D718100F9FE41 /* ExtraUITextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtraUITextField.h; sourceTree = "<group>"; };
+		CEFBD165202D71BA00F9FE41 /* ExtraUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraUITextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9A509A1C9794A100362AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE698B81D2E467000EC117D /* libMDEAPframework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE9A50941C9794A100362AD9 = {
+			isa = PBXGroup;
+			children = (
+				CE753BA91DA726D000355793 /* Accesskey.h */,
+				CEE698B61D2E44CE00EC117D /* libMDEAPframework.framework */,
+				CE9A509F1C9794A100362AD9 /* EAPSampleApp */,
+				CE9A509E1C9794A100362AD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9A509E1C9794A100362AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A509D1C9794A100362AD9 /* EAPSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9A509F1C9794A100362AD9 /* EAPSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE1EEB1D2F6A530065B791 /* EAPLog.h */,
+				CEDE1EE91D2F6A2C0065B791 /* EAPLog.m */,
+				CE9A50A31C9794A100362AD9 /* AppDelegate.h */,
+				CE9A50A41C9794A100362AD9 /* AppDelegate.m */,
+				CE89566A2027FC8C00D8E051 /* MainTabController.h */,
+				CE89566B2027FC9900D8E051 /* MainTabController.m */,
+				CE9A50A61C9794A100362AD9 /* ViewController.h */,
+				CE9A50A71C9794A100362AD9 /* ViewController.m */,
+				CEBF63CB1EF21F22005E7891 /* ViewControllerEventRes.h */,
+				CEBF63C91EF21EBA005E7891 /* ViewControllerEventRes.m */,
+				CE3C8CCE20297AA200442E7C /* TestFunc.h */,
+				CE3C8CCF20297AAC00442E7C /* TestFunc.m */,
+				CEFBD164202D718100F9FE41 /* ExtraUITextField.h */,
+				CEFBD165202D71BA00F9FE41 /* ExtraUITextField.m */,
+				CE9A50A91C9794A100362AD9 /* Main.storyboard */,
+				CE9A50AC1C9794A100362AD9 /* Assets.xcassets */,
+				CE9A50AE1C9794A100362AD9 /* LaunchScreen.storyboard */,
+				CE9A50B11C9794A100362AD9 /* Info.plist */,
+				CE9A50A01C9794A100362AD9 /* Supporting Files */,
+			);
+			path = EAPSampleApp;
+			sourceTree = "<group>";
+		};
+		CE9A50A01C9794A100362AD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A50A11C9794A100362AD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9A509C1C9794A100362AD9 /* EAPSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9A50B41C9794A100362AD9 /* Build configuration list for PBXNativeTarget "EAPSampleApp" */;
+			buildPhases = (
+				CE9A50991C9794A100362AD9 /* Sources */,
+				CE9A509A1C9794A100362AD9 /* Frameworks */,
+				CE9A509B1C9794A100362AD9 /* Resources */,
+				CEE381281C9A3CBA007F5D50 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EAPSampleApp;
+			productName = EAPSampleApp;
+			productReference = CE9A509D1C9794A100362AD9 /* EAPSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9A50951C9794A100362AD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = HiICS;
+				TargetAttributes = {
+					CE9A509C1C9794A100362AD9 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = ZRKWTEJHP3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE9A50981C9794A100362AD9 /* Build configuration list for PBXProject "EAPSampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9A50941C9794A100362AD9;
+			productRefGroup = CE9A509E1C9794A100362AD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9A509C1C9794A100362AD9 /* EAPSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9A509B1C9794A100362AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9A50B01C9794A100362AD9 /* LaunchScreen.storyboard in Resources */,
+				CE9A50AD1C9794A100362AD9 /* Assets.xcassets in Resources */,
+				CE9A50AB1C9794A100362AD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9A50991C9794A100362AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFBD166202D71BA00F9FE41 /* ExtraUITextField.m in Sources */,
+				CE89566C2027FC9900D8E051 /* MainTabController.m in Sources */,
+				CEBF63CA1EF21EBA005E7891 /* ViewControllerEventRes.m in Sources */,
+				CE9A50A81C9794A100362AD9 /* ViewController.m in Sources */,
+				CE9A50A51C9794A100362AD9 /* AppDelegate.m in Sources */,
+				CE3C8CD020297AAC00442E7C /* TestFunc.m in Sources */,
+				CE9A50A21C9794A100362AD9 /* main.m in Sources */,
+				CEDE1EEA1D2F6A2C0065B791 /* EAPLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE9A50A91C9794A100362AD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9A50AA1C9794A100362AD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE9A50AE1C9794A100362AD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9A50AF1C9794A100362AD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE89566D2027FDEB00D8E051 /* StandAlone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/user/Desktop/HO/libMDEAPframework;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "__STAND_ALONE__=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/user/Desktop/HO/libMDEAPframework/libMDEAPframework;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = StandAlone;
+		};
+		CE89566E2027FDEB00D8E051 /* StandAlone */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZRKWTEJHP3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../libMDEAPframework";
+				GCC_PREPROCESSOR_DEFINITIONS = "__STAND_ALONE__=1";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../libMDEAPframework/**";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../libMDEAPframework/*.*";
+				INFOPLIST_FILE = EAPSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honda.EAPSampleApp-FG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = StandAlone;
+		};
+		CE9A50B21C9794A100362AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/user/Desktop/HO/libMDEAPframework;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/user/Desktop/HO/libMDEAPframework/lib<DEAPframework";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9A50B31C9794A100362AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/user/Desktop/HO/libMDEAPframework;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/user/Desktop/HO/libMDEAPframework/libMDEAPframework;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9A50B51C9794A100362AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZRKWTEJHP3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../libMDEAPframework";
+				GCC_PREPROCESSOR_DEFINITIONS = "__DEBUG_ON__=1";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../libMDEAPframework/**";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../libMDEAPframework/*.*";
+				INFOPLIST_FILE = EAPSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honda.EAPSampleApp-FG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9A50B61C9794A100362AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZRKWTEJHP3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../libMDEAPframework";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../libMDEAPframework/**";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../libMDEAPframework/*.*";
+				INFOPLIST_FILE = EAPSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honda.EAPSampleApp-FG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9A50981C9794A100362AD9 /* Build configuration list for PBXProject "EAPSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9A50B21C9794A100362AD9 /* Debug */,
+				CE9A50B31C9794A100362AD9 /* Release */,
+				CE89566D2027FDEB00D8E051 /* StandAlone */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE9A50B41C9794A100362AD9 /* Build configuration list for PBXNativeTarget "EAPSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9A50B51C9794A100362AD9 /* Debug */,
+				CE9A50B61C9794A100362AD9 /* Release */,
+				CE89566E2027FDEB00D8E051 /* StandAlone */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9A50951C9794A100362AD9 /* Project object */;
+}

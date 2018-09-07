@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ScrollView_paddingBottom_margin">70dp</dimen>
+    <dimen name="Function_Description_textSize">13dp</dimen>
+</resources>

@@ -1,0 +1,370 @@
+<resources>
+    <string name="app_name">sampleapplication</string> <!-- Todo. アプリケーション表示名変更箇所 -->
+    <!--プルダウンリストに表示するアイテムを作成.-->
+    <!--車両データ確認画面-->
+        <!--Aircon-->
+            <!--AirconClimateStatus-->
+            <string-array name="AirconClimateStatus_seat_list">
+                <item>全席一括[0]</item>
+                <item>運転席[1]</item>
+                <item>助手席[2]</item>
+                <item>後部座席[3]</item>
+            </string-array>
+            <string-array name="AirconClimateStatus_climatestate_list">
+                <item>エアコン OFF[0]</item>
+                <item>エアコン ON(AUTO)[1]</item>
+                <item>エアコン ON/OFF(トグル切り替え)[2]</item>
+                <item>全席OFF[10]</item>
+                <item>急速冷房(AUTO,設定温度：MAX COOL)[11]</item>
+                <item>急速暖房(AUTO,設定温度：MAX HOT)[12]</item>
+                <item>おまかせ(AUTO,設定温度センター)[13]</item>
+            </string-array>
+            <!--AirconACSetting-->
+            <string-array name="AirconACSetting_seat_list">
+                <item>全席一括[0]</item>
+            </string-array>
+            <string-array name="AirconACSetting_acstatus_list">
+                <item>A/C OFF[0]</item>
+                <item>A/C ON[1]</item>
+                <item>A/C ON/OFFトグル[10]</item>
+                <item>A/C AUTO[11]</item>
+            </string-array>
+            <!--AirconModeSetting-->
+            <string-array name="AirconModeSetting_seat_list">
+                <item>全席一括[0]</item>
+                <item>運転席[1]</item>
+                <item>助手席[2]</item>
+                <item>後部座席[3]</item>
+            </string-array>
+            <string-array name="AirconModeSetting_modestatus_list">
+                <item>VENT[1]</item>
+                <item>B/L[2]</item>
+                <item>HEAT[3]</item>
+                <item>H/D[4]</item>
+                <item>DEF[5]</item>
+                <item>MODE UP[10]</item>
+                <item>MODE DOWN[11]</item>
+                <item>MODE AUTO[12]</item>
+            </string-array>
+            <!--AirconFanUpDown-->
+            <string-array name="AirconFanUpDown_seat_list">
+                <item>全席一括[0]</item>
+                <item>後部座席[3]</item>
+            </string-array>
+            <string-array name="AirconFanUpDown_fanupdown_list">
+                <item>風量1段階 UP[1]</item>
+                <item>風量2段階 UP[2]</item>
+                <item>風量1段階 DOWN[11]</item>
+                <item>風量2段階 DOWN[12]</item>
+            </string-array>
+            <!--AirconFanSetting-->
+            <string-array name="AirconFanSetting_seat_list">
+                <item>全席一括[0]</item>
+                <item>後部座席[3]</item>
+            </string-array>
+            <string-array name="AirconFanSetting_fanvalue_list">
+                <item>風量1[1]</item>
+                <item>風量2[2]</item>
+                <item>風量3[3]</item>
+                <item>風量4[4]</item>
+                <item>風量5[5]</item>
+                <item>風量6[6]</item>
+                <item>風量7[7]</item>
+                <item>風量 順次切り替え UP[10]</item>
+                <item>風量 順次切り替え DOWN[11]</item>
+                <item>風量 AUTO[12]</item>
+            </string-array>
+            <!--AirconTempUpDown-->
+            <string-array name="AirconTempUpDown_seat_list">
+                <item>全席一括[0]</item>
+                <item>運転席[1]</item>
+                <item>助手席[2]</item>
+                <item>後部座席[3]</item>
+            </string-array>
+            <string-array name="AirconTempUpDown_tempupdown_list">
+                <item>設定温度 1STEP UP[1]</item>
+                <item>設定温度 2STEP UP[2]</item>
+                <item>設定温度 3STEP UP[3]</item>
+                <item>設定温度 4STEP UP[4]</item>
+                <item>設定温度 5STEP UP[5]</item>
+                <item>設定温度 1STEP DOWN[11]</item>
+                <item>設定温度 2STEP DOWN[12]</item>
+                <item>設定温度 3STEP DOWN[13]</item>
+                <item>設定温度 4STEP DOWN[14]</item>
+                <item>設定温度 5STEP DOWN[15]</item>
+            </string-array>
+            <!--AirconTempSetting-->
+            <string-array name="AirconTempSetting_seat_list">
+                <item>全席一括[0]</item>
+                <item>運転席[1]</item>
+                <item>助手席[2]</item>
+                <item>後部座席[3]</item>
+            </string-array>
+            <!--AirconFrDefSetting-->
+            <string-array name="AirconFrDefSetting_seat_list">
+                <item>全席一括[0]</item>
+            </string-array>
+            <string-array name="AirconFrDefSetting_defstatus_list">
+                <item>フロントDEF OFF[0]</item>
+                <item>フロントDEF ON[1]</item>
+                <item>フロントDEF ON/OFFトグル[10]</item>
+            </string-array>
+            <!--AirconRrDefSetting-->
+            <string-array name="AirconRrDefSetting_seat_list">
+                <item>全席一括[0]</item>
+            </string-array>
+            <string-array name="AirconRrDefSetting_defstatus_list">
+                <item>フロントDEF OFF[0]</item>
+                <item>フロントDEF ON[1]</item>
+                <item>フロントDEF ON/OFFトグル[10]</item>
+            </string-array>
+            <!--AirconSyncSetting-->
+            <string-array name="AirconSyncSetting_seat_list">
+                <item>全席一括[0]</item>
+            </string-array>
+            <string-array name="AirconSyncSetting_syncstatus_list">
+                <item>左右一括制御(Singleモード)[0]</item>
+                <item>左右独立制御(Dualモード)[1]</item>
+                <item>DUALモード ON/OFFトグル[10]</item>
+            </string-array>
+            <!--AirconRecFrsSetting-->
+            <string-array name="AirconRecFrsSetting_seat_list">
+                <item>全席一括[0]</item>
+            </string-array>
+            <string-array name="AirconRecFrsSetting_recfrsstatus_list">
+                <item>内気循環(RECモード)[0]</item>
+                <item>外気導入(FRSモード)[1]</item>
+                <item>内外気 ON/OFFトグル[10]</item>
+                <item>内外気AUTO[11]</item>
+            </string-array>
+            <!--AirconVentTempSetting-->
+            <string-array name="AirconVentTempSetting_seat_list">
+                <item>運転席[1]</item>
+                <item>助手席[2]</item>
+            </string-array>
+            <string-array name="AirconVentTempSetting_venttemp_list">
+                <item>B/L1(Lo)[1]</item>
+                <item>B/L2[2]</item>
+                <item>B/L3(±0)[3]</item>
+                <item>B/L4[4]</item>
+                <item>B/L5(Hi)[5]</item>
+            </string-array>
+        <!--Aircon-->
+        <!--Audio-->
+            <!--AudioSourceChangeDirect-->
+            <string-array name="AudioSourceChangeDirect_source_list">
+                <item>OFF[0]</item>
+                <item>FM[1]</item>
+                <item>AM[2]</item>
+                <item>SXM[3]</item>
+                <item>USB1[40]</item>
+                <item>USB2[41]</item>
+                <item>iPod1[50]</item>
+                <item>iPod2[51]</item>
+                <item>BT-Audio[60]</item>
+            </string-array>
+            <!--AudioSourceChange-->
+            <string-array name="AudioSourceChange_next_list">
+                <item>Next[0]</item>
+                <item>Previous[1]</item>
+            </string-array>
+            <!--AudioSkipUpDown-->
+            <string-array name="AudioSkipUpDown_skip_list">
+                <item>Skip(track) up[0]</item>
+                <item>Skip(track) down[1]</item>
+            </string-array>
+            <!--AudioPlay-->
+            <string-array name="AudioPlay_play_list">
+                <item>Play[0]</item>
+                <item>Pause[1]</item>
+            </string-array>
+            <!--AudioFfRew-->
+            <string-array name="AudioFfRew_ffrew_list">
+                <item>FF Start[0]</item>
+                <item>REW Start[1]</item>
+                <item>FF/REW Stop[2]</item>
+            </string-array>
+            <!--reqAudioSeek-->
+            <string-array name="AudioSeek_seek_list">
+                <item>Seek Up[0]</item>
+                <item>Seek Down[1]</item>
+                <item>Seek Stop[2]</item>
+            </string-array>
+            <!--reqAudioShuffle-->
+            <string-array name="AudioShuffle_shufflemode_list">
+                <item>シャッフルモード1[0]</item>
+                <item>シャッフルモード2[1]</item>
+                <item>シャッフルモード3[2]</item>
+            </string-array>
+            <!--AudioRepeat-->
+            <string-array name="AudioRepeat_repeatemode_list">
+                <item>リピートモード1[0]</item>
+                <item>リピートモード2[1]</item>
+                <item>リピートモード3[2]</item>
+            </string-array>
+            <!--AudioSetAudioVol-->
+            <string-array name="AudioSetAudioVol_updown_list">
+                <item>Up[0]</item>
+                <item>Down[1]</item>
+            </string-array>
+            <!--AudioScan-->
+            <string-array name="AudioScan_source_list">
+                　<item>AM[0]</item>
+                　<item>FM[1]</item>
+            </string-array>
+            <string-array name="AudioScan_scan_list">
+                <item>Scan開始[0]</item>
+                <item>Scan停止[1]</item>
+            </string-array>
+            <!--AudioTune-->
+            <string-array name="AudioTune_source_list">
+                　<item>AM[0]</item>
+                　<item>FM[1]</item>
+            </string-array>
+            <string-array name="AudioTune_updown_list">
+                <item>Up[0]</item>
+                <item>Down[1]</item>
+                <item>Auto-Up[2]</item>
+                <item>Auto-Down[3]</item>
+                <item>Auto-Cancel[4]</item>
+            </string-array>
+        <!--Audio-->
+        <!--Setting-->
+            <!--SettingDisplay-->
+            <string-array name="SettingDisplay_videosource_list">
+               <item>"グラフィック[0]"</item>
+               <item>"テレビ映像[1]"</item>
+               <item>"圧縮Video映像[2]"</item>
+               <item>"AUX-VIDEO映像[3]"</item>
+               <item>"HDMI映像[4]"</item>
+               <item>"DVD映像[5]"</item>
+               <item>"リアワイドカメラ映像[6]"</item>
+               <item>"MVC映像[7]"</item>
+               <item>"LaneWatch映像[8]"</item>
+            </string-array>
+            <string-array name="SettingDisplay_dispsetkind_list">
+                <item>明るさ[0]</item>
+                <item>コントラスト[1]</item>
+                <item>黒の濃さ[2]</item>
+                <item>色の濃さ[3]</item>
+                <item>色合い[4]</item>
+            </string-array>
+            <string-array name="SettingDisplay_updown_list">
+                <item>Up[0]</item>
+                <item>Down[1]</item>
+            </string-array>
+            <!--SettngVolume-->
+            <string-array name="SettingVolume_volkind_list">
+                <item>ガイダンス音量[0]</item>
+                <item>テキスト読み上げ音量[1]</item>
+                <item>音声認識音量[2]</item>
+                <item>通話音量:着信[10]</item>
+                <item>通話音量:受話[11]</item>
+                <item>通話音量:送話[12]</item>
+            </string-array>
+            <string-array name="SettingVolume_updown_list">
+                <item>Up[0]</item>
+                <item>Down[1]</item>
+            </string-array>
+            <!--SettingVolumeDirect-->
+            <string-array name="SettingVolumeDirect_volkind_list">
+                <item>ガイダンス音量[0]</item>
+                <item>テキスト読み上げ音量[1]</item>
+            </string-array>
+            <!--SettingControlVol-->
+            <string-array name="SettingControlVol_volume_list">
+                <item>OFF[0]</item>
+                <item>1[1]</item>
+                <item>2[2]</item>
+                <item>3[3]</item>
+            </string-array>
+            <!--SettingTouchPanelSensitivity-->
+            <string-array name="SettingTouchPanelSensitivity_volume_list">
+                <item>Low[0]</item>
+                <item>High[1]</item>
+            </string-array>
+            <!--SettingTone-->
+            <string-array name="SettingTone_tonekind_list">
+                <item>BASS[0]</item>
+                <item>MIDRANGE[1]</item>
+                <item>TREBLE[2]</item>
+            </string-array>
+            <string-array name="SettingTone_updown_list">
+                <item>Up[0]</item>
+                <item>Down[1]</item>
+            </string-array>
+            <!--SettingToneDirect-->
+            <string-array name="SettingToneDirect_tonekind_list">
+                <item>BASS[0]</item>
+                <item>MIDRANGE[1]</item>
+                <item>TREBLE[2]</item>
+            </string-array>
+            <!--SettingFaderBalance-->
+            <string-array name="SettingFaderBalance_faderbalance_list">
+                　<item>Fader[0]</item>
+                　<item>Balance[1]</item>
+            </string-array>
+            <string-array name="SettingFaderBalance_updownleftright_list">
+                  <item>0[0]</item>
+                  <item>1[1]</item>
+            </string-array>
+            <!--SettingFaderBalanceDirect-->
+            <string-array name="SettingFaderBalanceDirect_faderbalance_list">
+            　    <item>Fader[0]</item>
+                  <item>Balance[1]</item>
+            </string-array>
+            <!--SettingSubwoofer-->
+            <string-array name="SettingSubwoofer_updown_list">
+                <item>Up[0]</item>
+                <item>Down[1]</item>
+            </string-array>
+            <!--SettingSVC-->
+            <string-array name="SettingSVC_set_list">
+                <item>OFF[0]</item>
+                <item>LOW[1]</item>
+                <item>MID[2]</item>
+                <item>HIGH[3]</item>
+            </string-array>
+        <!--Setting-->
+        <!--Notification-->
+            <!--NotificationPopup-->
+            <string-array name="NotificationPopup_kind_list">
+                <item>下部ポップアップ[0]</item>
+                <item>サイズ:小[10]</item>
+                <item>サイズ:大[30]</item>
+            </string-array>
+        <!--Notification-->
+    <!--車両データ確認画面-->
+    <!--イベント応答確認画面-->
+        <!--Audio-->
+            <!--AudioGetPresetList-->
+            <string-array name="AudioGetPresetList_source_list">
+                <item>AM[0]</item>
+                <item>FM[1]</item>
+                <item>SXM[2]</item>
+            </string-array>
+            <!--AudioSetPresetList(AM/FM)-->
+            <string-array name="AudioSetPresetList_source_list">
+                <item>AM[0]</item>
+                <item>FM[1]</item>
+            </string-array>
+            <string-array name="AudioSetPresetList_preset_list">
+                <item>1[1]</item>
+                <item>2[2]</item>
+            </string-array>
+            <!--AudioSetPresetListSXM-->
+            <string-array name="AudioSetPresetListSXM_source_list">
+                <item>SXM[2]</item>
+            </string-array>
+            <!--AudioGetStationList(AM/FM)-->
+            <string-array name="AudioGetStationList_source_list">
+                <item>AM[0]</item>
+                <item>FM[1]</item>
+            </string-array>
+       <!--Audio-->
+    <!--イベント応答確認画面-->
+    <!--プルダウンリストに表示するアイテムを作成.-->
+    <!--デバッグ用 JSON Data-->
+    <string name="debug">{\"result\":\"Success\",\"code\":0,\"accel_pedal_position\":{\"status\":0,\"data\":0},\"engine\":{\"status\":1,\"data\":16379},\"atmospheric_pressure\":{\"status\":1,\"data\":776.075},\"intake_air_temperature\":{\"status\":0,\"data\":0},\"engine_coolant_temperature\":{\"status\":1,\"data\":150},\"engine_oil_life\":{\"status\":1,\"data\":2},\"shift_d\":{\"status\":1,\"data\":1},\"shift_n\":{\"status\":1,\"data\":1},\"shift_r\":{\"status\":1,\"data\":1},\"shift_p\":{\"status\":1,\"data\":1},\"cruise_control_status\":{\"status\":0,\"data\":0},\"cruise_set_speed\":{\"status\":0,\"data\":0},\"vehicle_speed\":{\"status\":0,\"data\":0},\"transmission_speed\":{\"status\":1,\"data\":237},\"odometer\":{\"status\":0,\"data\":0},\"traveled_distance\":{\"status\":0,\"data\":0},\"accumulated_fuel_consumption\":{\"status\":0,\"data\":0},\"remained_fuel\":{\"status\":0,\"data\":0},\"instantaneous_fuel_economy\":{\"status\":1,\"data\":49},\"fuel_economy_max\":{\"status\":1,\"data\":6},\"fuel_economy_max_unit\":{\"status\":1,\"data\":3},\"average_fuel_economy_a\":{\"status\":1,\"data\":204.6},\"average_fuel_economy_b\":{\"status\":1,\"data\":99.6},\"fuel_economy_unit\":{\"status\":1,\"data\":3},\"trip_a\":{\"status\":1,\"data\":9999.9},\"trip_a_unit\":{\"status\":1,\"data\":1},\"trip_b\":{\"status\":1,\"data\":1000},\"trip_b_unit\":{\"status\":1,\"data\":1},\"estimated_range\":{\"status\":1,\"data\":2045},\"estimated_range_unit\":{\"status\":1,\"data\":1},\"steering_angle\":{\"status\":1,\"data\":755.8},\"steering_angle_velocity\":{\"status\":0,\"data\":0},\"brake_pressure\":{\"status\":0,\"data\":0},\"stop_switch\":{\"status\":1,\"data\":1},\"parking_brake\":{\"status\":1,\"data\":1},\"tire_pressure_fr\":{\"status\":0,\"data\":0},\"tire_pressure_fl\":{\"status\":0,\"data\":0},\"tire_pressure_rr\":{\"status\":0,\"data\":0},\"tire_pressure_rl\":{\"status\":0,\"data\":0},\"vsa_on\":{\"status\":0,\"data\":0},\"abs\":{\"status\":0,\"data\":0},\"wheel_speed_fl\":{\"status\":1,\"data\":125},\"wheel_speed_fr\":{\"status\":1,\"data\":125},\"wheel_speed_rl\":{\"status\":1,\"data\":125},\"wheel_speed_rr\":{\"status\":1,\"data\":125},\"longitudinal_g\":{\"status\":0,\"data\":0},\"lateral_g\":{\"status\":0,\"data\":0},\"yaw_rate\":{\"status\":1,\"data\":124.7558594},\"vin\":{\"status\":1,\"data\":\"GHIJKLMNOPQ\"},\"b_voltage\":{\"status\":0,\"data\":0},\"ignition_status\":{\"status\":1,\"data\":1},\"day_night_mode_status\":{\"status\":1,\"data\":1},\"back_light_signal\":{\"status\":1,\"data\":1},\"turn_signal_l\":{\"status\":1,\"data\":1},\"turn_signal_r\":{\"status\":1,\"data\":1},\"head_light_small\":{\"status\":1,\"data\":1},\"head_light_low\":{\"status\":1,\"data\":1},\"head_light_high\":{\"status\":1,\"data\":1},\"head_light_pass\":{\"status\":1,\"data\":1},\"hazard_switch\":{\"status\":1,\"data\":1},\"outside_temperature\":{\"status\":0,\"data\":0},\"ac_target_temp_dr\":{\"status\":1,\"data\":31.5},\"ac_target_temp_as\":{\"status\":1,\"data\":31.5},\"ac_current_temperature\":{\"status\":1,\"data\":85},\"rain_detection\":{\"status\":1,\"data\":1},\"wiper_status_int\":{\"status\":1,\"data\":1},\"wiper_status_low\":{\"status\":1,\"data\":1},\"wiper_status_high\":{\"status\":1,\"data\":1},\"wiper_status_mist\":{\"status\":1,\"data\":1},\"wiper_status_washer\":{\"status\":1,\"data\":1},\"window_status_dr\":{\"status\":1,\"data\":1},\"window_status_as\":{\"status\":1,\"data\":1},\"window_status_rr\":{\"status\":1,\"data\":1},\"window_status_rl\":{\"status\":1,\"data\":1},\"passenger_presence\":{\"status\":0,\"data\":0},\"timestamp\":{\"status\":1,\"data\":60752189},\"headunit_part_num\":{\"status\":1,\"data\":\"99999-****-*999-\"},\"headunit_sw_ver\":{\"status\":1,\"data\":\"1800-1287-000_local\"},\"car_direction\":{\"status\":0,\"data\":0},\"car_condition\":{\"status\":1,\"data\":1},\"sunroof_close\":{\"status\":1,\"data\":1},\"sunroof_apply\":{\"status\":1,\"data\":1},\"2door_type\":{\"status\":1,\"data\":1},\"window_error\":{\"status\":1,\"data\":1},\"navi_road_attr\":{\"status\":0,\"data\":0},\"navi_onroad\":{\"status\":0,\"data\":0},\"mode_info\":{\"status\":0,\"data\":0},\"seat_belt\":{\"status\":1,\"data\":1},\"ac_fanspeed_fr\":{\"status\":1,\"data\":15},\"ac_mode_dr\":{\"status\":1,\"data\":7},\"ac_mode_as\":{\"status\":1,\"data\":7},\"ac_sync\":{\"status\":1,\"data\":0},\"ac_recircu_fresh\":{\"status\":1,\"data\":1},\"ac_ac_fr\":{\"status\":1,\"data\":3},\"ac_rr_def\":{\"status\":1,\"data\":1},\"ac_fr_def\":{\"status\":1,\"data\":0},\"ac_variation\":{\"status\":1,\"data\":0},\"ac_lhrh\":{\"status\":1,\"data\":0},\"ac_tempstep\":{\"status\":1,\"data\":1},\"ac_mode_rr\":{\"status\":0,\"data\":0},\"ac_fanspeed_rr\":{\"status\":0,\"data\":0},\"ac_target_temp_rr\":{\"status\":0,\"data\":0},\"clutch_sw\":{\"status\":0,\"data\":0},\"engmanifoldV_sensorV\":{\"status\":0,\"data\":0},\"brakesw\":{\"status\":0,\"data\":0},\"vehible_stop_judge\":{\"status\":0,\"data\":0},\"clutch_sw_sil\":{\"status\":0,\"data\":0},\"at_gear_position\":{\"status\":0,\"data\":0},\"smatic_shift\":{\"status\":0,\"data\":0},\"smatic_shift_led\":{\"status\":0,\"data\":0},\"crankshaft_torque\":{\"status\":0,\"data\":0},\"preceding_vehicle_dist\":{\"status\":0,\"data\":0},\"mt_gear_position\":{\"status\":0,\"data\":0},\"rev_match_mode\":{\"status\":0,\"data\":0},\"brightness_graphic\":{\"status\":0,\"data\":0},\"contrast_graphic\":{\"status\":0,\"data\":0},\"black_level_graphic\":{\"status\":0,\"data\":0},\"color_graphic\":{\"status\":0,\"data\":0},\"tint_graphic\":{\"status\":0,\"data\":0},\"brightness_tv\":{\"status\":0,\"data\":0},\"contrast_tv\":{\"status\":0,\"data\":0},\"black_level_tv\":{\"status\":0,\"data\":0},\"color_tv\":{\"status\":0,\"data\":0},\"tint_tv\":{\"status\":0,\"data\":0},\"brightness_compressvideo\":{\"status\":0,\"data\":0},\"contrast_compressvideo\":{\"status\":0,\"data\":0},\"black_level_compressvideo\":{\"status\":0,\"data\":0},\"color_compressvideo\":{\"status\":0,\"data\":0},\"tint_compressvideo\":{\"status\":0,\"data\":0},\"brightness_auxvideo\":{\"status\":0,\"data\":0},\"contrast_auxvideo\":{\"status\":0,\"data\":0},\"black_level_auxvideo\":{\"status\":0,\"data\":0},\"color_auxvideo\":{\"status\":0,\"data\":0},\"tint_auxvideo\":{\"status\":0,\"data\":0},\"brightness_hdmi\":{\"status\":0,\"data\":0},\"contrast_hdmi\":{\"status\":0,\"data\":0},\"black_level_hdmi\":{\"status\":0,\"data\":0},\"color_hdmi\":{\"status\":0,\"data\":0},\"tint_hdmi\":{\"status\":0,\"data\":0},\"brightness_dvd\":{\"status\":0,\"data\":0},\"contrast_dvd\":{\"status\":0,\"data\":0},\"black_level_dvd\":{\"status\":0,\"data\":0},\"color_dvd\":{\"status\":0,\"data\":0},\"tint_dvd\":{\"status\":0,\"data\":0},\"brightness_rearwidecamera\":{\"status\":0,\"data\":0},\"contrast_rearwidecamera\":{\"status\":0,\"data\":0},\"black_level_rearwidecamera\":{\"status\":0,\"data\":0},\"color_rearwidecamera\":{\"status\":0,\"data\":0},\"tint_rearwidecamera\":{\"status\":0,\"data\":0},\"brightness_mvc\":{\"status\":0,\"data\":0},\"contrast_mvc\":{\"status\":0,\"data\":0},\"black_level_mvc\":{\"status\":0,\"data\":0},\"color_mvc\":{\"status\":0,\"data\":0},\"tint_mvc\":{\"status\":0,\"data\":0},\"brightness_lanewatch\":{\"status\":0,\"data\":0},\"contrast_lanewatch\":{\"status\":0,\"data\":0},\"black_level_lanewatch\":{\"status\":0,\"data\":0},\"color_lanewatch\":{\"status\":0,\"data\":0},\"tint_lanewatch\":{\"status\":0,\"data\":0},\"guidance_vol\":{\"status\":0,\"data\":0},\"readtext_vol\":{\"status\":0,\"data\":0},\"vr_vol\":{\"status\":0,\"data\":0},\"cotrol_vol\":{\"status\":0,\"data\":0},\"incoming_vol\":{\"status\":0,\"data\":0},\"in_call_vol\":{\"status\":0,\"data\":0},\"sending_vol\":{\"status\":0,\"data\":0},\"touch_panel_sensitivity\":{\"status\":0,\"data\":0},\"tone_bass\":{\"status\":0,\"data\":0},\"tone_midrange\":{\"status\":0,\"data\":0},\"tone_treble\":{\"status\":0,\"data\":0},\"fader\":{\"status\":0,\"data\":0},\"balance\":{\"status\":0,\"data\":0},\"subwoofer\":{\"status\":0,\"data\":0},\"svc_mode\":{\"status\":0,\"data\":0},\"current_audio\":{\"status\":1,\"source\":50,\"shufflemode\":0,\"repeatmode\":1,\"volume\":20,\"strdata1\":\"タイトル名\",\"strdata2\":\"アーティスト名\",\"strdata3\":\"アルバム名\",\"strdata4\":\"Podcast name\",\"strdata5\":\"Episode title\",\"strdata6\":\"2017\/06\/27\",\"strdata7\":\"Audiobook name\",\"strdata8\":\"Chapter title\",\"strdata9\":\"Station name\",\"strdata10\":\"Couse or Collection name\",\"strdata11\":\"Content title\",\"strdata12\":\"Author name\",\"numdata1\":0,\"numdata2\":0}}</string>
+</resources>
+
