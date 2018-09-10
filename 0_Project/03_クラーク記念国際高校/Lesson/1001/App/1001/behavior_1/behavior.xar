@@ -29,7 +29,7 @@
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="ボックス動作の終了時に信号を送る。" id="4" />
                             <Output name="onWalk" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
                         </Box>
-                        <Box name="Move To" id="2" localization="8" tooltip="Make the robot move to a configured point relative to its current location." x="399" y="91">
+                        <Box name="Move To" id="2" localization="8" tooltip="Make the robot move to a configured point relative to its current location." x="401" y="83">
                             <bitmap>media/images/box/movement/walk_forward.png</bitmap>
                             <script language="4">
                                 <content>
