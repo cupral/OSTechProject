@@ -1,0 +1,9 @@
+Yumemiルール
+
+【マージまでのフロー】
+修正 -> PR -> レビュー -> マージ
+
+【ブランチ名】
+・ブランチ名にJIRAのチケット番号を含めてください
+・feature/FFWW-(チケット番号)_(作業内容に応じて自由)
+例 feature/FFWW-139_testing_of_relationship_with_jira_and_github

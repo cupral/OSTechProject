@@ -1,0 +1,97 @@
+【必要画面】
+β3必要(β2未実装)
+登録
+スプラッシュ
+アカウント登録1~8
+問診トーク1~5
+
+自動スタートx
+安心ドライブ1~2
+(コースレコメンド無視)
+安心ドライブ3~5
+エクササイズ1~6
+
+
+
+
+【β2不必要画面】
+・0_スプラッシュ
+(TopNormalFragment - top_normal_fragment)
+
+・トレーナー選択画面 「トレーナーを選んでください」
+(TrainerSelectFragment - trainer_select_fragment)
+
+・トレーナー確認画面
+(TrainerSelectConfirmFragment - trainer_select_confirm_fragment)
+
+・コース選択画面
+(CourseSelectionFragment - course_selection_fragment)
+
+・ステージ選択
+(StageSelectionFragment - stage_selection_fragment)
+
+
+
+チュート1_01_top
+TopTutorial1Fragment - 
+top_tutorial1_fragment	
+
+0_スプラッシュ かぶせ
+TopTutorial2Fragment -
+top_tutorial2_fragment
+
+チュート1_02_トレーナー選択1
+Tutorial1WelcomeFragment -
+tutorial1_welcome_fragment
+
+-追加-
+
+FAQ一覧
+FaqFragment -
+faq_fragment	
+
+FAQ詳細と思われる
+FaqPopUpFragment - 
+faq_pop_up_fragment
+
+ログアウト確認
+LogoutConfirmFragment - 
+logout_confirm_fragment
+
+
+メニュー一覧
+MenuFragment -
+menu_fragment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+【前提】
+・登録フローはβ2にはない
+・自動スタートもβ2にはない
