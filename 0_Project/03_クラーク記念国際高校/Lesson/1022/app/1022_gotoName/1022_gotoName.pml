@@ -2,7 +2,9 @@
 <Package name="1022_gotoName" format_version="4">
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
-        <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="gotoName" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="gotoNum" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="play_stop" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources />
