@@ -15,7 +15,7 @@
             <BehaviorLayer name="behavior_layer1">
                 <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                        <Box name="cus.SAY" id="1" localization="8" tooltip="" x="376" y="20">
+                        <Box name="cus.SAY" id="1" localization="8" tooltip="" x="425" y="6">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -32,22 +32,25 @@
         #put clean-up code here
         pass
 
-    def onInput_onStart(self):
-        self.tts.say("hello,world")
-        self.onStopped() #activate the output of the box
+    def onInput_onStart(self, p):
+        self.tts.say(p)
+        self.onEnd()
+
         pass
 
     def onInput_onStop(self):
         self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
-        self.onStopped() #activate the output of the box]]>
+        self.onStopped() #activate the output of the box
+        self.onEnd()]]>
 </content>
                             </script>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                            <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                            <Output name="onEnd" type="1" type_size="1" nature="1" inner="0" tooltip="" id="4" />
+                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" />
                         </Box>
-                        <Box name="Cus.Switch" id="2" localization="8" tooltip="" x="381" y="121">
+                        <Box name="Cus.Switch" id="2" localization="8" tooltip="" x="433" y="109">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -64,12 +67,12 @@
         pass
 
     def onInput_onStart(self, p):
-        if p=="Hi":
+        if p=="こんにちは":
             self.logger.info("Hi")
-        elif p=="Hello":
+        elif p=="こんばんは":
             self.logger.info("Hello")
         else:
-            self.logger.info("Not Matching")
+            self.logger.info("error")
         self.onStopped() #activate the output of the box
         pass
 
@@ -83,7 +86,7 @@
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
-                        <Box name="Text Edit" id="3" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="104" y="137">
+                        <Box name="Text Edit" id="3" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="127" y="20">
                             <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                             <script language="4">
                                 <content>
@@ -93,19 +96,19 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Hi")]]>
+		self.onStopped("こんにちは")]]>
 </content>
                             </script>
                             <pluginContent>
                                 <text>
-                                    <![CDATA[Hi]]>
+                                    <![CDATA[こんにちは]]>
 </text>
                             </pluginContent>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
                             <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
                             <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
                         </Box>
-                        <Box name="VolumeChecker" id="4" localization="8" tooltip="" x="387" y="229">
+                        <Box name="VolumeChecker" id="4" localization="8" tooltip="" x="435" y="211">
                             <bitmap>media/images/box/box-python-script.png</bitmap>
                             <script language="4">
                                 <content>
@@ -154,8 +157,8 @@ class MyClass(GeneratedClass):
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
                         <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="4" />
-                        <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="3" />
-                        <Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="3" />
+                        <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
