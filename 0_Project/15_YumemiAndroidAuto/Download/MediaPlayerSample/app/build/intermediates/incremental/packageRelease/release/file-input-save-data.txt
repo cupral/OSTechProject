@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Thu Aug 23 18:54:22 JST 2018
-0.baseType=DIRECTORY
-0.base=/Users/anzaitakayuki/Documents/00_develop/0_Project2018/15_YumemiAndroidAuto/Download/MediaPlayerSample/app/build/intermediates/transforms/dex/release/0
-0.path=classes.dex
-0.set=DEX
-count=1

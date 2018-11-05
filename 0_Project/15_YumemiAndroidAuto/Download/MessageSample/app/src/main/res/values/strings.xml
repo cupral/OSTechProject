@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">MessageSample</string>
-
-    <string name="sample_message">This is sample message</string>
-    <string name="sample_name">Test User</string>
-</resources>

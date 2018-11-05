@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">MediaPlayer</string>
-
-    <string name="test_title">アルバム%1$d</string>
-    <string name="test_subtitle">サブタイトル%1$d</string>
-    <string name="action_settings">Settings</string>
-</resources>
