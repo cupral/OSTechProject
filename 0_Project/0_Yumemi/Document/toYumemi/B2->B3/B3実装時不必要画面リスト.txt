@@ -63,12 +63,55 @@ logout_confirm_fragment
 MenuFragment -
 menu_fragment
 
+運転履歴
+GraphNavigationFragment	
+運転時間グラフGraphDriveTimeFragment -
+graph_drive_time_fragment
+運転点数グラフGraphPointFragment -
+graph_point_fragment
 
+お買い物ショップ
+ShopFragment -
+shop_fragment
 
+アイテム８個並びShopPageFragment -
+shop_page_fragment
 
+アイテム詳細と思われるShopPopUpFragment -
+shop_pop_up_fragment
 
+アドバイス集
+OnePointAdviceListFragment - 
+one_point_advice_list_fragment
 
+ワンポイントアドバイス詳細と思われるOnePointAdvicePopUpFragment - 
+one_point_advice_pop_up_fragment	
 
+ステッカーメイン
+StickerBookFragment -
+sticker_book_fragment	
+
+ステッカー獲得履歴StickerBookHistoryFragment -
+sticker_book_history_fragment			ステッカー、コースStickerBookCourseFragment -
+sticker_book_course_fragment
+
+ステッカーブック表紙
+StickerBookPageCoverFragment -
+fragment_sticker_book_cover
+
+ステッカー一覧StickerBookIndex2Fragment - 
+sticker_book_index2_fragment
+
+トレーナースタンプ、シールStickerBookProfileFragment - 
+sticker_book_profile_fragment
+
+トレーナー一覧StickerBookTrainersFragment - 
+sticker_book_trainers_fragment	
+
+ステッカーメインと思われるStickerBookRewardDetailFragment - 	fragment_sticker_book_reward_detail_root
+
+ステッカー詳細
+StickerBookRewardDetailPageFragment - 	sticker_book_reward_detail_page_fragment	
 
 
 
