@@ -10,11 +10,15 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="behavior_1">
+  <behaviorContent path="customSay">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="test">
+  <behaviorContent path="customSwitch">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="volumeChecker">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

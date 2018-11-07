@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="inputoutputbox-91b0a7">
+ <names>
+  <name lang="en_US">InputOutputBox</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="InputOutput">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.0" uuid="timelinedevelop-c6b3bd">
+ <names>
+  <name lang="en_US">TimelineDevelop</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="gotoNum">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="gotoName">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

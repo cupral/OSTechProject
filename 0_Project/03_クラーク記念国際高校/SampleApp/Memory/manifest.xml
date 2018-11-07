@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="memory-398c06">
+ <names>
+  <name lang="en_US">Memory</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="RaiseSubscribed">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="InsertData_GetData">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

@@ -2,8 +2,9 @@
 <Package name="pythonLecture" format_version="4">
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
-        <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="test" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="customSay" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="customSwitch" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="volumeChecker" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources />

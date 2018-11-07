@@ -10,23 +10,11 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="gotoName">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
   <behaviorContent path="gotoNum">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="play_stop">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="test">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="test01">
+  <behaviorContent path="gotoName">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
