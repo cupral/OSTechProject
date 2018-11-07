@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="triggersentence">
+ <names>
+  <name lang="en_US">TriggerSentence</name>
+  <name lang="ja_JP">TriggerSentence</name>
+ </names>
+ <supportedLanguages>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>interactive</nature>
+   <triggerSentences>
+    <sentence lang="ja_JP">トリガーセンテンス</sentence>
+    <sentence lang="ja_JP">とりがーせんてんす</sentence>
+    <sentence lang="ja_JP">トリガーせんてんす</sentence>
+    <sentence lang="ja_JP">とりがーセンテンス</sentence>
+   </triggerSentences>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="my_application_id">
+ <names>
+  <name lang="en_US">TriggerConditions</name>
+  <name lang="ja_JP">TriggerConditions</name>
+ </names>
+ <supportedLanguages>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>interactive</nature>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[(('Launchpad/PeopleNotSeen' == 1) ~ 10) && ('Launchpad/PreviousActivity' !="my_application_id/behavior_1")]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
